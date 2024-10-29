@@ -1,0 +1,535 @@
+яйпхор ашк оепегюосыем2024-10-28 17:45:35 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:45:35 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:38 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:41 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:43 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:45 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:48 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:50 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passpost']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+2024-10-28 17:45:53 - root - ERROR - 'passpost'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 39, in webhook
+    {fieldPhys['passport']},\
+     ~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'passpost'
+яйпхор ашк оепегюосыем2024-10-28 17:45:55 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:46:30 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:33 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:36 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:38 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:41 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:43 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:45 - root - ERROR - Expecting value: line 5 column 5 (char 33)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 33)
+2024-10-28 17:46:48 - root - ERROR - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 32, in prepare_data
+    result['type_name'] = acc_stop.get('items', [{}])[0].get('type', {}).get('name', '-')
+                          ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+яйпхор ашк оепегюосыем2024-10-28 17:47:31 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:47:37 - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 24, in prepare_data
+    tax = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}])[0]
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+яйпхор ашк оепегюосыем2024-10-28 17:48:14 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:48:20 - root - ERROR - 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 25, in prepare_data
+    result['amount'] = tax.get('amount', '-')
+                       ^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+яйпхор ашк оепегюосыем2024-10-28 17:48:57 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:49:05 - root - ERROR - 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 26, in prepare_data
+    result['amount'] = tax.get('amount', '-')
+                       ^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+яйпхор ашк оепегюосыем2024-10-28 17:49:33 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:49:39 - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 24, in prepare_data
+    tax = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}])[0]
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+яйпхор ашк оепегюосыем2024-10-28 17:51:00 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:51:05 - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 25, in prepare_data
+    tax = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}])[0]
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+яйпхор ашк оепегюосыем2024-10-28 17:53:19 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 17:53:27 - root - INFO - OK
+2024-10-28 18:06:43 - root - ERROR - 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 26, in prepare_data
+    result['amount'] = tax.get('amount', '-')
+                       ^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+яйпхор ашк оепегюосыем2024-10-28 18:08:04 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-28 18:08:09 - root - INFO - OK
+Script has been reloaded2024-10-28 19:48:14 - asyncio - DEBUG - Using proactor: IocpProactor
+Script has been reloaded2024-10-29 15:56:28 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 16:03:42 - root - ERROR - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 166, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 33, in prepare_data
+    result['type_name'] = acc_stop.get('items', [{}])[0].get('type', {}).get('name', '-')
+                          ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+Script has been reloaded2024-10-29 16:04:16 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 16:04:24 - root - ERROR - Expecting value: line 5 column 5 (char 45)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 45)
+2024-10-29 16:04:26 - root - ERROR - Expecting value: line 5 column 5 (char 45)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 45)
+2024-10-29 16:04:28 - root - ERROR - Expecting value: line 5 column 5 (char 45)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 45)
+2024-10-29 16:04:31 - root - ERROR - Expecting value: line 5 column 5 (char 45)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 45)
+2024-10-29 16:04:33 - root - ERROR - Expecting value: line 5 column 5 (char 45)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 45)
+2024-10-29 16:04:35 - root - ERROR - Expecting value: line 5 column 5 (char 45)
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 153, in Phys
+    id = await RukPhysWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 54, in webhook
+    js = await readJsonFilePhys()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\webhook.py", line 9, in readJsonFilePhys
+    js = json.load(f)
+         ^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 45)
+2024-10-29 16:04:40 - root - INFO - OK
+Script has been reloaded
+2024-10-29 16:06:36 - asyncio - DEBUG - Using proactor: IocpProactor
+Script has been reloaded
+2024-10-29 16:09:55 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 16:10:10 - root - ERROR - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 169, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 33, in prepare_data
+    result['type_name'] = acc_stop.get('items', [{}])[0].get('type', {}).get('name', '-')
+                          ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+Script has been reloaded
+2024-10-29 16:11:03 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 16:11:22 - root - INFO - OK
+2024-10-29 16:14:30 - root - INFO - OK
+Script has been reloaded
+2024-10-29 16:40:54 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 16:41:05 - root - INFO - OK
+2024-10-29 17:10:51 - root - ERROR - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 170, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 33, in prepare_data
+    result['type_name'] = acc_stop.get('items', [{}])[0].get('type', {}).get('name', '-')
+                          ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+Script has been reloaded
+2024-10-29 17:11:12 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 17:11:18 - root - ERROR - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 170, in Phys
+    data = await PhysPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Phys\prepare_data.py", line 33, in prepare_data
+    result['type_name'] = acc_stop.get('items', [{}])[0].get('type', {}).get('name', '-')
+                          ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-10-29 17:11:38 - root - INFO - OK
+2024-10-29 17:11:57 - root - INFO - OK
+2024-10-29 17:14:54 - root - ERROR - 'charmap' codec can't encode character '\u221e' in position 4: character maps to <undefined>
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 168, in Phys
+    json.dump(data, f, ensure_ascii=False, indent=4)
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 180, in dump
+    fp.write(chunk)
+  File "H:\Programs\Python-3.11.9\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u221e' in position 4: character maps to <undefined>
+Script has been reloaded
+2024-10-29 17:26:22 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 17:26:28 - root - ERROR - 'charmap' codec can't encode character '\u221e' in position 4: character maps to <undefined>
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 168, in Phys
+    json.dump(data, f, ensure_ascii=False, indent=4)
+  File "H:\Programs\Python-3.11.9\Lib\json\__init__.py", line 180, in dump
+    fp.write(chunk)
+  File "H:\Programs\Python-3.11.9\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u221e' in position 4: character maps to <undefined>
+Script has been reloaded
+2024-10-29 17:26:52 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 17:27:13 - root - INFO - OK
+Script has been reloaded
+2024-10-29 17:27:59 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 17:28:10 - root - INFO - OK
+Script has been reloaded
+2024-10-29 17:28:26 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 17:28:34 - root - INFO - OK
+Script has been reloaded
+2024-10-29 17:29:25 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-10-29 17:29:33 - root - INFO - OK
+2024-10-29 17:32:59 - root - INFO - OK
