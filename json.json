@@ -2,7 +2,7 @@
     "state": "ok",
     "size": 1,
     "version": "2.0",
-    "stamp": "2024-10-29T14:33:00.592Z",
+    "stamp": "2024-10-31T11:55:30.011Z",
     "data": [
         {
             "domain_uid": "btg_spedition",
@@ -12,48 +12,24 @@
                 "type": "MULTIPART",
                 "body": " ",
                 "data": {
-                    "last_name": "\u0411\u0430\u0442\u0430\u043d\u043e\u0432\u0430",
-                    "first_name": "\u0414\u0430\u0440\u0438\u043c\u0430",
-                    "patronymic": "\u0427\u0438\u043d\u0433\u0438\u0441\u043e\u0432\u043d\u0430",
-                    "birth": "23.12.1979",
-                    "passport": "8103 659676",
-                    "passport_date": "",
-                    "inn": ""
+                    "last_name": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                    "first_name": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                    "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+                    "birth": "243896400",
+                    "passport": "4008787933",
+                    "passport_date": "23.05.2009",
+                    "inn": "781143108237"
                 },
                 "schema_version": "1.0",
                 "storages": {}
             },
             "progress_ok": 21,
-            "progress_wait": 1,
-            "progress_error": 0,
+            "progress_wait": 0,
+            "progress_error": 1,
             "state": {
                 "sources": [
                     {
-                        "_id": "check_person/credit_history",
-                        "state": "PROGRESS"
-                    },
-                    {
-                        "_id": "check_person/moneta_tax_accruals",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/expired_passport",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/inoagent",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "fns_opendata/massleaders",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/egrip_fio_inn",
+                        "_id": "fns_opendata/massfounders",
                         "state": "OK",
                         "data": {}
                     },
@@ -63,12 +39,19 @@
                         "data": {}
                     },
                     {
-                        "_id": "fns_opendata/massfounders",
+                        "_id": "fns_opendata/massleaders",
                         "state": "OK",
                         "data": {}
                     },
                     {
-                        "_id": "check_person/person_inn",
+                        "_id": "check_person/credit_history",
+                        "state": "SKIP",
+                        "data": {
+                            "reason": "\u0414\u0430\u0442\u0430 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0434\u0430\u0442\u043e\u0439 \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u043c. (Error); \u041f\u0430\u0441\u043f\u043e\u0440\u0442 \u0420\u0424 \u0432\u044b\u0434\u0430\u0435\u0442\u0441\u044f \u0432 \u0432\u043e\u0437\u0440\u0430\u0441\u0442\u0435 14 \u043b\u0435\u0442. (Error)"
+                        }
+                    },
+                    {
+                        "_id": "check_person/expired_passport",
                         "state": "OK",
                         "data": {}
                     },
@@ -76,11 +59,18 @@
                         "_id": "check_person/rnp_affected_supplier",
                         "state": "OK",
                         "data": {
-                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 032604111281 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
+                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 781143108237 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
                         }
                     },
                     {
-                        "_id": "check_person/linkasso_person_relation",
+                        "_id": "check_person/person_inn",
+                        "state": "ERROR",
+                        "data": {
+                            "reason": "(400) \u041f\u043e\u043b\u0435 \"\u0414\u0430\u0442\u0430 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f\" \u0434\u043e\u043b\u0436\u043d\u043e \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0432 \u0444\u043e\u0440\u043c\u0430\u0442\u0435 \u0414\u0414.\u041c\u041c.\u0413\u0413\u0413\u0413"
+                        }
+                    },
+                    {
+                        "_id": "check_person/statusnpd_nalog",
                         "state": "OK",
                         "data": {}
                     },
@@ -93,7 +83,36 @@
                         "_id": "check_person/rnp_dishonest_supplier",
                         "state": "OK",
                         "data": {
-                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 032604111281 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
+                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 781143108237 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
+                        }
+                    },
+                    {
+                        "_id": "check_person/inoagent",
+                        "state": "SKIP",
+                        "data": {
+                            "reason": ":\u0414\u0430\u0442\u0430 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f \u043d\u0435 \u0432\u0430\u043b\u0438\u0434\u043d\u0430"
+                        }
+                    },
+                    {
+                        "_id": "check_person/phn_contact_address",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/egrip_fio_inn",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/linkasso_person_relation",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/provisional_measures",
+                        "state": "OK",
+                        "data": {
+                            "reason": "\u041f\u043e \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u043c \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u043c \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u043e \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044e \u043d\u0430 2024-10-31 \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"
                         }
                     },
                     {
@@ -104,34 +123,7 @@
                         }
                     },
                     {
-                        "_id": "check_person/provisional_measures",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u041f\u043e \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u043c \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u043c \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u043e \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044e \u043d\u0430 2024-10-29 \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"
-                        }
-                    },
-                    {
-                        "_id": "check_person/statusnpd_nalog",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/tax_accruals",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
                         "_id": "check_person/phn_contact_phone_number",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/phn_contact_address",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/arbitr_cases_full",
                         "state": "OK",
                         "data": {}
                     },
@@ -141,369 +133,46 @@
                         "data": {}
                     },
                     {
+                        "_id": "check_person/arbitr_cases_full",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
                         "_id": "check_person/acc_stop",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/tax_accruals",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/moneta_tax_accruals",
                         "state": "OK",
                         "data": {}
                     }
                 ],
                 "data": {}
             },
-            "requested_at": "2024-10-29T14:32:55.411Z",
+            "requested_at": "2024-10-31T06:40:29.358Z",
             "content": {
-                "check_person": {
-                    "tax_accrual": {
-                        "tax_accruals": [],
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
+                "fns_opendata": {
+                    "massfounders": {
+                        "inn": "",
+                        "full_name": "",
+                        "data": {}
                     },
-                    "passport": {
-                        "series": "8103",
-                        "number": "659676",
-                        "expired": false,
-                        "details": "",
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "inoagent": {},
-                    "egrip": {
-                        "items": [
-                            {
-                                "id": "032604111281",
-                                "state": "ACTIVE",
-                                "inn": "032604111281",
-                                "ogrn": "318032700041910",
-                                "ogrn_date": "2018-11-21",
-                                "last_date": "2023-05-04",
-                                "date": "2023-05-04",
-                                "resolved_create_date": "2018-11-21",
-                                "code": "1",
-                                "type": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c",
-                                "found_by_inn": true,
-                                "email": {
-                                    "email": "darima_23@mail.ru",
-                                    "grn": {
-                                        "grnip": "318032700041910",
-                                        "date": "2018-11-21"
-                                    }
-                                },
-                                "person": {
-                                    "fio_rus": {
-                                        "first_name": "\u0414\u0430\u0440\u0438\u043c\u0430",
-                                        "last_name": "\u0411\u0430\u0442\u0430\u043d\u043e\u0432\u0430",
-                                        "patronymic": "\u0427\u0438\u043d\u0433\u0438\u0441\u043e\u0432\u043d\u0430"
-                                    },
-                                    "latin_first_name": "Darima",
-                                    "latin_last_name": "Batanova",
-                                    "sex_name": "FEMALE",
-                                    "sex": "2",
-                                    "grn": {
-                                        "grnip": "318032700041910",
-                                        "date": "2018-11-21"
-                                    }
-                                },
-                                "activity_duration": {
-                                    "text": "5 \u043b\u0435\u0442 11 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 8 \u0434\u043d\u0435\u0439"
-                                },
-                                "grazhd": {
-                                    "type_name": "RUSSIAN",
-                                    "type": "1",
-                                    "oksm": "643",
-                                    "country": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
-                                    "grn": {
-                                        "grnip": "318032700041910",
-                                        "date": "2018-11-21"
-                                    }
-                                },
-                                "reg_org": {
-                                    "code": "0300",
-                                    "name": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u043f\u043e \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0435 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
-                                    "addr": ",670000,\u0411\u0423\u0420\u042f\u0422\u0418\u042f \u0420\u0415\u0421\u041f,,\u0423\u041b\u0410\u041d-\u0423\u0414\u042d \u0413,,\u0411\u041e\u0420\u0421\u041e\u0415\u0412\u0410 \u0423\u041b,\u0414\u041e\u041c 11\u0410,,",
-                                    "grn": {
-                                        "grnip": "421030000438018",
-                                        "date": "2021-10-21"
-                                    }
-                                },
-                                "reg_ip": {
-                                    "ogrnip": "318032700041910",
-                                    "ogrn": "2018-11-21",
-                                    "reg_date": "2018-11-21"
-                                },
-                                "activity": {
-                                    "main": {
-                                        "code": "49.42",
-                                        "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0443\u0441\u043b\u0443\u0433 \u043f\u043e \u043f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430\u043c",
-                                        "version": "2014",
-                                        "grn": {
-                                            "grnip": "318032700041910",
-                                            "date": "2018-11-21"
-                                        }
-                                    },
-                                    "additional": [
-                                        {
-                                            "code": "49.41",
-                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "318032700041910",
-                                                "date": "2018-11-21"
-                                            }
-                                        }
-                                    ]
-                                },
-                                "register_tax_dep": {
-                                    "inn": "032604111281",
-                                    "reg_date": "2021-10-25",
-                                    "tax_dep": {
-                                        "code": "0300",
-                                        "name": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u043f\u043e \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0435 \u0411\u0443\u0440\u044f\u0442\u0438\u044f"
-                                    },
-                                    "grn": {
-                                        "grnip": "421030001287331",
-                                        "date": "2021-10-25"
-                                    }
-                                },
-                                "reg_pension_fund": {
-                                    "reg_nom_pension_fund": "003008015442",
-                                    "reg_date": "2018-11-23",
-                                    "org_pension_fund": {
-                                        "code": "003008",
-                                        "name": "\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0435 \u0411\u0443\u0440\u044f\u0442\u0438\u044f"
-                                    },
-                                    "grn": {
-                                        "grnip": "418032700278462",
-                                        "date": "2018-11-26"
-                                    }
-                                },
-                                "reg_social_fund": {
-                                    "reg_nom_social_fund": "030000933803003",
-                                    "reg_date": "2023-05-03",
-                                    "org_social_fund": {
-                                        "code": "0300",
-                                        "name": "\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0435 \u0411\u0443\u0440\u044f\u0442\u0438\u044f"
-                                    },
-                                    "grn": {
-                                        "grnip": "423030000117347",
-                                        "date": "2023-05-04"
-                                    }
-                                }
-                            }
-                        ],
-                        "count": 1,
-                        "enrichment_state": "\u0411\u044b\u043b \u043f\u043e\u043b\u0443\u0447\u0435\u043d \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0418\u041d\u041d \u0438\u0437 \u0440\u0435\u0435\u0441\u0442\u0440\u0430 \u0415\u0413\u0420\u0418\u041f: 032604111281",
-                        "enrichment_inn": "032604111281"
-                    },
-                    "disqualified_persons": {},
-                    "inn": {
-                        "status": "FOUND",
-                        "value": "032604111281",
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "rnp_affected_supplier": {},
-                    "linkasso_person_relation": {},
-                    "pledge": {
-                        "pledges": [
-                            {
-                                "number": "2024-010-288910-845",
-                                "statusInfo": {
-                                    "status": "NEW_PLEDGE",
-                                    "title": "\u0412\u043e\u0437\u043d\u0438\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
-                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u0432\u043e\u0437\u043d\u0438\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430 (\u0441\u0440\u043e\u043a \u0438\u0441\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u0441\u0442\u0432 \u043d\u0435 \u0438\u0441\u0442\u0435\u043a)"
-                                },
-                                "asPledgor": true,
-                                "pledgorsLast": [
-                                    {
-                                        "id": "8103659676",
-                                        "pledgeUid": "2024-010-288910-845",
-                                        "publicationDisclaimer": "NONE",
-                                        "type": "PERSON",
-                                        "person": {
-                                            "firstName": "\u0414\u0430\u0440\u0438\u043c\u0430",
-                                            "lastName": "\u0411\u0430\u0442\u0430\u043d\u043e\u0432\u0430",
-                                            "patronymic": "\u0427\u0438\u043d\u0433\u0438\u0441\u043e\u0432\u043d\u0430",
-                                            "birth": "1979-12-23",
-                                            "passport": {
-                                                "series": "8103",
-                                                "number": "659676"
-                                            },
-                                            "address": {
-                                                "regionCode": "03",
-                                                "regionName": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "pledgeesLast": [
-                                    {
-                                        "id": "3801002781",
-                                        "pledgeUid": "2024-010-288910-845",
-                                        "publicationDisclaimer": "NONE",
-                                        "type": "LEGAL",
-                                        "orgRussian": {
-                                            "name": "\u0410\u041a\u0426\u0418\u041e\u041d\u0415\u0420\u041d\u041e\u0415 \u041e\u0411\u0429\u0415\u0421\u0422\u0412\u041e \"\u0420\u0415\u0410\u041b\u0418\u0421\u0422 \u0411\u0410\u041d\u041a\"",
-                                            "ogrn": "1023800000124",
-                                            "inn": {
-                                                "inn": "3801002781"
-                                            }
-                                        }
-                                    }
-                                ],
-                                "pledgeManagersLast": [],
-                                "notificationLast": {
-                                    "notificationUid": "2024-010-288910-845",
-                                    "pledgeUid": "2024-010-288910-845",
-                                    "regTime": "2024-09-23T18:40:00.000",
-                                    "notificationType": "NEW_PLEDGE",
-                                    "contractName": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440 \u0437\u0430\u043b\u043e\u0433\u0430",
-                                    "contractDate": "2024-09-20",
-                                    "contractNumber": "37627/1",
-                                    "contractEnd": "2029-09-20",
-                                    "contractEndRaw": "2029-09-20"
-                                },
-                                "subjectsLast": [
-                                    {
-                                        "id": "WDB96702210255061",
-                                        "notificationUid": "",
-                                        "pledgeUid": "",
-                                        "number": 1,
-                                        "type": "VEHICLE",
-                                        "vehicle": {
-                                            "vin": "WDB96702210255061",
-                                            "description": "Mercedes-Benz ATEGO",
-                                            "pin": "",
-                                            "chassis": "",
-                                            "body": ""
-                                        }
-                                    }
-                                ],
-                                "lastUpdate": 1727143760,
-                                "dateActuality": "2024-09-24",
-                                "closeTime": 0,
-                                "totalSubjectsLast": 1
-                            }
-                        ],
-                        "total": 1,
-                        "totalAsPledgee": 0,
-                        "totalAsPledgor": 1,
-                        "totalAsPledgeManager": 0,
-                        "pledgeSizeLimit": 20,
-                        "subjectSizeLimit": 100,
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "rnp_dishonest_supplier": {},
-                    "bankruptcy_short": {
-                        "debtorStatus": "NOT_LISTED",
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        },
-                        "metadata": {
-                            "status": "EXECUTED",
-                            "description": ""
-                        }
-                    },
-                    "provisional_measures": {
-                        "request_date": "2024-10-29"
-                    },
-                    "statusnpd_nalog": {
-                        "status": false,
-                        "request_date": "2024-10-29",
-                        "message": "032604111281 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a\u043e\u043c \u043d\u0430\u043b\u043e\u0433\u0430 \u043d\u0430 \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u043e\u0445\u043e\u0434"
-                    },
-                    "tax_accruals": {
-                        "penalties": [],
-                        "total": 0,
-                        "partially_paid": 0,
-                        "none": 0,
-                        "unpaid": 0
-                    },
-                    "source_phones_contact": {
-                        "contacts": [
-                            {
-                                "phone_number": "79153111515",
-                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
-                                "client": "SHP",
-                                "relevance": "90%",
-                                "data_bank": "200920",
-                                "actuality": "2021-06-29"
-                            },
-                            {
-                                "phone_number": "9153111515",
-                                "phone_type": "\u0422\u0438\u043f \u043d\u043e\u043c\u0435\u0440\u0430 \u043d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d",
-                                "relevance": "89%",
-                                "data_bank": "100801",
-                                "actuality": "2020-10-04"
-                            },
-                            {
-                                "phone_number": "9111981515",
-                                "phone_type": "\u0422\u0438\u043f \u043d\u043e\u043c\u0435\u0440\u0430 \u043d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d",
-                                "relevance": "89%",
-                                "data_bank": "100801",
-                                "actuality": "2020-10-04"
-                            },
-                            {
-                                "phone_number": "9153111515",
-                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
-                                "relevance": "85%",
-                                "data_bank": "100401",
-                                "actuality": "2024-01-17"
-                            },
-                            {
-                                "phone_number": "9255060776",
-                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
-                                "relevance": "85%",
-                                "data_bank": "100401",
-                                "actuality": "2024-01-17"
-                            },
-                            {
-                                "phone_number": "9103111515",
-                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
-                                "relevance": "85%",
-                                "data_bank": "100401",
-                                "actuality": "2024-01-17"
-                            },
-                            {
-                                "address": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433",
-                                "client": "SHP",
-                                "relevance": "90%",
-                                "data_bank": "200920",
-                                "actuality": "2021-06-29"
-                            }
-                        ]
-                    },
-                    "phn_contact_phone_number": {
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "phn_contact_address": {
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "arbitr_cases_full": {
-                        "enrichment_inn": "032604111281",
-                        "request_at": "2024-10-29 17:32:55"
-                    },
-                    "egrul": {
-                        "items": [],
-                        "count": 0,
-                        "enrichment_state": "\u0411\u044b\u043b \u043f\u043e\u043b\u0443\u0447\u0435\u043d \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0418\u041d\u041d \u0438\u0437 \u0440\u0435\u0435\u0441\u0442\u0440\u0430 \u0415\u0413\u0420\u042e\u041b: 032604111281",
-                        "enrichment_inn": "032604111281"
-                    },
-                    "acc_stop": {
-                        "pdf": "https://accstop-archive.spectrumdata.ru//stop_pdf/046577712_032604111281_20241029173256.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241029T143257Z&X-Amz-SignedHeaders=host&X-Amz-Expires=259200&X-Amz-Credential=p-srcs-accstop/20241029/us-west-1/s3/aws4_request&X-Amz-Signature=dfab401e32dfb739b16c19d757527f64970ccbf65c8279474e4a8ed273e776ee"
+                    "massleaders": {
+                        "inn": "",
+                        "full_name": "",
+                        "data": {}
+                    }
+                },
+                "fns_opendata/massfounders": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
                     }
                 },
                 "report_meta": {
@@ -558,34 +227,981 @@
                         }
                     }
                 },
-                "check_person/inoagent": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "fns_opendata": {
-                    "massleaders": {
-                        "inn": "",
-                        "full_name": "",
-                        "data": {}
+                "check_person": {
+                    "disqualified_persons": {},
+                    "credit_history": {
+                        "src_meta": {
+                            "state": "SKIP",
+                            "detailed": ""
+                        }
                     },
-                    "massfounders": {
-                        "inn": "",
-                        "full_name": "",
-                        "data": {}
-                    }
-                },
-                "fns_opendata/massleaders": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/egrip_fio_inn": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
+                    "passport": {
+                        "series": "4008",
+                        "number": "787933",
+                        "expired": true,
+                        "details": "",
+                        "date_first_appearance": "2022-12-14",
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "rnp_affected_supplier": {},
+                    "inn": {
+                        "src_meta": {
+                            "state": "ERROR",
+                            "detailed": ""
+                        }
+                    },
+                    "statusnpd_nalog": {
+                        "status": false,
+                        "request_date": "2024-10-31",
+                        "message": "781143108237 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a\u043e\u043c \u043d\u0430\u043b\u043e\u0433\u0430 \u043d\u0430 \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u043e\u0445\u043e\u0434"
+                    },
+                    "pledge": {
+                        "pledges": [
+                            {
+                                "number": "2014-000-221913-489",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2014-000-221913-489",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0415\u0420\u0413\u0415\u0419",
+                                            "lastName": "\u041a\u0410\u041b\u042c\u041d\u0418\u0426\u041a\u0418\u0419",
+                                            "patronymic": "\u041d\u0418\u041a\u041e\u041b\u0410\u0415\u0412\u0418\u0427",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7705148464",
+                                        "pledgeUid": "2014-000-221913-489",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u0417\u0410\u041e \u041a\u0420\u0415\u0414\u0418\u0422 \u0415\u0412\u0420\u041e\u041f\u0410 \u0411\u0410\u041d\u041a",
+                                            "ogrn": "1037739326063",
+                                            "inn": {
+                                                "inn": "7705148464"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2014-000-221913-489/1",
+                                    "pledgeUid": "2014-000-221913-489",
+                                    "regTime": "2015-02-26T14:24:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u044b\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0437\u0430\u043b\u043e\u0433\u0430 (\u0441\u043c\u0435\u0448\u0430\u043d\u043d\u044b\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440)",
+                                    "contractDate": "2014-12-06",
+                                    "contractNumber": "00289-CL-000000062793",
+                                    "contractEnd": "2016-12-06",
+                                    "contractEndRaw": "2016-12-06"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "Z783010FDE0020812",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "Z783010FDE0020812",
+                                            "description": "\u0413\u0410\u0417/GAZ 3010 FD, \u0421\u0415\u0420\u042b\u0419, \u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430 2014, \u0421\u0435\u0440\u0438\u044f \u0438 \u043d\u043e\u043c\u0435\u0440 \u041f\u0422\u0421 52 \u041e\u0412 619906",
+                                            "pin": "",
+                                            "chassis": "",
+                                            "body": ""
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1585962690,
+                                "dateActuality": "2015-12-31",
+                                "closeTime": 1424960640,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2015-001-060154-353",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2015-001-060154-353",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                                            "lastName": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                                            "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433p\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7710353606",
+                                        "pledgeUid": "2015-001-060154-353",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u0411\u0430\u043d\u043a \u0412\u0422\u0411 24 (\u043f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0435 \u0430\u043a\u0446\u0438\u043e\u043d\u0435\u0440\u043d\u043e\u0435 \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e)",
+                                            "ogrn": "1027739207462",
+                                            "inn": {
+                                                "inn": "7710353606"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2015-001-060154-353/1",
+                                    "pledgeUid": "2015-001-060154-353",
+                                    "regTime": "2018-03-21T06:56:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "contractDate": "2015-11-19",
+                                    "contractNumber": "622/2010-0028851",
+                                    "contractEnd": "2018-11-19",
+                                    "contractEndRaw": "2018-11-19"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "Z783009Z7F0025895",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "Z783009Z7F0025895",
+                                            "description": "\u041d\u043e\u043c\u0435\u0440 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f: ISF2.8S4R148 89694337, \u041d\u043e\u043c\u0435\u0440 \u0448\u0430\u0441\u0441\u0438: X96A21R22G2637582, \u041d\u043e\u043c\u0435\u0440 \u043a\u0443\u0437\u043e\u0432\u0430: A21R22G0045440, \u041c\u0430\u0440\u043a\u0430 (\u043c\u043e\u0434\u0435\u043b\u044c): 3009Z7, \u0426\u0432\u0435\u0442 \u043a\u0443\u0437\u043e\u0432\u0430: \u0421\u0415\u0420\u042b\u0419, \u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430: 2015",
+                                            "pin": "",
+                                            "chassis": "X96A21R22G2637582",
+                                            "body": "A21R22G0045440"
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1718124981,
+                                "dateActuality": "2018-03-22",
+                                "closeTime": 1521615360,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2016-000-510102-224",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2016-000-510102-224",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                                            "lastName": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                                            "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433p\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7710353606",
+                                        "pledgeUid": "2016-000-510102-224",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u0411\u0430\u043d\u043a \u0412\u0422\u0411 24 (\u043f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0435 \u0430\u043a\u0446\u0438\u043e\u043d\u0435\u0440\u043d\u043e\u0435 \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e)",
+                                            "ogrn": "1027739207462",
+                                            "inn": {
+                                                "inn": "7710353606"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2016-000-510102-224/1",
+                                    "pledgeUid": "2016-000-510102-224",
+                                    "regTime": "2016-10-28T10:10:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "contractDate": "2016-10-06",
+                                    "contractNumber": "621/2010-0093680",
+                                    "contractEnd": "2018-10-08",
+                                    "contractEndRaw": "2018-10-08"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "Z783009Z7G0031457",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "Z783009Z7G0031457",
+                                            "description": "\u041d\u043e\u043c\u0435\u0440 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f: ISF2 8S4R148 89743428, \u041d\u043e\u043c\u0435\u0440 \u0448\u0430\u0441\u0441\u0438: X96A21R22G2666462, \u041d\u043e\u043c\u0435\u0440 \u043a\u0443\u0437\u043e\u0432\u0430: A21R22G0058799, \u041c\u0430\u0440\u043a\u0430 (\u043c\u043e\u0434\u0435\u043b\u044c): 3009Z7, \u0426\u0432\u0435\u0442 \u043a\u0443\u0437\u043e\u0432\u0430: \u0411\u0415\u041b\u042b\u0419, \u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430: 2016",
+                                            "pin": "",
+                                            "chassis": "X96A21R22G2666462",
+                                            "body": "A21R22G0058799"
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1718067656,
+                                "dateActuality": "2016-10-29",
+                                "closeTime": 1477649400,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2017-001-345201-869",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2017-001-345201-869",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                                            "lastName": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                                            "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7750005605",
+                                        "pledgeUid": "2017-001-345201-869",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \"\u0424\u043e\u043b\u044c\u043a\u0441\u0432\u0430\u0433\u0435\u043d \u0411\u0430\u043d\u043a \u0420\u0423\u0421\"",
+                                            "ogrn": "1107711000044",
+                                            "inn": {
+                                                "inn": "7750005605"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2017-001-345201-869/1",
+                                    "pledgeUid": "2017-001-345201-869",
+                                    "regTime": "2017-09-28T18:17:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u0417\u0430\u043b\u043e\u0433 - \u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u0438 (\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u044b \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f)",
+                                    "contractDate": "2017-04-27",
+                                    "contractNumber": "0166088/3/\u0417\u043b1",
+                                    "contractEnd": "2020-04-28",
+                                    "contractEndRaw": "2020-04-28"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "WAUZZZ4M9HD040206",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "WAUZZZ4M9HD040206",
+                                            "description": "Q7",
+                                            "pin": "",
+                                            "chassis": "",
+                                            "body": ""
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1718101760,
+                                "dateActuality": "2017-09-29",
+                                "closeTime": 1506622620,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2017-001-765606-524",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2017-001-765606-524",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                                            "lastName": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                                            "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "5012003647",
+                                        "pledgeUid": "2017-001-765606-524",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \"\u0420\u0443\u0441\u0444\u0438\u043d\u0430\u043d\u0441 \u0431\u0430\u043d\u043a\"",
+                                            "ogrn": "1026300001991",
+                                            "inn": {
+                                                "inn": "5012003647"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2017-001-765606-524/1",
+                                    "pledgeUid": "2017-001-765606-524",
+                                    "regTime": "2017-11-09T12:51:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "contractDate": "2017-10-19",
+                                    "contractNumber": "1562202/1",
+                                    "contractEnd": "2020-10-19",
+                                    "contractEndRaw": "2020-10-19"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "Z783009Z7J0040713",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "Z783009Z7J0040713",
+                                            "description": "3009Z7",
+                                            "pin": "",
+                                            "chassis": "",
+                                            "body": ""
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1718106772,
+                                "dateActuality": "2017-11-10",
+                                "closeTime": 1510231860,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2019-003-690271-017",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2019-003-690271-017",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0415\u0420\u0413\u0415\u0419",
+                                            "lastName": "\u041a\u0410\u041b\u042c\u041d\u0418\u0426\u041a\u0418\u0419",
+                                            "patronymic": "\u041d\u0418\u041a\u041e\u041b\u0410\u0415\u0412\u0418\u0427",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7705148464",
+                                        "pledgeUid": "2019-003-690271-017",
+                                        "publicationDisclaimer": "CONSENT",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u0410\u043a\u0446\u0438\u043e\u043d\u0435\u0440\u043d\u043e\u0435 \u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \"\u041a\u0440\u0435\u0434\u0438\u0442 \u0415\u0432\u0440\u043e\u043f\u0430 \u0411\u0430\u043d\u043a\"",
+                                            "ogrn": "1037739326063",
+                                            "inn": {
+                                                "inn": "7705148464"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2019-003-690271-017/1",
+                                    "pledgeUid": "2019-003-690271-017",
+                                    "regTime": "2019-07-03T16:02:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u044b\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0437\u0430\u043b\u043e\u0433\u0430 (\u0441\u043c\u0435\u0448\u0430\u043d\u043d\u044b\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440)",
+                                    "contractDate": "2019-05-31",
+                                    "contractNumber": "00009-CL-000000529372",
+                                    "contractEnd": "2024-06-03",
+                                    "contractEndRaw": "2024-06-03"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "Z783009Z7K0057803",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "Z783009Z7K0057803",
+                                            "description": "\u0413\u0410\u0417/GAZ A21R22, \u0427\u0415\u0420\u041d\u042b\u0419, \u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430 2019, \u0421\u0435\u0440\u0438\u044f \u0438 \u043d\u043e\u043c\u0435\u0440 \u041f\u0422\u0421 52\u0420\u0410458955",
+                                            "pin": "",
+                                            "chassis": "",
+                                            "body": ""
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1718198411,
+                                "dateActuality": "2019-07-04",
+                                "closeTime": 1562169720,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2019-004-057732-660",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2019-004-057732-660",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0415\u0420\u0413\u0415\u0419",
+                                            "lastName": "\u041a\u0410\u041b\u042c\u041d\u0418\u0426\u041a\u0418\u0419",
+                                            "patronymic": "\u041d\u0418\u041a\u041e\u041b\u0410\u0415\u0412\u0418\u0427",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7705148464",
+                                        "pledgeUid": "2019-004-057732-660",
+                                        "publicationDisclaimer": "CONSENT",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u0410\u043a\u0446\u0438\u043e\u043d\u0435\u0440\u043d\u043e\u0435 \u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \"\u041a\u0440\u0435\u0434\u0438\u0442 \u0415\u0432\u0440\u043e\u043f\u0430 \u0411\u0430\u043d\u043a\"",
+                                            "ogrn": "1037739326063",
+                                            "inn": {
+                                                "inn": "7705148464"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2019-004-057732-660/1",
+                                    "pledgeUid": "2019-004-057732-660",
+                                    "regTime": "2019-11-14T19:23:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u044b\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0437\u0430\u043b\u043e\u0433\u0430 (\u0441\u043c\u0435\u0448\u0430\u043d\u043d\u044b\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440)",
+                                    "contractDate": "2019-09-26",
+                                    "contractNumber": "00009-CL-000000543977",
+                                    "contractEnd": "2024-10-01",
+                                    "contractEndRaw": "2024-10-01"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "Z783009Z7K0061101",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "Z783009Z7K0061101",
+                                            "description": "\u0413\u0410\u0417/GAZ 3009Z, \u0411\u0415\u041b\u042b\u0419, \u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430 2019, \u0421\u0435\u0440\u0438\u044f \u0438 \u043d\u043e\u043c\u0435\u0440 \u041f\u0422\u0421 52PK057130",
+                                            "pin": "",
+                                            "chassis": "",
+                                            "body": ""
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1718222123,
+                                "dateActuality": "2019-11-15",
+                                "closeTime": 1573759380,
+                                "totalSubjectsLast": 1
+                            },
+                            {
+                                "number": "2021-006-295259-933",
+                                "statusInfo": {
+                                    "status": "FINISH_PLEDGE",
+                                    "title": "\u041f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "description": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 - \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043e \u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0437\u0430\u043b\u043e\u0433\u0430"
+                                },
+                                "asPledgor": true,
+                                "pledgorsLast": [
+                                    {
+                                        "id": "4008787933",
+                                        "pledgeUid": "2021-006-295259-933",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "PERSON",
+                                        "person": {
+                                            "firstName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                                            "lastName": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                                            "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+                                            "birth": "1977-09-24",
+                                            "passport": {
+                                                "series": "4008",
+                                                "number": "787933"
+                                            },
+                                            "address": {
+                                                "regionCode": "47",
+                                                "regionName": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeesLast": [
+                                    {
+                                        "id": "7702070139",
+                                        "pledgeUid": "2021-006-295259-933",
+                                        "publicationDisclaimer": "NONE",
+                                        "type": "LEGAL",
+                                        "orgRussian": {
+                                            "name": "\u0411\u0430\u043d\u043a \u0412\u0422\u0411 (\u043f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0435 \u0430\u043a\u0446\u0438\u043e\u043d\u0435\u0440\u043d\u043e\u0435 \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e)",
+                                            "ogrn": "1027739609391",
+                                            "inn": {
+                                                "inn": "7702070139"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "pledgeManagersLast": [],
+                                "notificationLast": {
+                                    "notificationUid": "2021-006-295259-933/1",
+                                    "pledgeUid": "2021-006-295259-933",
+                                    "regTime": "2021-08-25T14:43:00.000",
+                                    "notificationType": "FINISH_PLEDGE",
+                                    "contractName": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440 \u0437\u0430\u043b\u043e\u0433\u0430",
+                                    "contractDate": "2021-08-18",
+                                    "contractNumber": "621/2010-0186089",
+                                    "contractEnd": "2022-08-18",
+                                    "contractEndRaw": "18.08.2022"
+                                },
+                                "subjectsLast": [
+                                    {
+                                        "id": "XZV3009Z7M0002113",
+                                        "notificationUid": "",
+                                        "pledgeUid": "",
+                                        "number": 1,
+                                        "type": "VEHICLE",
+                                        "vehicle": {
+                                            "vin": "XZV3009Z7M0002113",
+                                            "description": "\u041d\u043e\u043c\u0435\u0440 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f: ISF28S5161P 77015163, \u041d\u043e\u043c\u0435\u0440 \u0448\u0430\u0441\u0441\u0438: X96A21R22M2837812, \u041d\u043e\u043c\u0435\u0440 \u043a\u0443\u0437\u043e\u0432\u0430: A21R22M0148016, \u041c\u0430\u0440\u043a\u0430 (\u043c\u043e\u0434\u0435\u043b\u044c): 3009Z7, \u0426\u0432\u0435\u0442 \u043a\u0443\u0437\u043e\u0432\u0430: \u0411\u0415\u041b\u042b\u0419, \u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430: 2021",
+                                            "pin": "",
+                                            "chassis": "X96A21R22M2837812",
+                                            "body": "A21R22M0148016"
+                                        }
+                                    }
+                                ],
+                                "lastUpdate": 1635243355,
+                                "dateActuality": "2021-08-26",
+                                "closeTime": 1629902580,
+                                "totalSubjectsLast": 1
+                            }
+                        ],
+                        "total": 8,
+                        "totalAsPledgee": 0,
+                        "totalAsPledgor": 8,
+                        "totalAsPledgeManager": 0,
+                        "pledgeSizeLimit": 20,
+                        "subjectSizeLimit": 100,
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "rnp_dishonest_supplier": {},
+                    "source_phones_contact": {
+                        "contacts": [
+                            {
+                                "address": "\u0414 \u041a\u0423\u0414\u0420\u041e\u0412\u041e",
+                                "address_splitted": {
+                                    "country": "",
+                                    "region": "",
+                                    "city": "\u0414 \u041a\u0423\u0414\u0420\u041e\u0412\u041e",
+                                    "settlement": "",
+                                    "district": "",
+                                    "street": "",
+                                    "house": "",
+                                    "structure": "",
+                                    "corpus": "",
+                                    "porch_count": "",
+                                    "floor": "",
+                                    "floor_count": "",
+                                    "latitude": "",
+                                    "longitude": "",
+                                    "flat_count": "",
+                                    "flat_number": "",
+                                    "room_number": "",
+                                    "index": "",
+                                    "region_code": "",
+                                    "fias_code": "",
+                                    "kladr_code": ""
+                                },
+                                "relevance": "85%",
+                                "data_bank": "100201",
+                                "actuality": "2020-09-04"
+                            },
+                            {
+                                "address": "\u0433. \u0441\u0430\u043d\u043a\u0442-\u043f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433, \u0443\u043b. \u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f, \u0434. 68, \u043a\u0432. 251",
+                                "address_type": "\u0410\u0434\u0440\u0435\u0441 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u043c\u0435\u0441\u0442\u0443 \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430",
+                                "relevance": "85%",
+                                "data_bank": "100101",
+                                "actuality": "2019-09-01"
+                            }
+                        ]
+                    },
+                    "phn_contact_address": {
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "egrip": {
+                        "items": [
+                            {
+                                "id": "781143108237",
+                                "state": "ACTIVE",
+                                "inn": "781143108237",
+                                "ogrn": "311784730600192",
+                                "ogrn_date": "2011-11-02",
+                                "last_date": "2022-12-12",
+                                "date": "2022-12-12",
+                                "resolved_create_date": "2011-11-02",
+                                "code": "1",
+                                "type": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c",
+                                "found_by_inn": true,
+                                "email": {
+                                    "email": "s9111866603@yandex.ru",
+                                    "grn": {
+                                        "grnip": "421470400246654",
+                                        "date": "2021-03-19"
+                                    }
+                                },
+                                "person": {
+                                    "fio_rus": {
+                                        "first_name": "\u0421\u0435\u0440\u0433\u0435\u0439",
+                                        "last_name": "\u041a\u0430\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+                                        "patronymic": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447"
+                                    },
+                                    "latin_first_name": "Sergei",
+                                    "latin_last_name": "Kalnitskii",
+                                    "sex_name": "MALE",
+                                    "sex": "1",
+                                    "grn": {
+                                        "grnip": "422470400639682",
+                                        "date": "2022-12-12"
+                                    }
+                                },
+                                "activity_duration": {
+                                    "text": "12 \u043b\u0435\u0442 11 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 29 \u0434\u043d\u0435\u0439"
+                                },
+                                "grazhd": {
+                                    "type_name": "RUSSIAN",
+                                    "type": "1",
+                                    "oksm": "643",
+                                    "country": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
+                                    "grn": {
+                                        "grnip": "311784730600192",
+                                        "date": "2011-11-02"
+                                    }
+                                },
+                                "reg_org": {
+                                    "code": "4704",
+                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
+                                    "addr": "188801, \u0433.\u0412\u044b\u0431\u043e\u0440\u0433, \u0443\u043b.\u0413\u0430\u0433\u0430\u0440\u0438\u043d\u0430, 27 \u0410",
+                                    "grn": {
+                                        "grnip": "415470300244167",
+                                        "date": "2015-10-07"
+                                    }
+                                },
+                                "reg_ip": {
+                                    "ogrnip": "311784730600192",
+                                    "ogrn": "2011-11-02",
+                                    "reg_date": "2011-11-02"
+                                },
+                                "activity": {
+                                    "main": {
+                                        "code": "49.41",
+                                        "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                                        "version": "2014",
+                                        "grn": {
+                                            "grnip": "421470400332792",
+                                            "date": "2021-04-22"
+                                        }
+                                    },
+                                    "additional": [
+                                        {
+                                            "code": "46.49",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043f\u0440\u043e\u0447\u0438\u043c\u0438 \u0431\u044b\u0442\u043e\u0432\u044b\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "421470400246654",
+                                                "date": "2021-03-19"
+                                            }
+                                        },
+                                        {
+                                            "code": "46.69.9",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043f\u0440\u043e\u0447\u0438\u043c\u0438 \u043c\u0430\u0448\u0438\u043d\u0430\u043c\u0438, \u043f\u0440\u0438\u0431\u043e\u0440\u0430\u043c\u0438, \u0430\u043f\u043f\u0430\u0440\u0430\u0442\u0443\u0440\u043e\u0439 \u0438 \u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u0435\u043c \u043e\u0431\u0449\u0435\u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "418470400067537",
+                                                "date": "2018-01-25"
+                                            }
+                                        },
+                                        {
+                                            "code": "50.10",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043c\u043e\u0440\u0441\u043a\u043e\u0433\u043e \u043f\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043a\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "412784718500744",
+                                                "date": "2012-07-03"
+                                            }
+                                        },
+                                        {
+                                            "code": "50.20",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043c\u043e\u0440\u0441\u043a\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "412784718500744",
+                                                "date": "2012-07-03"
+                                            }
+                                        },
+                                        {
+                                            "code": "50.30",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0435\u0433\u043e \u0432\u043e\u0434\u043d\u043e\u0433\u043e \u043f\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043a\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "412784718500744",
+                                                "date": "2012-07-03"
+                                            }
+                                        },
+                                        {
+                                            "code": "50.40",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0435\u0433\u043e \u0432\u043e\u0434\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "412784718500744",
+                                                "date": "2012-07-03"
+                                            }
+                                        },
+                                        {
+                                            "code": "52.29",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0432\u0441\u043f\u043e\u043c\u043e\u0433\u0430\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u0440\u043e\u0447\u0430\u044f, \u0441\u0432\u044f\u0437\u0430\u043d\u043d\u0430\u044f \u0441 \u043f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430\u043c\u0438",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "412784718500744",
+                                                "date": "2012-07-03"
+                                            }
+                                        },
+                                        {
+                                            "code": "93.11",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0441\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0445 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "421470400246654",
+                                                "date": "2021-03-19"
+                                            }
+                                        },
+                                        {
+                                            "code": "93.12",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0441\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0445 \u043a\u043b\u0443\u0431\u043e\u0432",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "421470400246654",
+                                                "date": "2021-03-19"
+                                            }
+                                        },
+                                        {
+                                            "code": "93.13",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0444\u0438\u0442\u043d\u0435\u0441-\u0446\u0435\u043d\u0442\u0440\u043e\u0432",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "421470400246654",
+                                                "date": "2021-03-19"
+                                            }
+                                        },
+                                        {
+                                            "code": "93.19",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0432 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u0441\u043f\u043e\u0440\u0442\u0430 \u043f\u0440\u043e\u0447\u0430\u044f",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "421470400246654",
+                                                "date": "2021-03-19"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "register_tax_dep": {
+                                    "inn": "781143108237",
+                                    "reg_date": "2021-09-20",
+                                    "tax_dep": {
+                                        "code": "4706",
+                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u21162 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
+                                    },
+                                    "grn": {
+                                        "grnip": "421470400723810",
+                                        "date": "2021-09-20"
+                                    }
+                                },
+                                "reg_pension_fund": {
+                                    "reg_nom_pension_fund": "057003033243",
+                                    "reg_date": "2014-07-12",
+                                    "org_pension_fund": {
+                                        "code": "057003",
+                                        "name": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u041f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0412\u0441\u0435\u0432\u043e\u043b\u043e\u0436\u0441\u043a\u043e\u043c\u0443 \u0440\u0430\u0439\u043e\u043d\u0443 \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
+                                    },
+                                    "grn": {
+                                        "grnip": "415470300066999",
+                                        "date": "2015-06-01"
+                                    }
+                                },
+                                "reg_social_fund": {
+                                    "reg_nom_social_fund": "783003421947003",
+                                    "reg_date": "2014-06-24",
+                                    "org_social_fund": {
+                                        "code": "4700",
+                                        "name": "\u0413\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u0443\u0447\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u0435 - \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0435 \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438"
+                                    },
+                                    "grn": {
+                                        "grnip": "416470400367290",
+                                        "date": "2016-04-28"
+                                    }
+                                }
+                            }
+                        ],
+                        "count": 1
+                    },
+                    "linkasso_person_relation": {},
+                    "provisional_measures": {
+                        "request_date": "2024-10-31"
+                    },
+                    "bankruptcy_short": {
+                        "debtorStatus": "NOT_LISTED",
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        },
+                        "metadata": {
+                            "status": "EXECUTED",
+                            "description": ""
+                        }
+                    },
+                    "phn_contact_phone_number": {
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "egrul": {
+                        "items": [],
+                        "count": 0
+                    },
+                    "arbitr_cases_full": {
+                        "request_at": "2024-10-31 09:40:29"
+                    },
+                    "acc_stop": {
+                        "pdf": "https://accstop-archive.spectrumdata.ru//stop_pdf/040349758_781143108237_20241031094030.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241031T064030Z&X-Amz-SignedHeaders=host&X-Amz-Expires=259200&X-Amz-Credential=p-srcs-accstop/20241031/us-west-1/s3/aws4_request&X-Amz-Signature=f02c55430513a4a127a6e5a565deb9743866b6a9e65a0b5dcd2b268ff110753e"
+                    },
+                    "tax_accruals": {
+                        "penalties": [],
+                        "total": 0,
+                        "partially_paid": 0,
+                        "none": 0,
+                        "unpaid": 0
+                    },
+                    "tax_accrual": {
+                        "tax_accruals": [],
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
                     }
                 },
                 "check_person/disqualified_persons": {
@@ -594,7 +1210,7 @@
                         "detailed": ""
                     }
                 },
-                "fns_opendata/massfounders": {
+                "fns_opendata/massleaders": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -606,7 +1222,7 @@
                         "detailed": ""
                     }
                 },
-                "check_person/linkasso_person_relation": {
+                "check_person/statusnpd_nalog": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -618,25 +1234,25 @@
                         "detailed": ""
                     }
                 },
+                "check_person/inoagent": {
+                    "src_meta": {
+                        "state": "SKIP",
+                        "detailed": ""
+                    }
+                },
+                "check_person/egrip_fio_inn": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
+                "check_person/linkasso_person_relation": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
                 "check_person/provisional_measures": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/statusnpd_nalog": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/tax_accruals": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/arbitr_cases_full": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -648,7 +1264,19 @@
                         "detailed": ""
                     }
                 },
+                "check_person/arbitr_cases_full": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
                 "check_person/acc_stop": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
+                "check_person/tax_accruals": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -656,15 +1284,17 @@
                 }
             },
             "last_generation_stat": {
-                "start_time": "2024-10-29T14:32:55.411Z"
+                "duration": 17439,
+                "start_time": "2024-10-31T06:40:29.358Z",
+                "complete_time": "2024-10-31T06:40:46.797Z"
             },
-            "uid": "report_check_passport_test_2928669ec28031dcae4bff1bc4ac25bb@btg_spedition",
+            "uid": "report_check_passport_test_5ffdeab0b9ad372d9bf7f7d45d22a1ff@btg_spedition",
             "name": "NONAME",
             "comment": "",
             "tags": "",
-            "created_at": "2024-10-29T14:32:55.377Z",
+            "created_at": "2024-10-31T06:40:29.326Z",
             "created_by": "system",
-            "updated_at": "2024-10-29T14:32:58.212Z",
+            "updated_at": "2024-10-31T06:40:47.825Z",
             "updated_by": "system",
             "active_from": "1900-01-01T00:00:00.000Z",
             "active_to": "3000-01-01T00:00:00.000Z"

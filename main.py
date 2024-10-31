@@ -57,11 +57,10 @@ async def Jur():
         if id:
             uid = await JurG.post_spectrum_jur_face(id[FJurW['inn']])
             data = await JurG.get_spectrum_jur_face(uid)
-            print(data)
             data = await JurPrep.prepare_data(data)
-            print(data)
+
             await JurPos.post_data(data, id['id'])
-            logging.info('OK')
+            logging.info('OK Jur')
     except Exception as err:
         logging.error(str(err), exc_info=True)
         
@@ -90,7 +89,7 @@ async def Driver():
             print(data)
             
             await DrPos.post_data(data, id['id'])
-            logging.info('OK')
+            logging.info('OK Driver')
             
         # Percent (N2)
         """id = await RukDriverWebhook().webhookPercent()
@@ -116,7 +115,7 @@ async def Auto():
             data = await AutoG.get_spectrum(uid)
             data = await AutoPrep.prepare_data(data)
             await AutoPos.post_data(data, id['id'])
-            logging.debug('OK')
+            logging.info('OK Auto')
     except Exception as err:
         logging.error(str(err), exc_info=True)
 
@@ -139,9 +138,10 @@ async def IP():
             data = await IPG.get_spectrum(uid)
             
             data = await IPPrep.prepare_data(data)
+            print(data)
             
             await IPPos.post_data(data, id['id'])
-            logging.info('OK')
+            logging.info('OK IP')
     except Exception as err:
         logging.error(str(err), exc_info=True)
         
@@ -163,15 +163,11 @@ async def Phys():
                 )
             await asyncio.sleep(5)
             data = await PhysG.get_spectrum(uid)
-            with open('json.json', 'w') as f:
-                import json
-                json.dump(data, f, indent=4)
             
             data = await PhysPrep.prepare_data(data)
-            print(data)
             
             await PhysPos.post_data(data, id['id'])
-            logging.info('OK')
+            logging.info('OK Phys')
     except Exception as err:
         logging.error(str(err), exc_info=True)
     
