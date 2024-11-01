@@ -86,7 +86,6 @@ async def Driver():
             data = await DrG.get_spectrum(uid)
                 
             data = await DrPrep.prepare_data(data)
-            print(data)
             
             await DrPos.post_data(data, id['id'])
             logging.info('OK Driver')
@@ -138,7 +137,6 @@ async def IP():
             data = await IPG.get_spectrum(uid)
             
             data = await IPPrep.prepare_data(data)
-            print(data)
             
             await IPPos.post_data(data, id['id'])
             logging.info('OK IP')
@@ -163,7 +161,9 @@ async def Phys():
                 )
             await asyncio.sleep(5)
             data = await PhysG.get_spectrum(uid)
-            
+            with open('json.json', 'w') as f:
+                import json
+                json.dump(data, f, indent=4)
             data = await PhysPrep.prepare_data(data)
             
             await PhysPos.post_data(data, id['id'])
@@ -179,8 +179,9 @@ async def main():
         task4 = asyncio.create_task(IP())
         task5 = asyncio.create_task(Phys())
                 
-        await asyncio.gather(task1, task2, task3, task4, task5)
-            
+        #await asyncio.gather(task1, task2, task3, task4, task5)
+        
+        print(1)
         await asyncio.sleep(2)
     
 if __name__ == "__main__":

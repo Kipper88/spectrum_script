@@ -26,7 +26,7 @@ class PhysPost:
             
             fieldPhys['details_pass']: data.get('details_pass', '-'),
   
-            fieldPhys['value_inn']: data.get('value_inn', '-'),
+            #fieldPhys['value_inn']: data.get('value_inn', '-'),
             
             fieldPhys['amount']: data.get('amount', '-'),
             fieldPhys['payment_status']: data.get('payment_status', '-'),
@@ -41,7 +41,7 @@ class PhysPost:
             fieldPhys['activity_duration']: data.get('activity_duration', '-'),
             fieldPhys['stopash_date']: data.get('stopash_date', '-'),
             
-            fieldPhys['last_date']: data.get('stopash_date', '-'),
+            fieldPhys['last_date']: data.get('last_date', '-'),
             fieldPhys['management_position_name']: data.get('management_position_name', '-'),
             fieldPhys['stop_org_date']: data.get('stop_org_date', '-'),
             

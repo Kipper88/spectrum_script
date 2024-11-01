@@ -17,20 +17,20 @@ class PhysPrepare:
         result['details_pass'] = registry.get('details', '-')
         
         
-        inn = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('inn', {})
-        result['value_inn'] = inn.get('value', '-')
+        #inn = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('inn', {})
+        #result['value_inn'] = inn.get('value', '-')
         
         
         tax = {} if data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}]) == [] else\
             data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}])[0]
-        result['amount'] = tax.get('amount', '-')
-        result['payment_status'] = tax.get('payment_status', '-')
-        result['details'] = tax.get('details', '-')
-        result['amount_to_pay'] = tax.get('amount_to_pay', '-')
+        result['amount'] = ", ".join(tax.get('amount', '-'))
+        result['payment_status'] = ", ".join(tax.get('payment_status', '-'))
+        result['details'] = ", ".join(tax.get('details', '-'))
+        result['amount_to_pay'] = ", ".join(tax.get('amount_to_pay', '-'))
         
         
-        acc_stop = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('acc_stop')
-        result['type_name'] = acc_stop.get('items', [{}])[0].get('type', {}).get('name', '-')
+        acc_stop = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('acc_stop', {})
+        result['type_name'] = acc_stop.get('items', [{}] if not acc_stop.get('items') else acc_stop.get('items'))[0].get('type', {}).get('name', '-')
         
         
         status = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('statusnpd_nalog', {})
@@ -43,18 +43,18 @@ class PhysPrepare:
         result['stopash_date'] = egrip.get('stopash_date', '-')
         
         
-        egrul = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('egrul', {})
+        egrul = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('egrul', {}).get('items', [{}])[0]
         result['last_date'] = egrul.get('last_date', '')
-        result['management_position_name'] = egrul.get('management', {}).get('position', {}).get('name', '-')
-        result['stop_org_date'] = egrul.get('stop_org_date', '-')
+        result['management_position_name'] = egrul.get('management', [{}])[0].get('position', {}).get('name', '-')
+        result['stop_org_date'] = egrul.get('stop', {}).get('stop_org_date', '-')
         
         inoagent = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('inoagent', {})
         result['items_isActive'] = inoagent.get('items', [{}])[0].get('isActive', '-')
         
-        linkasso_person = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('linkasso_person_relation', {})
-        result['throughBy_inn'] = linkasso_person.get('throughBy', {}).get('inn', '-')
-        result['position'] = linkasso_person.get('position', '-')
-        result['toDate'] = linkasso_person.get('toDate', '-')
+        linkasso_person = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('linkasso_person_relation', {}).get('relations', [{}])[0]
+        result['throughBy_inn'] = linkasso_person.get('throughBy', [{}])[0].get('organization', '-').get('inn', '-')
+        result['position'] = linkasso_person.get('throughBy', [{}])[0].get('historicalManagerRelationships', [{}])[0].get('position', '-')
+        result['toDate'] = linkasso_person.get('throughBy', [{}])[0].get('historicalManagerRelationships', [{}])[0].get('toDate', '-')
         
         return result
     

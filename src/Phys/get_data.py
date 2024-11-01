@@ -4,6 +4,7 @@ from const import *
 class PhysGet:
     def __init__(self):
         self.URL_FOR_POST_DATA_TO_SPECTRUM = URL_FOR_POST_DATA_TO_SPECTRUM.format(type_request_passport)
+        self.URL_FOR_REFRESH_DATA_FROM_SPECTRUM = URL_FOR_REFRESH_DATA_FROM_SPECTRUM
         self.URL_FOR_GET_DATA_FROM_SPECTRUM = URL_FOR_GET_DATA_FROM_SPECTRUM
         
     async def post_spectrum(self,
@@ -43,6 +44,17 @@ class PhysGet:
 
             resp = await sess.post(
                 url=self.URL_FOR_POST_DATA_TO_SPECTRUM,
+                headers=headers,
+                json=params)
+            data = await resp.json()
+            
+            uid = data.get('data', [{}])[0].get('uid', {})
+            
+            params['data']['settings'] = {}
+            params['data']['settings']['FORCE'] = "true"
+            
+            resp = await sess.post(
+                url=self.URL_FOR_REFRESH_DATA_FROM_SPECTRUM.format(uid),
                 headers=headers,
                 json=params)
             data = await resp.json()

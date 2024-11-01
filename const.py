@@ -1,4 +1,5 @@
 URL_FOR_POST_DATA_TO_SPECTRUM = 'https://b2b-api.spectrumdata.ru/b2b/api/v1/user/reports/{}/_make'
+URL_FOR_REFRESH_DATA_FROM_SPECTRUM = 'https://b2b-api.spectrumdata.ru/b2b/api/v1/user/reports/{}/_refresh'
 URL_FOR_GET_DATA_FROM_SPECTRUM = 'https://b2b-api.spectrumdata.ru/b2b/api/v1/user/reports'
 
 apiKeyRuk = 'qtIeyLiuELr77ptCXcL3RhHhVNJscQvXzvyOcaIC'
