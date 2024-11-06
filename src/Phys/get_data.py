@@ -74,7 +74,8 @@ class PhysGet:
             }
             resp = await sess.get(url=url,
                                 headers=headers,
-                                params=params)
+                                params=params,
+                                ssl=False)
             data = await resp.json()
 
             return data

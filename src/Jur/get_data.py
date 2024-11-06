@@ -22,7 +22,8 @@ class JurGet:
             resp = await sess.post(
                 url=self.URL_FOR_POST_DATA_TO_SPECTRUM,
                 headers=headers,
-                json=params)
+                json=params,
+                ssl=False)
             data = await resp.json()
             
             return data.get('data', [{}])[0].get('uid', {})
@@ -40,7 +41,8 @@ class JurGet:
             }
             resp = await sess.get(url=url,
                                 headers=headers,
-                                params=params)
+                                params=params,
+                                ssl=False)
             data = await resp.json()
 
             return data

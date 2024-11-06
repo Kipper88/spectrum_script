@@ -26,7 +26,8 @@ class DriverPost:
         }
         async with ClientSession() as sess:
             await sess.post(url=urlRuk,
-                            json=params)
+                            json=params,
+                            ssl=False)
             
     """ async def post_data_percent(self, data, id_f):
         items = {

@@ -33,7 +33,8 @@ class GlobusGet:
 
             resp = await sess.post(
                 url=self.urlGlobus,
-                params=params)
+                params=params,
+                ssl=False)
             data = await resp.json()
             
             return data

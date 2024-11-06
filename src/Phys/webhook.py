@@ -46,7 +46,8 @@ class RukPhysWebhook:
     
         async with ClientSession() as sess:
             resp = await sess.get(url=self.urlRuk,
-                                  json=params
+                                  json=params,
+                                  ssl=False
                                   )
             data = await resp.json(content_type='text/html')
             data = data['data'][-1]

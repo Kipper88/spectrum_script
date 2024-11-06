@@ -49,4 +49,6 @@ class IPPost:
         }
         
         async with ClientSession() as sess:
-            data = await sess.post(url=urlRuk, json=params)
+            data = await sess.post(url=urlRuk, 
+                                   json=params,
+                                   ssl=False)

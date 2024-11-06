@@ -42,7 +42,8 @@ class RukJurWebhook:
     
         async with ClientSession() as sess:
             resp = await sess.get(url=self.urlRuk,
-                                  params=params
+                                  params=params,
+                                  ssl=False
                                   )
             data = await resp.json(content_type='text/html')
             data = data['data'][-1]

@@ -5237,3 +5237,7 @@ Script has been reloaded
 2024-11-06 20:48:21 - root - INFO - OK Globus
 Script has been reloaded
 2024-11-06 20:49:41 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-06 20:49:47 - root - INFO - OK Globus
+Script has been reloaded
+2024-11-06 21:31:47 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-06 21:31:49 - root - INFO - OK Globus
