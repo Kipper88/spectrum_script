@@ -24,7 +24,6 @@ class AutoPost:
             
             fieldAuto['inclusionDateis_wanted']: data['inclusionDateis_wanted']
         }
-        print(items)
         params = {
             'key': apiKeyRuk,           # API ключ  
             'username': 'PortalBTG24',                                   # Имя пользователя

@@ -2,7 +2,7 @@
     "state": "ok",
     "size": 1,
     "version": "2.0",
-    "stamp": "2024-11-01T17:52:02.988Z",
+    "stamp": "2024-11-06T15:58:34.012Z",
     "data": [
         {
             "domain_uid": "btg_spedition",
@@ -12,13 +12,13 @@
                 "type": "MULTIPART",
                 "body": " ",
                 "data": {
-                    "last_name": "1",
-                    "first_name": "1",
-                    "patronymic": "1",
-                    "birth": "01.11.2024",
-                    "passport": "1",
+                    "last_name": "\u0413\u0430\u043d\u0430\u043a\u043e\u0432",
+                    "first_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
+                    "patronymic": "\u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447",
+                    "birth": "18.03.1977",
+                    "passport": "4022123529",
                     "passport_date": "",
-                    "inn": "781612027441"
+                    "inn": ""
                 },
                 "schema_version": "1.0",
                 "storages": {}
@@ -29,63 +29,19 @@
             "state": {
                 "sources": [
                     {
-                        "_id": "check_person/fedresurs_short_inn",
+                        "_id": "check_person/disqualified_persons",
                         "state": "OK",
-                        "data": {
-                            "reason": "\u041d\u0435\u0442 \u0434\u0430\u043d\u043d\u044b\u0445"
-                        }
+                        "data": {}
                     },
                     {
-                        "_id": "check_person/linkasso_person_relation",
+                        "_id": "check_person/expired_passport",
                         "state": "OK",
                         "data": {}
                     },
                     {
                         "_id": "check_person/pledge",
                         "state": "OK",
-                        "data": {
-                            "reason": "[com.datastax.driver.core.exceptions.InvalidQueryException] Key may not be empty (cause: null)"
-                        }
-                    },
-                    {
-                        "_id": "check_person/person_inn",
-                        "state": "SKIP",
-                        "data": {
-                            "reason": "\u041d\u043e\u043c\u0435\u0440 \u043f\u0430\u0441\u043f\u043e\u0440\u0442\u0430 \u0438\u043c\u0435\u0435\u0442 \u043d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 (Error)"
-                        }
-                    },
-                    {
-                        "_id": "fns_opendata/massfounders",
-                        "state": "OK",
                         "data": {}
-                    },
-                    {
-                        "_id": "check_person/arbitr_cases_full",
-                        "state": "SKIP",
-                        "data": {
-                            "reason": "\u0424\u0430\u043c\u0438\u043b\u0438\u044f \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (Error); \u0418\u043c\u044f \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (Error); \u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (Error)"
-                        }
-                    },
-                    {
-                        "_id": "check_person/disqualified_persons",
-                        "state": "SKIP",
-                        "data": {
-                            "reason": "\u0424\u0430\u043c\u0438\u043b\u0438\u044f \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (Error); \u0418\u043c\u044f \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (Error); \u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (Error)"
-                        }
-                    },
-                    {
-                        "_id": "check_person/credit_history",
-                        "state": "SKIP",
-                        "data": {
-                            "reason": "\u0424\u0430\u043c\u0438\u043b\u0438\u044f \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0430 \u043d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e:  (Error); \u0418\u043c\u044f \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u043e \u043d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e:  (Error); \u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u043e \u043d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e:  (Error); \u041f\u0430\u0441\u043f\u043e\u0440\u0442 \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d \u043d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e: 1 (Error)"
-                        }
-                    },
-                    {
-                        "_id": "check_person/expired_passport",
-                        "state": "SKIP",
-                        "data": {
-                            "reason": "\u041d\u043e\u043c\u0435\u0440 \u043f\u0430\u0441\u043f\u043e\u0440\u0442\u0430 \u0438\u043c\u0435\u0435\u0442 \u043d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 (Error)"
-                        }
                     },
                     {
                         "_id": "check_person/inoagent",
@@ -93,31 +49,12 @@
                         "data": {}
                     },
                     {
-                        "_id": "check_person/rnp_affected_supplier",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 781612027441 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
-                        }
-                    },
-                    {
-                        "_id": "check_person/rnp_dishonest_supplier",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 781612027441 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
-                        }
-                    },
-                    {
                         "_id": "check_person/phn_contact_phone_number",
                         "state": "OK",
                         "data": {}
                     },
                     {
-                        "_id": "fns_opendata/massleaders",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/tax_accruals",
+                        "_id": "check_person/arbitr_short",
                         "state": "OK",
                         "data": {}
                     },
@@ -127,26 +64,57 @@
                         "data": {}
                     },
                     {
-                        "_id": "check_person/provisional_measures",
+                        "_id": "fns_opendata/massfounders",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/arbitr_cases_full",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "fns_opendata/massleaders",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/rnp_dishonest_supplier",
                         "state": "OK",
                         "data": {
-                            "reason": "\u041f\u043e \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u043c \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u043c \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u043e \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044e \u043d\u0430 2024-11-01 \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"
+                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 470409387610 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
                         }
                     },
                     {
-                        "_id": "check_person/moneta_tax_accruals",
+                        "_id": "check_person/person_inn",
                         "state": "OK",
                         "data": {}
                     },
                     {
-                        "_id": "check_person/phn_contact_address",
+                        "_id": "check_person/fedresurs_short_inn",
+                        "state": "OK",
+                        "data": {
+                            "reason": "\u041d\u0435\u0442 \u0434\u0430\u043d\u043d\u044b\u0445"
+                        }
+                    },
+                    {
+                        "_id": "check_person/rnp_affected_supplier",
+                        "state": "OK",
+                        "data": {
+                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 470409387610 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
+                        }
+                    },
+                    {
+                        "_id": "check_person/linkasso_person_relation",
                         "state": "OK",
                         "data": {}
                     },
                     {
-                        "_id": "check_person/arbitr_short",
+                        "_id": "check_person/provisional_measures",
                         "state": "OK",
-                        "data": {}
+                        "data": {
+                            "reason": "\u041f\u043e \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u043c \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u043c \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u043e \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044e \u043d\u0430 2024-11-05 \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"
+                        }
                     },
                     {
                         "_id": "check_person/egrul_fio_inn",
@@ -159,87 +127,47 @@
                         "data": {}
                     },
                     {
+                        "_id": "check_person/tax_accruals",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
                         "_id": "check_person/acc_stop",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/credit_history",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/phn_contact_address",
+                        "state": "OK",
+                        "data": {}
+                    },
+                    {
+                        "_id": "check_person/moneta_tax_accruals",
                         "state": "OK",
                         "data": {}
                     }
                 ],
                 "data": {}
             },
-            "requested_at": "2024-11-01T17:51:57.793Z",
+            "requested_at": "2024-11-05T11:21:43.240Z",
             "content": {
                 "check_person": {
-                    "inn": {
-                        "src_meta": {
-                            "state": "SKIP",
-                            "detailed": ""
-                        }
-                    },
-                    "inoagent": {},
-                    "credit_history": {
-                        "src_meta": {
-                            "state": "SKIP",
-                            "detailed": ""
-                        }
-                    },
+                    "disqualified_persons": {},
                     "passport": {
-                        "src_meta": {
-                            "state": "SKIP",
-                            "detailed": ""
-                        }
-                    },
-                    "statusnpd_nalog": {
-                        "status": false,
-                        "request_date": "2024-11-01",
-                        "message": "781612027441 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a\u043e\u043c \u043d\u0430\u043b\u043e\u0433\u0430 \u043d\u0430 \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u043e\u0445\u043e\u0434"
-                    },
-                    "source_phones_contact": {
-                        "contacts": [
-                            {
-                                "address": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u0433.",
-                                "address_splitted": {
-                                    "country": "",
-                                    "region": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u0433.",
-                                    "city": "",
-                                    "settlement": "",
-                                    "district": "",
-                                    "street": "",
-                                    "house": "",
-                                    "structure": "",
-                                    "corpus": "",
-                                    "porch_count": "",
-                                    "floor": "",
-                                    "floor_count": "",
-                                    "latitude": "",
-                                    "longitude": "",
-                                    "flat_count": "",
-                                    "flat_number": "",
-                                    "room_number": "",
-                                    "index": "",
-                                    "region_code": "",
-                                    "fias_code": "",
-                                    "kladr_code": ""
-                                },
-                                "relevance": "71%",
-                                "data_bank": "100201",
-                                "actuality": "2021-10-20"
-                            },
-                            {
-                                "address": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433",
-                                "client": "SHP",
-                                "relevance": "65%",
-                                "data_bank": "200920",
-                                "actuality": "2021-05-13"
-                            }
-                        ]
-                    },
-                    "phn_contact_phone_number": {
+                        "series": "4022",
+                        "number": "123529",
+                        "expired": false,
+                        "details": "",
                         "src_meta": {
                             "state": "OK",
                             "detailed": ""
                         }
                     },
-                    "rnp_dishonest_supplier": {},
                     "pledge": {
                         "pledges": [],
                         "total": 0,
@@ -253,63 +181,131 @@
                             "detailed": ""
                         }
                     },
-                    "linkasso_person_relation": {
-                        "relations": [
+                    "inoagent": {},
+                    "source_phones_contact": {
+                        "contacts": [
                             {
-                                "person": {
-                                    "inn": "380125531550",
-                                    "fio": "\u0411\u0443\u0431\u043d\u043e\u0432\u0430 \u041c\u0430\u0440\u0438\u043d\u0430 \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432\u043e\u0432\u043d\u0430"
+                                "phone_number": "9312995060",
+                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
+                                "relevance": "85%",
+                                "data_bank": "100401",
+                                "actuality": "2024-01-17"
+                            },
+                            {
+                                "phone_number": "9219941569",
+                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
+                                "relevance": "85%",
+                                "data_bank": "100401",
+                                "actuality": "2024-01-17"
+                            },
+                            {
+                                "phone_number": "78931299506",
+                                "relevance": "82%",
+                                "data_bank": "100202",
+                                "actuality": "2017-08-29"
+                            },
+                            {
+                                "phone_number": "79312995060",
+                                "relevance": "70%",
+                                "data_bank": "200500",
+                                "actuality": "2022-02-25"
+                            },
+                            {
+                                "address": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a \u0413., \u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 \u0420-\u041d., \u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b., 14, 25",
+                                "address_splitted": {
+                                    "country": "",
+                                    "region": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+                                    "city": "\u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a \u0413.",
+                                    "settlement": "",
+                                    "district": "\u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 \u0420-\u041d.",
+                                    "street": "\u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b.",
+                                    "house": "14",
+                                    "structure": "",
+                                    "corpus": "",
+                                    "porch_count": "",
+                                    "floor": "",
+                                    "floor_count": "",
+                                    "latitude": "",
+                                    "longitude": "",
+                                    "flat_count": "",
+                                    "flat_number": "25",
+                                    "room_number": "",
+                                    "index": "000000",
+                                    "region_code": "1141",
+                                    "fias_code": "",
+                                    "kladr_code": ""
                                 },
-                                "throughBy": [
-                                    {
-                                        "organization": {
-                                            "inn": "7805377620",
-                                            "kpp": "781101001",
-                                            "ogrn": "1057812028670",
-                                            "registrationDate": "2005-08-30",
-                                            "activityDuration": "19 \u043b\u0435\u0442 2 \u043c\u0435\u0441\u044f\u0446\u0430 2 \u0434\u043d\u044f",
-                                            "isActive": true,
-                                            "name": {
-                                                "full": "\u041e\u0411\u0429\u0415\u0421\u0422\u0412\u041e \u0421 \u041e\u0413\u0420\u0410\u041d\u0418\u0427\u0415\u041d\u041d\u041e\u0419 \u041e\u0422\u0412\u0415\u0422\u0421\u0422\u0412\u0415\u041d\u041d\u041e\u0421\u0422\u042c\u042e \"\u0421\u041f\u0415\u041a\u0422\u0420 \u0413\u0420\u0423\u041f\u041f\"",
-                                                "short": "\u041e\u041e\u041e \"\u0421\u041f\u0415\u041a\u0422\u0420 \u0413\u0420\u0423\u041f\u041f\""
-                                            },
-                                            "okved": {
-                                                "code": "47.75",
-                                                "title": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438 \u043b\u0438\u0447\u043d\u043e\u0439 \u0433\u0438\u0433\u0438\u0435\u043d\u044b \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445"
-                                            },
-                                            "capital": "3000000",
-                                            "addressText": "192019, \u0433. \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433, \u043c.\u043e. \u041d\u0435\u0432\u0441\u043a\u0430\u044f \u0417\u0430\u0441\u0442\u0430\u0432\u0430, \u0443\u043b. \u0421\u0435\u0434\u043e\u0432\u0430, \u0434. 12, \u043b\u0438\u0442. \u0410, \u0427\u0430\u0441\u0442\u044c \u043f\u043e\u043c. 81-83, \u043f\u043e\u043c. 3-\u041d",
-                                            "managers": {
-                                                "persons": [
-                                                    {
-                                                        "inn": "380125531550",
-                                                        "fio": "\u0411\u0443\u0431\u043d\u043e\u0432\u0430 \u041c\u0430\u0440\u0438\u043d\u0430 \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432\u043e\u0432\u043d\u0430"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "historicalManagerRelationships": [
-                                            {
-                                                "fromDate": "2008-02-01",
-                                                "toDate": "2023-01-17",
-                                                "duration": "14 \u043b\u0435\u0442 11 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 16 \u0434\u043d\u0435\u0439",
-                                                "position": "\u0413\u0415\u041d\u0415\u0420\u0410\u041b\u042c\u041d\u042b\u0419 \u0414\u0418\u0420\u0415\u041a\u0422\u041e\u0420"
-                                            }
-                                        ]
-                                    }
-                                ]
+                                "address_type": "\u0410\u0434\u0440\u0435\u0441 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u043c\u0435\u0441\u0442\u0443 \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430",
+                                "relevance": "82%",
+                                "data_bank": "100202",
+                                "actuality": "2017-08-29"
+                            },
+                            {
+                                "address": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0413\u041e\u0420.\u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a, \u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 (\u041e\u0411\u041b), \u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b, 14, 25",
+                                "address_splitted": {
+                                    "country": "",
+                                    "region": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+                                    "city": "\u0413\u041e\u0420.\u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a",
+                                    "settlement": "",
+                                    "district": "\u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 (\u041e\u0411\u041b)",
+                                    "street": "\u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b",
+                                    "house": "14",
+                                    "structure": "",
+                                    "corpus": "",
+                                    "porch_count": "",
+                                    "floor": "",
+                                    "floor_count": "",
+                                    "latitude": "",
+                                    "longitude": "",
+                                    "flat_count": "",
+                                    "flat_number": "25",
+                                    "room_number": "",
+                                    "index": "",
+                                    "region_code": "1141",
+                                    "fias_code": "",
+                                    "kladr_code": ""
+                                },
+                                "address_type": "\u0410\u0434\u0440\u0435\u0441 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u043c\u0435\u0441\u0442\u0443 \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430",
+                                "relevance": "81%",
+                                "data_bank": "100202",
+                                "actuality": "2015-08-11"
                             }
                         ]
                     },
-                    "phn_contact_address": {
+                    "phn_contact_phone_number": {
                         "src_meta": {
                             "state": "OK",
                             "detailed": ""
                         }
                     },
-                    "rnp_affected_supplier": {},
-                    "provisional_measures": {
-                        "request_date": "2024-11-01"
+                    "arbitr_short": {
+                        "cases_amount_total": 0,
+                        "plaintiff_cases_amount": 0,
+                        "plaintiff_cases_sum": 0,
+                        "defendant_cases_amount": 0,
+                        "defendant_cases_sum": 0,
+                        "third_cases_amount": 0,
+                        "third_cases_sum": 0,
+                        "another_cases_amount": 0,
+                        "another_cases_sum": 0,
+                        "request_at": "2024-11-05 14:21:45"
+                    },
+                    "statusnpd_nalog": {
+                        "status": false,
+                        "request_date": "2024-11-05",
+                        "message": "470409387610 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a\u043e\u043c \u043d\u0430\u043b\u043e\u0433\u0430 \u043d\u0430 \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u043e\u0445\u043e\u0434"
+                    },
+                    "arbitr_cases_full": {
+                        "request_at": "2024-11-05 14:21:44"
+                    },
+                    "rnp_dishonest_supplier": {},
+                    "inn": {
+                        "status": "FOUND",
+                        "value": "470409387610",
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
                     },
                     "bankruptcy_short": {
                         "debtorStatus": "NOT_LISTED",
@@ -322,602 +318,55 @@
                             "description": ""
                         }
                     },
-                    "tax_accruals": {
-                        "penalties": [],
-                        "total": 0,
-                        "partially_paid": 0,
-                        "none": 0,
-                        "unpaid": 0
-                    },
-                    "tax_accrual": {
-                        "tax_accruals": [],
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
+                    "rnp_affected_supplier": {},
+                    "linkasso_person_relation": {},
+                    "provisional_measures": {
+                        "request_date": "2024-11-05"
                     },
                     "egrul": {
-                        "items": [
-                            {
-                                "_id": "7801440550",
-                                "state": "NOT_ACTIVE",
-                                "inn": "7801440550",
-                                "kpp": "781001001",
-                                "ogrn": "1077847442793",
-                                "address_text": "196247, \u0433. \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433, \u043f\u0440-\u043a\u0442 \u041b\u0435\u043d\u0438\u043d\u0441\u043a\u0438\u0439, \u0434. 160 \u043b\u0438\u0442. \u0410",
-                                "create_date": "2007-06-08",
-                                "date": "2016-02-19",
-                                "activity_duration": {
-                                    "text": "8 \u043b\u0435\u0442 8 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 11 \u0434\u043d\u0435\u0439"
-                                },
-                                "ogrn_date": "2007-06-08",
-                                "last_date": "2022-01-02",
-                                "form_type": "\u041e\u041a\u041e\u041f\u0424",
-                                "form_code": "12300",
-                                "resolved_found_capital": 2584635,
-                                "founders_count": 1,
-                                "foundersCount": 1,
-                                "activities_count": 5,
-                                "name": {
-                                    "short": "\u041e\u041e\u041e \"\u0421\u041f\u0415\u041a\u0422\u0420 \u0413\u0420\u0423\u041f\u041f \u0414\u0418\u0421\u0422\u0420\u0418\u0411\u042c\u042e\u0428\u041d\u0417\"",
-                                    "long": "\u041e\u0411\u0429\u0415\u0421\u0422\u0412\u041e \u0421 \u041e\u0413\u0420\u0410\u041d\u0418\u0427\u0415\u041d\u041d\u041e\u0419 \u041e\u0422\u0412\u0415\u0422\u0421\u0422\u0412\u0415\u041d\u041d\u041e\u0421\u0422\u042c\u042e \"\u0421\u041f\u0415\u041a\u0422\u0420 \u0413\u0420\u0423\u041f\u041f \u0414\u0418\u0421\u0422\u0420\u0418\u0411\u042c\u042e\u0428\u041d\u0417\"",
-                                    "grn": {
-                                        "code": "1077847442793",
-                                        "date": "2007-06-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "address": {
-                                    "rus": {
-                                        "kladr": "780000000000691",
-                                        "post_index": "196247",
-                                        "region_code": "78",
-                                        "region": {
-                                            "code": "\u0413\u041e\u0420\u041e\u0414",
-                                            "name": "\u0421\u0410\u041d\u041a\u0422-\u041f\u0415\u0422\u0415\u0420\u0411\u0423\u0420\u0413"
-                                        },
-                                        "street": {
-                                            "code": "\u041f\u0420-\u041a\u0422",
-                                            "name": "\u041b\u0415\u041d\u0418\u041d\u0421\u041a\u0418\u0419"
-                                        },
-                                        "house": "\u0414.160 \u041b\u0418\u0422\u0415\u0420 \u0410",
-                                        "block": "",
-                                        "grn": {
-                                            "code": "2109847150092",
-                                            "date": "2010-01-19"
-                                        },
-                                        "grn_obsolete": {
-                                            "code": "6107847038843",
-                                            "date": "2010-03-19"
-                                        }
-                                    }
-                                },
-                                "create_info": {
-                                    "type": {
-                                        "code": "11",
-                                        "name": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u043b\u0438\u0446\u0430"
-                                    },
-                                    "ogrn": "1077847442793",
-                                    "ogrn_date": "2007-06-08",
-                                    "grn": {
-                                        "code": "1077847442793",
-                                        "date": "2007-06-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "register": {
-                                    "code": "7847",
-                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211615 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443",
-                                    "address": ",191124, \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u0433,,,, \u041a\u0440\u0430\u0441\u043d\u043e\u0433\u043e \u0422\u0435\u043a\u0441\u0442\u0438\u043b\u044c\u0449\u0438\u043a\u0430 \u0443\u043b, \u0434 10-12 \u043b\u0438\u0442.\u041e,,",
-                                    "grn": {
-                                        "code": "1077847442793",
-                                        "date": "2007-06-08"
-                                    }
-                                },
-                                "stop": {
-                                    "sp_stop_org": {
-                                        "code": "201",
-                                        "name": "\u041b\u0438\u043a\u0432\u0438\u0434\u0430\u0446\u0438\u044f \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u043b\u0438\u0446\u0430"
-                                    },
-                                    "stop_org_date": "2016-02-19",
-                                    "reg_org": {
-                                        "code": "7847",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211615 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443"
-                                    },
-                                    "grn": {
-                                        "code": "2167847467005",
-                                        "date": "2016-02-19"
-                                    }
-                                },
-                                "management": [
-                                    {
-                                        "found_by_inn": true,
-                                        "person": {
-                                            "inn": "781612027441",
-                                            "last_name": "\u041c\u0415\u041b\u042c\u041d\u0418\u041a\u041e\u0412",
-                                            "first_name": "\u0410\u041d\u0414\u0420\u0415\u0419",
-                                            "patronymic": "\u0418\u0413\u041e\u0420\u0415\u0412\u0418\u0427",
-                                            "grn": {
-                                                "code": "9157848052309",
-                                                "date": "2015-11-26"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        "position": {
-                                            "type": "05",
-                                            "type_name": "\u041b\u0438\u043a\u0432\u0438\u0434\u0430\u0442\u043e\u0440",
-                                            "name": "\u041b\u0438\u043a\u0432\u0438\u0434\u0430\u0442\u043e\u0440",
-                                            "grn": {
-                                                "code": "9157848052309",
-                                                "date": "2015-11-26"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        "grn": {
-                                            "code": "9157848052309",
-                                            "date": "2015-11-26"
-                                        }
-                                    }
-                                ],
-                                "activity": {
-                                    "main": {
-                                        "code": "46.4",
-                                        "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043d\u0435\u043f\u0440\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438",
-                                        "version": "2014",
-                                        "grn": {
-                                            "code": "1077847442793",
-                                            "date": "2007-06-08"
-                                        },
-                                        "grn_obsolete": {}
-                                    },
-                                    "additional": [
-                                        {
-                                            "code": "46.45",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043f\u0430\u0440\u0444\u044e\u043c\u0435\u0440\u043d\u044b\u043c\u0438 \u0438 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442793",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        {
-                                            "code": "47.53.3",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043e\u0431\u043e\u044f\u043c\u0438 \u0438 \u043d\u0430\u043f\u043e\u043b\u044c\u043d\u044b\u043c\u0438 \u043f\u043e\u043a\u0440\u044b\u0442\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442793",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        {
-                                            "code": "47.75",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438 \u043b\u0438\u0447\u043d\u043e\u0439 \u0433\u0438\u0433\u0438\u0435\u043d\u044b \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442793",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        {
-                                            "code": "47.78",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0447\u0430\u044f \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442793",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        }
-                                    ]
-                                },
-                                "registration": {
-                                    "inn": "7801440550",
-                                    "kpp": "781001001",
-                                    "reg_date": "2010-01-19",
-                                    "register_code": "",
-                                    "tax_dep": {
-                                        "code": "7810",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211623 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443"
-                                    },
-                                    "grn": {
-                                        "code": "2167847467159",
-                                        "date": "2016-02-19"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "registration_pfr": {
-                                    "code": "088009073727",
-                                    "date": "2010-01-21",
-                                    "register_code": "088009",
-                                    "register": "\u0413\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u0423\u0447\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u0435 \u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u041f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u0420\u0424 \u043f\u043e \u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u043e\u043c\u0443 \u0440\u0430\u0439\u043e\u043d\u0443 \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0430",
-                                    "grn": {
-                                        "code": "2107847229939",
-                                        "date": "2010-02-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "registration_fss": {
-                                    "code": "782702670578251",
-                                    "date": "2010-02-11",
-                                    "register_code": "7825",
-                                    "register": "\u0424\u0438\u043b\u0438\u0430\u043b \u211625 \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0441\u043a\u043e\u0433\u043e \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u0424\u043e\u043d\u0434\u0430 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438",
-                                    "grn": {
-                                        "code": "2107847456627",
-                                        "date": "2010-02-18"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "found_capital": {
-                                    "sum": 2584635,
-                                    "type": "\u0423\u0421\u0422\u0410\u0412\u041d\u042b\u0419 \u041a\u0410\u041f\u0418\u0422\u0410\u041b",
-                                    "grn": {
-                                        "code": "1077847442793",
-                                        "date": "2007-06-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "founders": {
-                                    "total_count": 1,
-                                    "foreign_count": 1,
-                                    "foreign_org": [
-                                        {
-                                            "inn_org_name": {
-                                                "long": "\u0410.\u0421. \u0423\u041e\u0422\u0421\u041e\u041d (\u0420\u041e\u0421\u0421\u0418\u042f) \u0411.\u0412.",
-                                                "grn": {
-                                                    "code": "2109847150092",
-                                                    "date": "2010-01-19"
-                                                },
-                                                "grn_obsolete": {}
-                                            },
-                                            "reg_in": {
-                                                "oksm": "528",
-                                                "stran_name": "\u041d\u0418\u0414\u0415\u0420\u041b\u0410\u041d\u0414\u042b",
-                                                "reg_number": "32118969",
-                                                "reg_org_name": "\u0422\u041e\u0420\u0413\u041e\u0412\u0410\u042f \u041f\u0410\u041b\u0410\u0422\u0410 \u0413\u041e\u041e\u0419-\u0418 \u042d\u0415\u041c\u041b\u0410\u041d\u0414\u0410, \u041d\u0418\u0414\u0415\u0420\u041b\u0410\u041d\u0414\u042b",
-                                                "adr_str": "3927 DA \u0420\u0415\u041d\u0421\u0412\u0423\u0414\u0415, \u041d\u0415\u0419\u0411\u0423\u0420\u0413 17, \u041d\u0418\u0414\u0415\u0420\u041b\u0410\u041d\u0414\u042b",
-                                                "grn": {
-                                                    "code": "2109847150092",
-                                                    "date": "2010-01-19"
-                                                },
-                                                "grn_obsolete": {}
-                                            },
-                                            "share_found_capital": {
-                                                "nominal": 2584635,
-                                                "share": {
-                                                    "percent": 100
-                                                },
-                                                "grn": {
-                                                    "code": "2109847150092",
-                                                    "date": "2010-01-19"
-                                                },
-                                                "grn_obsolete": {}
-                                            },
-                                            "grn": {
-                                                "code": "1077847442793",
-                                                "date": "2007-06-08"
-                                            },
-                                            "found_by_inn": false
-                                        }
-                                    ],
-                                    "founders": [],
-                                    "grn": {},
-                                    "grn_obsolete": {}
-                                }
-                            },
-                            {
-                                "_id": "7801440503",
-                                "state": "NOT_ACTIVE",
-                                "inn": "7801440503",
-                                "kpp": "781101001",
-                                "ogrn": "1077847442056",
-                                "address_text": "192019, \u0433. \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433, \u0443\u043b. \u0421\u0435\u0434\u043e\u0432\u0430, \u0434. 11, \u041a. 2, \u043b\u0438\u0442. \u0410, \u043f\u043e\u043c. 34",
-                                "create_date": "2007-06-08",
-                                "date": "2019-02-27",
-                                "activity_duration": {
-                                    "text": "11 \u043b\u0435\u0442 8 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 19 \u0434\u043d\u0435\u0439"
-                                },
-                                "ogrn_date": "2007-06-08",
-                                "last_date": "2022-01-02",
-                                "form_type": "\u041e\u041a\u041e\u041f\u0424",
-                                "form_code": "12300",
-                                "resolved_found_capital": 2584635,
-                                "founders_count": 1,
-                                "foundersCount": 1,
-                                "activities_count": 5,
-                                "name": {
-                                    "short": "\u041e\u041e\u041e \"\u0421\u041f\u0415\u041a\u0422\u0420 \u0413\u0420\u0423\u041f\u041f \u0425\u041e\u041b\u0414\u0418\u041d\u0413\u0417\"",
-                                    "long": "\u041e\u0411\u0429\u0415\u0421\u0422\u0412\u041e \u0421 \u041e\u0413\u0420\u0410\u041d\u0418\u0427\u0415\u041d\u041d\u041e\u0419 \u041e\u0422\u0412\u0415\u0422\u0421\u0422\u0412\u0415\u041d\u041d\u041e\u0421\u0422\u042c\u042e \"\u0421\u041f\u0415\u041a\u0422\u0420 \u0413\u0420\u0423\u041f\u041f \u0425\u041e\u041b\u0414\u0418\u041d\u0413\u0417\"",
-                                    "grn": {
-                                        "code": "1077847442056",
-                                        "date": "2007-06-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "address": {
-                                    "rus": {
-                                        "kladr": "780000000001260",
-                                        "post_index": "192019",
-                                        "region_code": "78",
-                                        "region": {
-                                            "code": "\u0413\u041e\u0420\u041e\u0414",
-                                            "name": "\u0421\u0410\u041d\u041a\u0422-\u041f\u0415\u0422\u0415\u0420\u0411\u0423\u0420\u0413"
-                                        },
-                                        "street": {
-                                            "code": "\u0423\u041b.",
-                                            "name": "\u0421\u0415\u0414\u041e\u0412\u0410"
-                                        },
-                                        "house": "\u0414. 11",
-                                        "block": "\u041a. 2, \u041b\u0418\u0422. \u0410",
-                                        "appartment": "\u041f\u041e\u041c\u0415\u0429. 34",
-                                        "grn": {
-                                            "code": "6167847254162",
-                                            "date": "2016-04-15"
-                                        },
-                                        "grn_obsolete": {}
-                                    }
-                                },
-                                "create_info": {
-                                    "type": {
-                                        "code": "11",
-                                        "name": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u043b\u0438\u0446\u0430"
-                                    },
-                                    "ogrn": "1077847442056",
-                                    "ogrn_date": "2007-06-08",
-                                    "grn": {
-                                        "code": "1077847442056",
-                                        "date": "2007-06-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "register": {
-                                    "code": "7847",
-                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211615 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443",
-                                    "address": ",191124, \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u0433,,,, \u041a\u0440\u0430\u0441\u043d\u043e\u0433\u043e \u0422\u0435\u043a\u0441\u0442\u0438\u043b\u044c\u0449\u0438\u043a\u0430 \u0443\u043b, \u0434 10-12 \u043b\u0438\u0442.\u041e,,",
-                                    "grn": {
-                                        "code": "8157847988147",
-                                        "date": "2015-01-10"
-                                    }
-                                },
-                                "stop": {
-                                    "sp_stop_org": {
-                                        "code": "201",
-                                        "name": "\u041b\u0438\u043a\u0432\u0438\u0434\u0430\u0446\u0438\u044f \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u043b\u0438\u0446\u0430"
-                                    },
-                                    "stop_org_date": "2019-02-27",
-                                    "reg_org": {
-                                        "code": "7847",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211615 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443"
-                                    },
-                                    "grn": {
-                                        "code": "2197847799378",
-                                        "date": "2019-02-27"
-                                    }
-                                },
-                                "management": [
-                                    {
-                                        "found_by_inn": true,
-                                        "person": {
-                                            "inn": "781612027441",
-                                            "last_name": "\u041c\u0415\u041b\u042c\u041d\u0418\u041a\u041e\u0412",
-                                            "first_name": "\u0410\u041d\u0414\u0420\u0415\u0419",
-                                            "patronymic": "\u0418\u0413\u041e\u0420\u0415\u0412\u0418\u0427",
-                                            "grn": {
-                                                "code": "2187848685583",
-                                                "date": "2018-11-23"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        "position": {
-                                            "type": "05",
-                                            "type_name": "\u041b\u0438\u043a\u0432\u0438\u0434\u0430\u0442\u043e\u0440",
-                                            "name": "\u041b\u0418\u041a\u0412\u0418\u0414\u0410\u0422\u041e\u0420",
-                                            "grn": {
-                                                "code": "2187848685583",
-                                                "date": "2018-11-23"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        "grn": {
-                                            "code": "8187847371902",
-                                            "date": "2018-06-26"
-                                        }
-                                    }
-                                ],
-                                "activity": {
-                                    "main": {
-                                        "code": "46.4",
-                                        "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043d\u0435\u043f\u0440\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438",
-                                        "version": "2014",
-                                        "grn": {
-                                            "code": "1077847442056",
-                                            "date": "2007-06-08"
-                                        },
-                                        "grn_obsolete": {}
-                                    },
-                                    "additional": [
-                                        {
-                                            "code": "46.45",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043f\u0430\u0440\u0444\u044e\u043c\u0435\u0440\u043d\u044b\u043c\u0438 \u0438 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442056",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        {
-                                            "code": "47.53.3",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043e\u0431\u043e\u044f\u043c\u0438 \u0438 \u043d\u0430\u043f\u043e\u043b\u044c\u043d\u044b\u043c\u0438 \u043f\u043e\u043a\u0440\u044b\u0442\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442056",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        {
-                                            "code": "47.75",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438 \u043b\u0438\u0447\u043d\u043e\u0439 \u0433\u0438\u0433\u0438\u0435\u043d\u044b \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442056",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        },
-                                        {
-                                            "code": "47.78",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0447\u0430\u044f \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "code": "1077847442056",
-                                                "date": "2007-06-08"
-                                            },
-                                            "grn_obsolete": {}
-                                        }
-                                    ]
-                                },
-                                "registration": {
-                                    "inn": "7801440503",
-                                    "kpp": "781101001",
-                                    "reg_date": "2016-04-15",
-                                    "register_code": "",
-                                    "tax_dep": {
-                                        "code": "7811",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211624 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443"
-                                    },
-                                    "grn": {
-                                        "code": "2197847799983",
-                                        "date": "2019-02-27"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "registration_pfr": {
-                                    "code": "088010107455",
-                                    "date": "2016-04-18",
-                                    "register_code": "088010",
-                                    "register": "\u0413\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u0423\u0447\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u0435 \u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u041f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u0420\u0424 \u043f\u043e \u041d\u0435\u0432\u0441\u043a\u043e\u043c\u0443 \u0440\u0430\u0439\u043e\u043d\u0443 \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0430",
-                                    "grn": {
-                                        "code": "6167847304168",
-                                        "date": "2016-04-20"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "registration_fss": {
-                                    "code": "782702670078301",
-                                    "date": "2016-04-16",
-                                    "register_code": "7830",
-                                    "register": "\u0424\u0438\u043b\u0438\u0430\u043b \u211630 \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0441\u043a\u043e\u0433\u043e \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u0424\u043e\u043d\u0434\u0430 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438",
-                                    "grn": {
-                                        "code": "6167847290517",
-                                        "date": "2016-04-20"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "found_capital": {
-                                    "sum": 2584635,
-                                    "type": "\u0423\u0421\u0422\u0410\u0412\u041d\u042b\u0419 \u041a\u0410\u041f\u0418\u0422\u0410\u041b",
-                                    "grn": {
-                                        "code": "1077847442056",
-                                        "date": "2007-06-08"
-                                    },
-                                    "grn_obsolete": {}
-                                },
-                                "founders": {
-                                    "total_count": 1,
-                                    "foreign_count": 1,
-                                    "foreign_org": [
-                                        {
-                                            "inn_org_name": {
-                                                "long": "\u0410.\u0421. \u0423\u041e\u0422\u0421\u041e\u041d (\u0420\u041e\u0421\u0421\u0418\u042f) \u0411.\u0412.",
-                                                "grn": {
-                                                    "code": "2109847149069",
-                                                    "date": "2010-01-19"
-                                                },
-                                                "grn_obsolete": {}
-                                            },
-                                            "reg_in": {
-                                                "oksm": "528",
-                                                "stran_name": "\u041d\u0418\u0414\u0415\u0420\u041b\u0410\u041d\u0414\u042b",
-                                                "reg_number": "32118969",
-                                                "reg_org_name": "\u0422\u041e\u0420\u0413\u041e\u0412\u0410\u042f \u041f\u0410\u041b\u0410\u0422\u0410 \u0413\u041e\u041e\u0419-\u0418 \u042d\u0415\u041c\u041b\u0410\u041d\u0414\u0410, \u041d\u0418\u0414\u0415\u0420\u041b\u0410\u041d\u0414\u042b",
-                                                "adr_str": "3927 DA \u0420\u0415\u041d\u0421\u0412\u0423\u0414\u0415, \u041d\u0415\u0419\u0411\u041e\u0420\u0413 17, \u041d\u0418\u0414\u0415\u0420\u041b\u0410\u041d\u0414\u042b",
-                                                "grn": {
-                                                    "code": "2109847149069",
-                                                    "date": "2010-01-19"
-                                                },
-                                                "grn_obsolete": {}
-                                            },
-                                            "share_found_capital": {
-                                                "nominal": 2584635,
-                                                "share": {
-                                                    "percent": 100
-                                                },
-                                                "grn": {
-                                                    "code": "2109847149069",
-                                                    "date": "2010-01-19"
-                                                },
-                                                "grn_obsolete": {}
-                                            },
-                                            "grn": {
-                                                "code": "1077847442056",
-                                                "date": "2007-06-08"
-                                            },
-                                            "found_by_inn": false
-                                        }
-                                    ],
-                                    "founders": [],
-                                    "grn": {},
-                                    "grn_obsolete": {}
-                                }
-                            }
-                        ],
-                        "count": 2
-                    },
-                    "acc_stop": {
-                        "pdf": "https://accstop-archive.spectrumdata.ru//stop_pdf/043469623_781612027441_20241101205158.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241101T175159Z&X-Amz-SignedHeaders=host&X-Amz-Expires=259200&X-Amz-Credential=p-srcs-accstop/20241101/us-west-1/s3/aws4_request&X-Amz-Signature=75ff04862cb7efcdeda3ec0fd790c77a7d4b64ea5bd8f0513e2a242753098197"
+                        "items": [],
+                        "count": 0,
+                        "enrichment_state": "\u0411\u044b\u043b \u043f\u043e\u043b\u0443\u0447\u0435\u043d \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0418\u041d\u041d \u0438\u0437 \u0440\u0435\u0435\u0441\u0442\u0440\u0430 \u0415\u0413\u0420\u042e\u041b: 470409387610",
+                        "enrichment_inn": "470409387610"
                     },
                     "egrip": {
                         "items": [
                             {
-                                "id": "781612027441",
+                                "id": "470409387610",
                                 "state": "ACTIVE",
-                                "inn": "781612027441",
-                                "ogrn": "323784700054281",
-                                "ogrn_date": "2023-02-17",
-                                "last_date": "2023-02-21",
-                                "date": "2023-02-21",
-                                "resolved_create_date": "2023-02-17",
+                                "inn": "470409387610",
+                                "ogrn": "324470400005495",
+                                "ogrn_date": "2024-01-22",
+                                "last_date": "2024-02-28",
+                                "date": "2024-02-29",
+                                "resolved_create_date": "2024-01-22",
                                 "code": "1",
                                 "type": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c",
                                 "found_by_inn": true,
                                 "email": {
-                                    "email": "6540090@gmail.com",
+                                    "email": "ganakov.vladimir@gmail.com",
                                     "grn": {
-                                        "grnip": "323784700054281",
-                                        "date": "2023-02-17"
+                                        "grnip": "324470400005495",
+                                        "date": "2024-01-22"
                                     }
                                 },
                                 "person": {
                                     "fio_rus": {
-                                        "first_name": "\u0410\u043d\u0434\u0440\u0435\u0439",
-                                        "last_name": "\u041c\u0435\u043b\u044c\u043d\u0438\u043a\u043e\u0432",
-                                        "patronymic": "\u0418\u0433\u043e\u0440\u0435\u0432\u0438\u0447"
+                                        "first_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
+                                        "last_name": "\u0413\u0430\u043d\u0430\u043a\u043e\u0432",
+                                        "patronymic": "\u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447"
                                     },
-                                    "latin_first_name": "Andrei",
-                                    "latin_last_name": "Melnikov",
+                                    "latin_first_name": "Vladimir",
+                                    "latin_last_name": "Ganakov",
                                     "sex_name": "MALE",
                                     "sex": "1",
                                     "grn": {
-                                        "grnip": "323784700054281",
-                                        "date": "2023-02-17"
+                                        "grnip": "324470400005495",
+                                        "date": "2024-01-22"
                                     }
                                 },
                                 "activity_duration": {
-                                    "text": "1 \u0433\u043e\u0434 8 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 15 \u0434\u043d\u0435\u0439"
+                                    "text": "9 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 14 \u0434\u043d\u0435\u0439"
                                 },
                                 "grazhd": {
                                     "type_name": "RUSSIAN",
@@ -925,544 +374,301 @@
                                     "oksm": "643",
                                     "country": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
                                     "grn": {
-                                        "grnip": "323784700054281",
-                                        "date": "2023-02-17"
+                                        "grnip": "324470400005495",
+                                        "date": "2024-01-22"
                                     }
                                 },
                                 "reg_org": {
-                                    "code": "7847",
-                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211615 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443",
-                                    "addr": ",191124, \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u0433,,,, \u041a\u0440\u0430\u0441\u043d\u043e\u0433\u043e \u0422\u0435\u043a\u0441\u0442\u0438\u043b\u044c\u0449\u0438\u043a\u0430 \u0443\u043b, \u0434 10-12 \u043b\u0438\u0442.\u041e,,",
+                                    "code": "4704",
+                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
+                                    "addr": "188801, \u0433.\u0412\u044b\u0431\u043e\u0440\u0433, \u0443\u043b.\u0413\u0430\u0433\u0430\u0440\u0438\u043d\u0430, 27 \u0410",
                                     "grn": {
-                                        "grnip": "323784700054281",
-                                        "date": "2023-02-17"
+                                        "grnip": "324470400005495",
+                                        "date": "2024-01-22"
                                     }
                                 },
                                 "reg_ip": {
-                                    "ogrnip": "323784700054281",
-                                    "ogrn": "2023-02-17",
-                                    "reg_date": "2023-02-17"
+                                    "ogrnip": "324470400005495",
+                                    "ogrn": "2024-01-22",
+                                    "reg_date": "2024-01-22"
                                 },
                                 "activity": {
                                     "main": {
-                                        "code": "56.10",
-                                        "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0440\u0435\u0441\u0442\u043e\u0440\u0430\u043d\u043e\u0432 \u0438 \u0443\u0441\u043b\u0443\u0433\u0438 \u043f\u043e \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0435 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u043e\u0432 \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+                                        "code": "77.12",
+                                        "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u043b\u0438\u0437\u0438\u043d\u0433 \u0433\u0440\u0443\u0437\u043e\u0432\u044b\u0445 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432",
                                         "version": "2014",
                                         "grn": {
-                                            "grnip": "323784700054281",
-                                            "date": "2023-02-17"
+                                            "grnip": "324470400005495",
+                                            "date": "2024-01-22"
                                         }
                                     },
                                     "additional": [
                                         {
-                                            "code": "46.42",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043e\u0434\u0435\u0436\u0434\u043e\u0439 \u0438 \u043e\u0431\u0443\u0432\u044c\u044e",
+                                            "code": "49.41",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
                                             "version": "2014",
                                             "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.44.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0447\u0438\u0441\u0442\u044f\u0449\u0438\u043c\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.45",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043f\u0430\u0440\u0444\u044e\u043c\u0435\u0440\u043d\u044b\u043c\u0438 \u0438 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.11.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043d\u0435\u0437\u0430\u043c\u043e\u0440\u043e\u0436\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430\u043c\u0438, \u0432\u043a\u043b\u044e\u0447\u0430\u044f \u043d\u0430\u043f\u0438\u0442\u043a\u0438 \u0438 \u0442\u0430\u0431\u0430\u0447\u043d\u044b\u0435 \u0438\u0437\u0434\u0435\u043b\u0438\u044f, \u0432 \u043d\u0435\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.11.3",
-                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043f\u043e \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u043e\u0439 \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u0435 \u0431\u043e\u043b\u044c\u0448\u0438\u043c \u0442\u043e\u0432\u0430\u0440\u043d\u044b\u043c \u0430\u0441\u0441\u043e\u0440\u0442\u0438\u043c\u0435\u043d\u0442\u043e\u043c \u0441 \u043f\u0440\u0435\u043e\u0431\u043b\u0430\u0434\u0430\u043d\u0438\u0435\u043c \u043f\u0440\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0432 \u043d\u0435\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.19",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0447\u0430\u044f \u0432 \u043d\u0435\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.24.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0445\u043b\u0435\u0431\u043e\u043c \u0438 \u0445\u043b\u0435\u0431\u043e\u0431\u0443\u043b\u043e\u0447\u043d\u044b\u043c\u0438 \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.24.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043a\u043e\u043d\u0434\u0438\u0442\u0435\u0440\u0441\u043a\u0438\u043c\u0438 \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.24.21",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043c\u0443\u0447\u043d\u044b\u043c\u0438 \u043a\u043e\u043d\u0434\u0438\u0442\u0435\u0440\u0441\u043a\u0438\u043c\u0438 \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.24.22",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043a\u043e\u043d\u0434\u0438\u0442\u0435\u0440\u0441\u043a\u0438\u043c\u0438 \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438, \u0432\u043a\u043b\u044e\u0447\u0430\u044f \u0448\u043e\u043a\u043e\u043b\u0430\u0434, \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.24.3",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043c\u043e\u0440\u043e\u0436\u0435\u043d\u044b\u043c \u0438 \u0437\u0430\u043c\u043e\u0440\u043e\u0436\u0435\u043d\u043d\u044b\u043c\u0438 \u0434\u0435\u0441\u0435\u0440\u0442\u0430\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.25.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0431\u0435\u0437\u0430\u043b\u043a\u043e\u0433\u043e\u043b\u044c\u043d\u044b\u043c\u0438 \u043d\u0430\u043f\u0438\u0442\u043a\u0430\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.29.39",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0447\u0438\u043c\u0438 \u043f\u0438\u0449\u0435\u0432\u044b\u043c\u0438 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445, \u043d\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u043c\u0438 \u0432 \u0434\u0440\u0443\u0433\u0438\u0435 \u0433\u0440\u0443\u043f\u043f\u0438\u0440\u043e\u0432\u043a\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.51.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0442\u0435\u043a\u0441\u0442\u0438\u043b\u044c\u043d\u044b\u043c\u0438 \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.51.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0433\u0430\u043b\u0430\u043d\u0442\u0435\u0440\u0435\u0439\u043d\u044b\u043c\u0438 \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.71.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043c\u0443\u0436\u0441\u043a\u043e\u0439, \u0436\u0435\u043d\u0441\u043a\u043e\u0439 \u0438 \u0434\u0435\u0442\u0441\u043a\u043e\u0439 \u043e\u0434\u0435\u0436\u0434\u043e\u0439 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.71.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043d\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u043c \u0431\u0435\u043b\u044c\u0435\u043c \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.71.4",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043e\u0434\u0435\u0436\u0434\u043e\u0439 \u0438\u0437 \u043a\u043e\u0436\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.71.7",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0433\u043e\u043b\u043e\u0432\u043d\u044b\u043c\u0438 \u0443\u0431\u043e\u0440\u0430\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.71.8",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u0430\u043c\u0438 \u043e\u0434\u0435\u0436\u0434\u044b (\u043f\u0435\u0440\u0447\u0430\u0442\u043a\u0430\u043c\u0438, \u0433\u0430\u043b\u0441\u0442\u0443\u043a\u0430\u043c\u0438, \u0448\u0430\u0440\u0444\u0430\u043c\u0438, \u0440\u0435\u043c\u043d\u044f\u043c\u0438, \u043f\u043e\u0434\u0442\u044f\u0436\u043a\u0430\u043c\u0438 \u0438 \u0442. \u043f.) \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.72.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043e\u0431\u0443\u0432\u044c\u044e \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.72.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0438\u0437\u0434\u0435\u043b\u0438\u044f\u043c\u0438 \u0438\u0437 \u043a\u043e\u0436\u0438 \u0438 \u0434\u043e\u0440\u043e\u0436\u043d\u044b\u043c\u0438 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u044f\u043c\u0438 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.75.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 \u0438 \u043f\u0430\u0440\u0444\u044e\u043c\u0435\u0440\u043d\u044b\u043c\u0438 \u0442\u043e\u0432\u0430\u0440\u0430\u043c\u0438, \u043a\u0440\u043e\u043c\u0435 \u043c\u044b\u043b\u0430 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.75.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0442\u0443\u0430\u043b\u0435\u0442\u043d\u044b\u043c \u0438 \u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u043c\u044b\u043b\u043e\u043c \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.75.3",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u0430\u043c\u0438 \u043b\u0438\u0447\u043d\u043e\u0439 \u0433\u0438\u0433\u0438\u0435\u043d\u044b \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.76.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u0434\u043e\u043c\u0430\u0448\u043d\u0438\u043c\u0438 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u043c\u0438 \u0438 \u043a\u043e\u0440\u043c\u0430\u043c\u0438 \u0434\u043b\u044f \u0434\u043e\u043c\u0430\u0448\u043d\u0438\u0445 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445 \u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.91.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u043e \u043f\u043e\u0447\u0442\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.91.2",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f, \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0435\u043c\u0430\u044f \u043d\u0435\u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u043e-\u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0439 \u0441\u0435\u0442\u0438 \u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "47.91.4",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0440\u043e\u0437\u043d\u0438\u0447\u043d\u0430\u044f, \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0435\u043c\u0430\u044f \u043d\u0435\u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0442\u0435\u043b\u0435\u0432\u0438\u0434\u0435\u043d\u0438\u044f, \u0440\u0430\u0434\u0438\u043e, \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "56.30",
-                                            "name": "\u041f\u043e\u0434\u0430\u0447\u0430 \u043d\u0430\u043f\u0438\u0442\u043a\u043e\u0432",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.10.11",
-                                            "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.10.12",
-                                            "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.10.21",
-                                            "name": "\u041f\u043e\u043a\u0443\u043f\u043a\u0430 \u0438 \u043f\u0440\u043e\u0434\u0430\u0436\u0430 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.10.22",
-                                            "name": "\u041f\u043e\u043a\u0443\u043f\u043a\u0430 \u0438 \u043f\u0440\u043e\u0434\u0430\u0436\u0430 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u043d\u0435\u0436\u0438\u043b\u044b\u0445 \u0437\u0434\u0430\u043d\u0438\u0439 \u0438 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0439",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.10.23",
-                                            "name": "\u041f\u043e\u043a\u0443\u043f\u043a\u0430 \u0438 \u043f\u0440\u043e\u0434\u0430\u0436\u0430 \u0437\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0445 \u0443\u0447\u0430\u0441\u0442\u043a\u043e\u0432",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.20.1",
-                                            "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0438\u043b\u0438 \u0430\u0440\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u043c \u0436\u0438\u043b\u044b\u043c \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u044b\u043c \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u043e\u043c",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.20.21",
-                                            "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0438\u043b\u0438 \u0430\u0440\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u043c \u0442\u043e\u0440\u0433\u043e\u0432\u044b\u043c \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u043c \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.20.29",
-                                            "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0438\u043b\u0438 \u0430\u0440\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u043c \u043f\u0440\u043e\u0447\u0438\u043c \u043d\u0435\u0436\u0438\u043b\u044b\u043c \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u044b\u043c \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u043e\u043c",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.11",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0440\u0438 \u043a\u0443\u043f\u043b\u0435-\u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.12",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0440\u0438 \u043a\u0443\u043f\u043b\u0435-\u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.21",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u043e \u0430\u0440\u0435\u043d\u0434\u0435 \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.22",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u043e \u0430\u0440\u0435\u043d\u0434\u0435 \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.31",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0440\u0438 \u043a\u0443\u043f\u043b\u0435-\u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.32",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0440\u0438 \u043a\u0443\u043f\u043b\u0435-\u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.41",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u043e \u0430\u0440\u0435\u043d\u0434\u0435 \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.42",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u043e \u0430\u0440\u0435\u043d\u0434\u0435 \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.51",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0440\u0438 \u043e\u0446\u0435\u043d\u043a\u0435 \u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.31.52",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0440\u0438 \u043e\u0446\u0435\u043d\u043a\u0435 \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.32.1",
-                                            "name": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u044d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u0435\u0439 \u0436\u0438\u043b\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "68.32.2",
-                                            "name": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u044d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u0435\u0439 \u043d\u0435\u0436\u0438\u043b\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u0437\u0430 \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u043b\u0438 \u043d\u0430 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "96.02.1",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u0430\u0440\u0438\u043a\u043c\u0430\u0445\u0435\u0440\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
-                                            }
-                                        },
-                                        {
-                                            "code": "96.02.2",
-                                            "name": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0443\u0441\u043b\u0443\u0433 \u043f\u0430\u0440\u0438\u043a\u043c\u0430\u0445\u0435\u0440\u0441\u043a\u0438\u043c\u0438 \u0438 \u0441\u0430\u043b\u043e\u043d\u0430\u043c\u0438 \u043a\u0440\u0430\u0441\u043e\u0442\u044b",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "323784700054281",
-                                                "date": "2023-02-17"
+                                                "grnip": "324470400005495",
+                                                "date": "2024-01-22"
                                             }
                                         }
                                     ]
                                 },
                                 "register_tax_dep": {
-                                    "inn": "781612027441",
-                                    "reg_date": "2023-02-17",
+                                    "inn": "470409387610",
+                                    "reg_date": "2024-01-22",
                                     "tax_dep": {
-                                        "code": "7816",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211627 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443"
+                                        "code": "4704",
+                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
                                     },
                                     "grn": {
-                                        "grnip": "423784700295928",
-                                        "date": "2023-02-17"
+                                        "grnip": "424470400076041",
+                                        "date": "2024-01-22"
                                     }
                                 },
                                 "reg_pension_fund": {
-                                    "reg_nom_pension_fund": "088015125405",
-                                    "reg_date": "2023-02-20",
+                                    "reg_nom_pension_fund": "057004043602",
+                                    "reg_date": "2024-01-23",
                                     "org_pension_fund": {
-                                        "code": "088015",
+                                        "code": "057004",
                                         "name": "\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443 \u0438 \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
                                     },
                                     "grn": {
-                                        "grnip": "423784700311863",
-                                        "date": "2023-02-21"
+                                        "grnip": "424470400166075",
+                                        "date": "2024-02-28"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "470409387610",
+                                "state": "NOT_ACTIVE",
+                                "inn": "470409387610",
+                                "ogrn": "322470400091408",
+                                "ogrn_date": "2022-09-16",
+                                "last_date": "2023-04-19",
+                                "date": "2023-04-19",
+                                "resolved_create_date": "2022-09-16",
+                                "code": "1",
+                                "type": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c",
+                                "found_by_inn": true,
+                                "email": {
+                                    "email": "ganakov.vladimir@gmail.com",
+                                    "grn": {
+                                        "grnip": "322470400091408",
+                                        "date": "2022-09-16"
+                                    }
+                                },
+                                "person": {
+                                    "fio_rus": {
+                                        "first_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
+                                        "last_name": "\u0413\u0430\u043d\u0430\u043a\u043e\u0432",
+                                        "patronymic": "\u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447"
+                                    },
+                                    "latin_first_name": "Vladimir",
+                                    "latin_last_name": "Ganakov",
+                                    "sex_name": "MALE",
+                                    "sex": "1",
+                                    "grn": {
+                                        "grnip": "322470400091408",
+                                        "date": "2022-09-16"
+                                    }
+                                },
+                                "activity_duration": {
+                                    "text": "7 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 3 \u0434\u043d\u044f"
+                                },
+                                "grazhd": {
+                                    "type_name": "RUSSIAN",
+                                    "type": "1",
+                                    "oksm": "643",
+                                    "country": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
+                                    "grn": {
+                                        "grnip": "322470400091408",
+                                        "date": "2022-09-16"
+                                    }
+                                },
+                                "reg_org": {
+                                    "code": "4704",
+                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
+                                    "addr": "188801, \u0433.\u0412\u044b\u0431\u043e\u0440\u0433, \u0443\u043b.\u0413\u0430\u0433\u0430\u0440\u0438\u043d\u0430, 27 \u0410",
+                                    "grn": {
+                                        "grnip": "322470400091408",
+                                        "date": "2022-09-16"
+                                    }
+                                },
+                                "reg_ip": {
+                                    "ogrnip": "322470400091408",
+                                    "ogrn": "2022-09-16",
+                                    "reg_date": "2022-09-16"
+                                },
+                                "activity": {
+                                    "main": {
+                                        "code": "77.12",
+                                        "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u043b\u0438\u0437\u0438\u043d\u0433 \u0433\u0440\u0443\u0437\u043e\u0432\u044b\u0445 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432",
+                                        "version": "2014",
+                                        "grn": {
+                                            "grnip": "322470400091408",
+                                            "date": "2022-09-16"
+                                        }
+                                    },
+                                    "additional": [
+                                        {
+                                            "code": "46.21.1",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0437\u0435\u0440\u043d\u043e\u043c, \u0441\u0435\u043c\u0435\u043d\u0430\u043c\u0438 \u0438 \u043a\u043e\u0440\u043c\u0430\u043c\u0438 \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "46.21.11",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0437\u0435\u0440\u043d\u043e\u043c",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "46.21.12",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0441\u0435\u043c\u0435\u043d\u0430\u043c\u0438, \u043a\u0440\u043e\u043c\u0435 \u0441\u0435\u043c\u044f\u043d \u043c\u0430\u0441\u043b\u0438\u0447\u043d\u044b\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "46.21.13",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043c\u0430\u0441\u043b\u0438\u0447\u043d\u044b\u043c\u0438 \u0441\u0435\u043c\u0435\u043d\u0430\u043c\u0438 \u0438 \u043c\u0430\u0441\u043b\u043e\u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u043c\u0438 \u043f\u043b\u043e\u0434\u0430\u043c\u0438",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "46.21.14",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043a\u043e\u0440\u043c\u0430\u043c\u0438 \u0434\u043b\u044f \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "46.21.19",
+                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0441\u044b\u0440\u044c\u0435\u043c, \u043d\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u043c \u0432 \u0434\u0440\u0443\u0433\u0438\u0435 \u0433\u0440\u0443\u043f\u043f\u0438\u0440\u043e\u0432\u043a\u0438",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "49.41",
+                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "49.41.1",
+                                            "name": "\u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u0433\u0440\u0443\u0437\u043e\u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u043c\u0438 \u0430\u0432\u0442\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u043c\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043c\u0438",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        },
+                                        {
+                                            "code": "49.41.2",
+                                            "name": "\u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u0433\u0440\u0443\u0437\u043e\u0432 \u043d\u0435\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u043c\u0438 \u0430\u0432\u0442\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u043c\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043c\u0438",
+                                            "version": "2014",
+                                            "grn": {
+                                                "grnip": "322470400091408",
+                                                "date": "2022-09-16"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "stopash": {
+                                    "status": {
+                                        "code_status": "201",
+                                        "status_name": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c \u043f\u0440\u0435\u043a\u0440\u0430\u0442\u0438\u043b \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0432 \u0441\u0432\u044f\u0437\u0438 \u0441 \u043f\u0440\u0438\u043d\u044f\u0442\u0438\u0435\u043c \u0438\u043c \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0433\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u044f",
+                                        "stopash_date": "2023-04-19"
+                                    },
+                                    "grn": {
+                                        "grnip": "423470400232415",
+                                        "date": "2023-04-19"
+                                    }
+                                },
+                                "register_tax_dep": {
+                                    "inn": "470409387610",
+                                    "reg_date": "2022-09-16",
+                                    "tax_dep": {
+                                        "code": "4704",
+                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
+                                    },
+                                    "grn": {
+                                        "grnip": "423470400232426",
+                                        "date": "2023-04-19"
+                                    }
+                                },
+                                "reg_pension_fund": {
+                                    "reg_nom_pension_fund": "057004041833",
+                                    "reg_date": "2022-09-20",
+                                    "org_pension_fund": {
+                                        "code": "057004",
+                                        "name": "\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443 \u0438 \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
+                                    },
+                                    "grn": {
+                                        "grnip": "422470400498740",
+                                        "date": "2022-09-20"
                                     }
                                 }
                             }
                         ],
-                        "count": 1
+                        "count": 2,
+                        "enrichment_state": "\u0411\u044b\u043b \u043f\u043e\u043b\u0443\u0447\u0435\u043d \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0418\u041d\u041d \u0438\u0437 \u0440\u0435\u0435\u0441\u0442\u0440\u0430 \u0415\u0413\u0420\u0418\u041f: 470409387610",
+                        "enrichment_inn": "470409387610"
                     },
-                    "arbitr_short": {
-                        "cases_amount_total": 0,
-                        "plaintiff_cases_amount": 0,
-                        "plaintiff_cases_sum": 0,
-                        "defendant_cases_amount": 0,
-                        "defendant_cases_sum": 0,
-                        "third_cases_amount": 0,
-                        "third_cases_sum": 0,
-                        "another_cases_amount": 0,
-                        "another_cases_sum": 0,
-                        "request_at": "2024-11-01 20:51:59"
+                    "tax_accruals": {
+                        "penalties": [],
+                        "total": 0,
+                        "partially_paid": 0,
+                        "none": 0,
+                        "unpaid": 0
+                    },
+                    "acc_stop": {
+                        "pdf": "https://accstop-archive.spectrumdata.ru//stop_pdf/049401871_470409387610_20241105142149.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241105T112149Z&X-Amz-SignedHeaders=host&X-Amz-Expires=259200&X-Amz-Credential=p-srcs-accstop/20241105/us-west-1/s3/aws4_request&X-Amz-Signature=7f307eb7dcf5a27c0f4e98d6d9eb89b5a9ea3c050cac3eb639548797c216483a"
+                    },
+                    "credit_history": {
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "phn_contact_address": {
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "tax_accrual": {
+                        "tax_accruals": [],
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    }
+                },
+                "check_person/disqualified_persons": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
                     }
                 },
                 "report_meta": {
@@ -1517,31 +723,19 @@
                         }
                     }
                 },
-                "check_person/disqualified_persons": {
-                    "src_meta": {
-                        "state": "SKIP",
-                        "detailed": ""
-                    }
-                },
-                "check_person/arbitr_cases_full": {
-                    "src_meta": {
-                        "state": "SKIP",
-                        "detailed": ""
-                    }
-                },
                 "check_person/inoagent": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
                     }
                 },
-                "check_person/statusnpd_nalog": {
+                "check_person/arbitr_short": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
                     }
                 },
-                "check_person/rnp_dishonest_supplier": {
+                "check_person/statusnpd_nalog": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -1565,7 +759,7 @@
                         "detailed": ""
                     }
                 },
-                "check_person/linkasso_person_relation": {
+                "check_person/arbitr_cases_full": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -1577,7 +771,19 @@
                         "detailed": ""
                     }
                 },
+                "check_person/rnp_dishonest_supplier": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
                 "check_person/rnp_affected_supplier": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
+                "check_person/linkasso_person_relation": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -1589,19 +795,7 @@
                         "detailed": ""
                     }
                 },
-                "check_person/tax_accruals": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
                 "check_person/egrul_fio_inn": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/acc_stop": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -1613,7 +807,13 @@
                         "detailed": ""
                     }
                 },
-                "check_person/arbitr_short": {
+                "check_person/tax_accruals": {
+                    "src_meta": {
+                        "state": "OK",
+                        "detailed": ""
+                    }
+                },
+                "check_person/acc_stop": {
                     "src_meta": {
                         "state": "OK",
                         "detailed": ""
@@ -1621,17 +821,17 @@
                 }
             },
             "last_generation_stat": {
-                "duration": 1383,
-                "start_time": "2024-11-01T17:51:57.793Z",
-                "complete_time": "2024-11-01T17:51:59.176Z"
+                "duration": 20602,
+                "start_time": "2024-11-05T11:21:43.240Z",
+                "complete_time": "2024-11-05T11:22:03.842Z"
             },
-            "uid": "report_check_passport_test_5a0fa2fe65103075b742addd8fa3c00c@btg_spedition",
+            "uid": "report_check_passport_test_e2d551437d1634c3b69e8fc4cc122c3f@btg_spedition",
             "name": "NONAME",
             "comment": "",
             "tags": "",
-            "created_at": "2024-11-01T16:13:18.224Z",
+            "created_at": "2024-11-05T11:21:43.199Z",
             "created_by": "system",
-            "updated_at": "2024-11-01T17:52:00.109Z",
+            "updated_at": "2024-11-05T11:22:05.727Z",
             "updated_by": "system",
             "active_from": "1900-01-01T00:00:00.000Z",
             "active_to": "3000-01-01T00:00:00.000Z"

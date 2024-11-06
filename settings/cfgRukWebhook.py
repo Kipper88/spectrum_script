@@ -3,6 +3,7 @@ fieldAuto = {}
 fieldJur = {}
 fieldIP = {}
 fieldPhys = {}
+fieldGlobus = {}
 
 # Driver
 fieldDriver['DriverLicense'] = '10757'
@@ -42,3 +43,10 @@ fieldPhys['birth'] = '11209'
 fieldPhys['passport'] = '11210'
 fieldPhys['passport_date'] = '11426'
 fieldPhys['inn'] = '11370'
+
+#Globus
+fieldGlobus['Globus'] = '318'
+fieldGlobus['declarant_tin'] = '11460'
+fieldGlobus['start'] = '11484'
+fieldGlobus['finish'] = '11485'
+fieldGlobus['direction'] = '11486'

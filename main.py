@@ -23,6 +23,11 @@ from src.Phys.prepare_data import PhysPrepare
 from src.Phys.post_data import PhysPost
 from src.Phys.webhook import RukPhysWebhook
 
+from src.Globus.get_data import GlobusGet
+from src.Globus.prepare_data import GlobusPrepare
+from src.Globus.post_data import GlobusPost
+from src.Globus.webhook import RukGlobusWebhook
+
 from settings.cfgRukWebhook import fieldJur as FJurW
 
 from settings.cfgRukWebhook import fieldDriver as DrW
@@ -32,6 +37,8 @@ from settings.cfgRukWebhook import fieldAuto as FAW
 from settings.cfgRukWebhook import fieldIP as FIPW
 
 from settings.cfgRukWebhook import fieldPhys as PhW
+
+from settings.cfgRukWebhook import fieldGlobus as FGlW
 
 import logging
 import asyncio
@@ -57,6 +64,7 @@ async def Jur():
         if id:
             uid = await JurG.post_spectrum_jur_face(id[FJurW['inn']])
             data = await JurG.get_spectrum_jur_face(uid)
+                
             data = await JurPrep.prepare_data(data)
 
             await JurPos.post_data(data, id['id'])
@@ -134,8 +142,7 @@ async def IP():
                 id[FIPW['passport_date']],
                 id[FIPW['inn']]
                 )
-            data = await IPG.get_spectrum(uid)
-            
+            data = await IPG.get_spectrum(uid)            
             data = await IPPrep.prepare_data(data)
             
             await IPPos.post_data(data, id['id'])
@@ -171,6 +178,28 @@ async def Phys():
     except Exception as err:
         logging.error(str(err), exc_info=True)
     
+async def Globus():
+    GlobusG = GlobusGet()
+    GlobusPrep = GlobusPrepare()
+    GlobusPos = GlobusPost()
+    try:
+        id = await RukGlobusWebhook().webhook()
+        if id:
+            data = await GlobusG.get_data(
+                id[FGlW['declarant_tin']],
+                id[FGlW['start']],
+                id[FGlW['finish']],
+                id[FGlW['direction']]
+                )
+
+            data = await GlobusPrep.prepare_data(data)
+            
+            await GlobusPos.post_data(data, id['id'])
+            logging.info('OK Globus')
+    except Exception as err:
+        logging.error(str(err), exc_info=True)
+        
+        
 async def main():
     while True:
         task1 = asyncio.create_task(Jur())
@@ -178,10 +207,8 @@ async def main():
         task3 = asyncio.create_task(Auto())
         task4 = asyncio.create_task(IP())
         task5 = asyncio.create_task(Phys())
-                
-        #await asyncio.gather(task1, task2, task3, task4, task5)
+        task6 = asyncio.create_task(Globus())
         
-        print(1)
         await asyncio.sleep(2)
     
 if __name__ == "__main__":

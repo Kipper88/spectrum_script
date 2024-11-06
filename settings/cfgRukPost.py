@@ -3,6 +3,7 @@ fieldAuto = {}
 fieldJur = {}
 fieldIP = {}
 fieldPhys = {}
+fieldGlobus = {}
 
 #Jur
 fieldJur['activityDuration'] = 'field_10611' 
@@ -102,5 +103,14 @@ fieldPhys['throughBy_inn'] = 'field_11343'
 fieldPhys['position'] = 'field_11344'
 fieldPhys['toDate'] = 'field_11345'
 
-
+#Globus
+fieldGlobus['country_departure'] = 'field_11488'
+fieldGlobus['country_destination'] = 'field_11496'
+fieldGlobus['incoterms'] = 'field_11489'
+fieldGlobus['price_usd'] = 'field_11491'
+fieldGlobus['sender_name'] = 'field_11492'
+fieldGlobus['recipient_tin'] = 'field_11493'
+fieldGlobus['recipient_name'] = 'field_11494'
+fieldGlobus['found'] = 'field_11490'
+fieldGlobus['error'] = 'field_11503'
 

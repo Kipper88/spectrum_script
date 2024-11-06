@@ -22,11 +22,12 @@ class PhysPrepare:
         
         
         tax = {} if data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}]) == [] else\
-            data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}])[0]
-        result['amount'] = ", ".join(tax.get('amount', '-'))
-        result['payment_status'] = ", ".join(tax.get('payment_status', '-'))
-        result['details'] = ", ".join(tax.get('details', '-'))
-        result['amount_to_pay'] = ", ".join(tax.get('amount_to_pay', '-'))
+            data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('tax_accrual', {}).get('tax_accruals', [{}])
+        
+        result['amount'] = ", ".join([str(i.get('amount', '-')) for i in tax])
+        result['payment_status'] = ", ".join([str(i.get('payment_status', '-')) for i in tax])
+        result['details'] = ", ".join([str(i.get('details', '-')) for i in tax])
+        result['amount_to_pay'] = ", ".join([str(i.get('amount_to_pay', '-')) for i in tax])
         
         
         acc_stop = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('acc_stop', {})

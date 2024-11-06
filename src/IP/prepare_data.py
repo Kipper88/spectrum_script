@@ -7,10 +7,6 @@ class IPPrepare:
         
         physip = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('egrip', {}).get('items', [{}])[0]
         
-        with open('json.json', 'w') as f:
-            import json
-            json.dump(data, f, indent=4)
-        
         result['inn'] = physip.get('inn', '')
         result['state'] = physip.get('state', '')
         result['ogrn'] = physip.get('ogrn', '')

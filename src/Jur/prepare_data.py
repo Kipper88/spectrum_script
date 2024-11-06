@@ -14,7 +14,7 @@ class JurPrepare:
         result['name'] =               dat.get('fns_opendata', {}).get('paytax', {}).get('data', {}).get('paytax', [{}])[0].get('taxes', [{}])[0].get('name', '')        # Наименование статуса ЮЛ
         
         # Налоговые задолженности организации
-        result['year'] =               dat.get('fns_opendata', {}).get('debtam', {}).get('data', {}).get('debtam', [{}])[0].get('year',  {})                             # Год актуальности данных
+        result['year'] =               dat.get('fns_opendata', {}).get('debtam', {}).get('data', {}).get('debtam', [{}])[0].get('year',  '')                             # Год актуальности данных
         result['group'] =              dat.get('fns_opendata', {}).get('debtam', {}).get('data', {}).get('debtam', [{}])[0].get('debts', [{}])[0].get('group', '')       # Название группы, в которую входит налог
         result['total'] =              dat.get('fns_opendata', {}).get('debtam', {}).get('data', {}).get('debtam', [{}])[0].get('debts', [{}])[0].get('total', '')       # Общая сумма недоимки по налогу, пени и штрафу
         
