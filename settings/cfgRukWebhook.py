@@ -12,7 +12,7 @@ fieldDriver['DriverLicenseDate'] = '10758'
 fieldDriver['LastName'] = '10776'
 fieldDriver['FirstName'] = '10777'
 fieldDriver['Patronymic'] = '10778'
-fieldDriver['Birth'] = '10779'
+fieldDriver['Birth'] = '11507'
 
 fieldDriver['Drivers'] = '287'
 

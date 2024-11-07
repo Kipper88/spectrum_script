@@ -2,720 +2,75 @@
     "state": "ok",
     "size": 1,
     "version": "2.0",
-    "stamp": "2024-11-06T15:58:34.012Z",
+    "stamp": "2024-11-07T13:05:44.367Z",
     "data": [
         {
             "domain_uid": "btg_spedition",
-            "report_type_uid": "report_check_passport_test@btg_spedition",
+            "report_type_uid": "report_check_dl_test@btg_spedition",
             "vehicle_id": " ",
             "query": {
                 "type": "MULTIPART",
                 "body": " ",
                 "data": {
-                    "last_name": "\u0413\u0430\u043d\u0430\u043a\u043e\u0432",
-                    "first_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
-                    "patronymic": "\u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447",
-                    "birth": "18.03.1977",
-                    "passport": "4022123529",
-                    "passport_date": "",
-                    "inn": ""
+                    "driver_license": "9922547753",
+                    "driver_license_date": "01.03.2022",
+                    "last_name": "\u0421\u0438\u0434\u043e\u0440\u043e\u0432",
+                    "first_name": "\u041c\u0438\u0445\u0430\u0438\u043b",
+                    "patronymic": "\u0424\u0435\u0434\u043e\u0440\u043e\u0432\u0438\u0447",
+                    "birth": ""
                 },
                 "schema_version": "1.0",
                 "storages": {}
             },
-            "progress_ok": 23,
-            "progress_wait": 0,
+            "progress_ok": 2,
+            "progress_wait": 2,
             "progress_error": 0,
             "state": {
                 "sources": [
                     {
-                        "_id": "check_person/disqualified_persons",
+                        "_id": "check_person/cp_gibdd_driver_license_v2",
+                        "state": "PROGRESS"
+                    },
+                    {
+                        "_id": "check_person/moneta_traffic_tickets",
+                        "state": "PROGRESS"
+                    },
+                    {
+                        "_id": "check_person/driver_rating_scoring",
                         "state": "OK",
                         "data": {}
                     },
                     {
-                        "_id": "check_person/expired_passport",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/pledge",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/inoagent",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/phn_contact_phone_number",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/arbitr_short",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/statusnpd_nalog",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "fns_opendata/massfounders",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/arbitr_cases_full",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "fns_opendata/massleaders",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/rnp_dishonest_supplier",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 470409387610 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
-                        }
-                    },
-                    {
-                        "_id": "check_person/person_inn",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/fedresurs_short_inn",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u041d\u0435\u0442 \u0434\u0430\u043d\u043d\u044b\u0445"
-                        }
-                    },
-                    {
-                        "_id": "check_person/rnp_affected_supplier",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u0414\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0433\u043e \u0418\u041d\u041d: 470409387610 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438"
-                        }
-                    },
-                    {
-                        "_id": "check_person/linkasso_person_relation",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/provisional_measures",
-                        "state": "OK",
-                        "data": {
-                            "reason": "\u041f\u043e \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u043c \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u043c \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u043e \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044e \u043d\u0430 2024-11-05 \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"
-                        }
-                    },
-                    {
-                        "_id": "check_person/egrul_fio_inn",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/egrip_fio_inn",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/tax_accruals",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/acc_stop",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/credit_history",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/phn_contact_address",
-                        "state": "OK",
-                        "data": {}
-                    },
-                    {
-                        "_id": "check_person/moneta_tax_accruals",
+                        "_id": "check_person/peter_driver_license",
                         "state": "OK",
                         "data": {}
                     }
                 ],
                 "data": {}
             },
-            "requested_at": "2024-11-05T11:21:43.240Z",
+            "requested_at": "2024-11-07T13:05:39.189Z",
             "content": {
-                "check_person": {
-                    "disqualified_persons": {},
-                    "passport": {
-                        "series": "4022",
-                        "number": "123529",
-                        "expired": false,
-                        "details": "",
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "pledge": {
-                        "pledges": [],
-                        "total": 0,
-                        "totalAsPledgee": 0,
-                        "totalAsPledgor": 0,
-                        "totalAsPledgeManager": 0,
-                        "pledgeSizeLimit": 20,
-                        "subjectSizeLimit": 100,
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "inoagent": {},
-                    "source_phones_contact": {
-                        "contacts": [
-                            {
-                                "phone_number": "9312995060",
-                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
-                                "relevance": "85%",
-                                "data_bank": "100401",
-                                "actuality": "2024-01-17"
-                            },
-                            {
-                                "phone_number": "9219941569",
-                                "phone_type": "\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
-                                "relevance": "85%",
-                                "data_bank": "100401",
-                                "actuality": "2024-01-17"
-                            },
-                            {
-                                "phone_number": "78931299506",
-                                "relevance": "82%",
-                                "data_bank": "100202",
-                                "actuality": "2017-08-29"
-                            },
-                            {
-                                "phone_number": "79312995060",
-                                "relevance": "70%",
-                                "data_bank": "200500",
-                                "actuality": "2022-02-25"
-                            },
-                            {
-                                "address": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a \u0413., \u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 \u0420-\u041d., \u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b., 14, 25",
-                                "address_splitted": {
-                                    "country": "",
-                                    "region": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
-                                    "city": "\u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a \u0413.",
-                                    "settlement": "",
-                                    "district": "\u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 \u0420-\u041d.",
-                                    "street": "\u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b.",
-                                    "house": "14",
-                                    "structure": "",
-                                    "corpus": "",
-                                    "porch_count": "",
-                                    "floor": "",
-                                    "floor_count": "",
-                                    "latitude": "",
-                                    "longitude": "",
-                                    "flat_count": "",
-                                    "flat_number": "25",
-                                    "room_number": "",
-                                    "index": "000000",
-                                    "region_code": "1141",
-                                    "fias_code": "",
-                                    "kladr_code": ""
-                                },
-                                "address_type": "\u0410\u0434\u0440\u0435\u0441 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u043c\u0435\u0441\u0442\u0443 \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430",
-                                "relevance": "82%",
-                                "data_bank": "100202",
-                                "actuality": "2017-08-29"
-                            },
-                            {
-                                "address": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0413\u041e\u0420.\u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a, \u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 (\u041e\u0411\u041b), \u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b, 14, 25",
-                                "address_splitted": {
-                                    "country": "",
-                                    "region": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
-                                    "city": "\u0413\u041e\u0420.\u0421\u0412\u0415\u0422\u041e\u0413\u041e\u0420\u0421\u041a",
-                                    "settlement": "",
-                                    "district": "\u0412\u042b\u0411\u041e\u0420\u0413\u0421\u041a\u0418\u0419 (\u041e\u0411\u041b)",
-                                    "street": "\u041a\u0420\u0410\u0421\u041d\u041e\u0410\u0420\u041c\u0415\u0419\u0421\u041a\u0410\u042f \u0423\u041b",
-                                    "house": "14",
-                                    "structure": "",
-                                    "corpus": "",
-                                    "porch_count": "",
-                                    "floor": "",
-                                    "floor_count": "",
-                                    "latitude": "",
-                                    "longitude": "",
-                                    "flat_count": "",
-                                    "flat_number": "25",
-                                    "room_number": "",
-                                    "index": "",
-                                    "region_code": "1141",
-                                    "fias_code": "",
-                                    "kladr_code": ""
-                                },
-                                "address_type": "\u0410\u0434\u0440\u0435\u0441 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u043c\u0435\u0441\u0442\u0443 \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430",
-                                "relevance": "81%",
-                                "data_bank": "100202",
-                                "actuality": "2015-08-11"
-                            }
-                        ]
-                    },
-                    "phn_contact_phone_number": {
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "arbitr_short": {
-                        "cases_amount_total": 0,
-                        "plaintiff_cases_amount": 0,
-                        "plaintiff_cases_sum": 0,
-                        "defendant_cases_amount": 0,
-                        "defendant_cases_sum": 0,
-                        "third_cases_amount": 0,
-                        "third_cases_sum": 0,
-                        "another_cases_amount": 0,
-                        "another_cases_sum": 0,
-                        "request_at": "2024-11-05 14:21:45"
-                    },
-                    "statusnpd_nalog": {
-                        "status": false,
-                        "request_date": "2024-11-05",
-                        "message": "470409387610 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a\u043e\u043c \u043d\u0430\u043b\u043e\u0433\u0430 \u043d\u0430 \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u043e\u0445\u043e\u0434"
-                    },
-                    "arbitr_cases_full": {
-                        "request_at": "2024-11-05 14:21:44"
-                    },
-                    "rnp_dishonest_supplier": {},
-                    "inn": {
-                        "status": "FOUND",
-                        "value": "470409387610",
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "bankruptcy_short": {
-                        "debtorStatus": "NOT_LISTED",
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        },
-                        "metadata": {
-                            "status": "EXECUTED",
-                            "description": ""
-                        }
-                    },
-                    "rnp_affected_supplier": {},
-                    "linkasso_person_relation": {},
-                    "provisional_measures": {
-                        "request_date": "2024-11-05"
-                    },
-                    "egrul": {
-                        "items": [],
-                        "count": 0,
-                        "enrichment_state": "\u0411\u044b\u043b \u043f\u043e\u043b\u0443\u0447\u0435\u043d \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0418\u041d\u041d \u0438\u0437 \u0440\u0435\u0435\u0441\u0442\u0440\u0430 \u0415\u0413\u0420\u042e\u041b: 470409387610",
-                        "enrichment_inn": "470409387610"
-                    },
-                    "egrip": {
-                        "items": [
-                            {
-                                "id": "470409387610",
-                                "state": "ACTIVE",
-                                "inn": "470409387610",
-                                "ogrn": "324470400005495",
-                                "ogrn_date": "2024-01-22",
-                                "last_date": "2024-02-28",
-                                "date": "2024-02-29",
-                                "resolved_create_date": "2024-01-22",
-                                "code": "1",
-                                "type": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c",
-                                "found_by_inn": true,
-                                "email": {
-                                    "email": "ganakov.vladimir@gmail.com",
-                                    "grn": {
-                                        "grnip": "324470400005495",
-                                        "date": "2024-01-22"
-                                    }
-                                },
-                                "person": {
-                                    "fio_rus": {
-                                        "first_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
-                                        "last_name": "\u0413\u0430\u043d\u0430\u043a\u043e\u0432",
-                                        "patronymic": "\u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447"
-                                    },
-                                    "latin_first_name": "Vladimir",
-                                    "latin_last_name": "Ganakov",
-                                    "sex_name": "MALE",
-                                    "sex": "1",
-                                    "grn": {
-                                        "grnip": "324470400005495",
-                                        "date": "2024-01-22"
-                                    }
-                                },
-                                "activity_duration": {
-                                    "text": "9 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 14 \u0434\u043d\u0435\u0439"
-                                },
-                                "grazhd": {
-                                    "type_name": "RUSSIAN",
-                                    "type": "1",
-                                    "oksm": "643",
-                                    "country": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
-                                    "grn": {
-                                        "grnip": "324470400005495",
-                                        "date": "2024-01-22"
-                                    }
-                                },
-                                "reg_org": {
-                                    "code": "4704",
-                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
-                                    "addr": "188801, \u0433.\u0412\u044b\u0431\u043e\u0440\u0433, \u0443\u043b.\u0413\u0430\u0433\u0430\u0440\u0438\u043d\u0430, 27 \u0410",
-                                    "grn": {
-                                        "grnip": "324470400005495",
-                                        "date": "2024-01-22"
-                                    }
-                                },
-                                "reg_ip": {
-                                    "ogrnip": "324470400005495",
-                                    "ogrn": "2024-01-22",
-                                    "reg_date": "2024-01-22"
-                                },
-                                "activity": {
-                                    "main": {
-                                        "code": "77.12",
-                                        "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u043b\u0438\u0437\u0438\u043d\u0433 \u0433\u0440\u0443\u0437\u043e\u0432\u044b\u0445 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432",
-                                        "version": "2014",
-                                        "grn": {
-                                            "grnip": "324470400005495",
-                                            "date": "2024-01-22"
-                                        }
-                                    },
-                                    "additional": [
-                                        {
-                                            "code": "49.41",
-                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "324470400005495",
-                                                "date": "2024-01-22"
-                                            }
-                                        }
-                                    ]
-                                },
-                                "register_tax_dep": {
-                                    "inn": "470409387610",
-                                    "reg_date": "2024-01-22",
-                                    "tax_dep": {
-                                        "code": "4704",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
-                                    },
-                                    "grn": {
-                                        "grnip": "424470400076041",
-                                        "date": "2024-01-22"
-                                    }
-                                },
-                                "reg_pension_fund": {
-                                    "reg_nom_pension_fund": "057004043602",
-                                    "reg_date": "2024-01-23",
-                                    "org_pension_fund": {
-                                        "code": "057004",
-                                        "name": "\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443 \u0438 \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
-                                    },
-                                    "grn": {
-                                        "grnip": "424470400166075",
-                                        "date": "2024-02-28"
-                                    }
-                                }
-                            },
-                            {
-                                "id": "470409387610",
-                                "state": "NOT_ACTIVE",
-                                "inn": "470409387610",
-                                "ogrn": "322470400091408",
-                                "ogrn_date": "2022-09-16",
-                                "last_date": "2023-04-19",
-                                "date": "2023-04-19",
-                                "resolved_create_date": "2022-09-16",
-                                "code": "1",
-                                "type": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c",
-                                "found_by_inn": true,
-                                "email": {
-                                    "email": "ganakov.vladimir@gmail.com",
-                                    "grn": {
-                                        "grnip": "322470400091408",
-                                        "date": "2022-09-16"
-                                    }
-                                },
-                                "person": {
-                                    "fio_rus": {
-                                        "first_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
-                                        "last_name": "\u0413\u0430\u043d\u0430\u043a\u043e\u0432",
-                                        "patronymic": "\u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447"
-                                    },
-                                    "latin_first_name": "Vladimir",
-                                    "latin_last_name": "Ganakov",
-                                    "sex_name": "MALE",
-                                    "sex": "1",
-                                    "grn": {
-                                        "grnip": "322470400091408",
-                                        "date": "2022-09-16"
-                                    }
-                                },
-                                "activity_duration": {
-                                    "text": "7 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 3 \u0434\u043d\u044f"
-                                },
-                                "grazhd": {
-                                    "type_name": "RUSSIAN",
-                                    "type": "1",
-                                    "oksm": "643",
-                                    "country": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
-                                    "grn": {
-                                        "grnip": "322470400091408",
-                                        "date": "2022-09-16"
-                                    }
-                                },
-                                "reg_org": {
-                                    "code": "4704",
-                                    "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
-                                    "addr": "188801, \u0433.\u0412\u044b\u0431\u043e\u0440\u0433, \u0443\u043b.\u0413\u0430\u0433\u0430\u0440\u0438\u043d\u0430, 27 \u0410",
-                                    "grn": {
-                                        "grnip": "322470400091408",
-                                        "date": "2022-09-16"
-                                    }
-                                },
-                                "reg_ip": {
-                                    "ogrnip": "322470400091408",
-                                    "ogrn": "2022-09-16",
-                                    "reg_date": "2022-09-16"
-                                },
-                                "activity": {
-                                    "main": {
-                                        "code": "77.12",
-                                        "name": "\u0410\u0440\u0435\u043d\u0434\u0430 \u0438 \u043b\u0438\u0437\u0438\u043d\u0433 \u0433\u0440\u0443\u0437\u043e\u0432\u044b\u0445 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432",
-                                        "version": "2014",
-                                        "grn": {
-                                            "grnip": "322470400091408",
-                                            "date": "2022-09-16"
-                                        }
-                                    },
-                                    "additional": [
-                                        {
-                                            "code": "46.21.1",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0437\u0435\u0440\u043d\u043e\u043c, \u0441\u0435\u043c\u0435\u043d\u0430\u043c\u0438 \u0438 \u043a\u043e\u0440\u043c\u0430\u043c\u0438 \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.21.11",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0437\u0435\u0440\u043d\u043e\u043c",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.21.12",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0441\u0435\u043c\u0435\u043d\u0430\u043c\u0438, \u043a\u0440\u043e\u043c\u0435 \u0441\u0435\u043c\u044f\u043d \u043c\u0430\u0441\u043b\u0438\u0447\u043d\u044b\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.21.13",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043c\u0430\u0441\u043b\u0438\u0447\u043d\u044b\u043c\u0438 \u0441\u0435\u043c\u0435\u043d\u0430\u043c\u0438 \u0438 \u043c\u0430\u0441\u043b\u043e\u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u043c\u0438 \u043f\u043b\u043e\u0434\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.21.14",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u043a\u043e\u0440\u043c\u0430\u043c\u0438 \u0434\u043b\u044f \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "46.21.19",
-                                            "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043e\u043f\u0442\u043e\u0432\u0430\u044f \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0441\u044b\u0440\u044c\u0435\u043c, \u043d\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u043c \u0432 \u0434\u0440\u0443\u0433\u0438\u0435 \u0433\u0440\u0443\u043f\u043f\u0438\u0440\u043e\u0432\u043a\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "49.41",
-                                            "name": "\u0414\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "49.41.1",
-                                            "name": "\u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u0433\u0440\u0443\u0437\u043e\u0432 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u043c\u0438 \u0430\u0432\u0442\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u043c\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        },
-                                        {
-                                            "code": "49.41.2",
-                                            "name": "\u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u0433\u0440\u0443\u0437\u043e\u0432 \u043d\u0435\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u043c\u0438 \u0430\u0432\u0442\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u043c\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043c\u0438",
-                                            "version": "2014",
-                                            "grn": {
-                                                "grnip": "322470400091408",
-                                                "date": "2022-09-16"
-                                            }
-                                        }
-                                    ]
-                                },
-                                "stopash": {
-                                    "status": {
-                                        "code_status": "201",
-                                        "status_name": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c \u043f\u0440\u0435\u043a\u0440\u0430\u0442\u0438\u043b \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0432 \u0441\u0432\u044f\u0437\u0438 \u0441 \u043f\u0440\u0438\u043d\u044f\u0442\u0438\u0435\u043c \u0438\u043c \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0433\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u044f",
-                                        "stopash_date": "2023-04-19"
-                                    },
-                                    "grn": {
-                                        "grnip": "423470400232415",
-                                        "date": "2023-04-19"
-                                    }
-                                },
-                                "register_tax_dep": {
-                                    "inn": "470409387610",
-                                    "reg_date": "2022-09-16",
-                                    "tax_dep": {
-                                        "code": "4704",
-                                        "name": "\u041c\u0435\u0436\u0440\u0430\u0439\u043e\u043d\u043d\u0430\u044f \u0438\u043d\u0441\u043f\u0435\u043a\u0446\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043d\u0430\u043b\u043e\u0433\u043e\u0432\u043e\u0439 \u0441\u043b\u0443\u0436\u0431\u044b \u211610 \u043f\u043e \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
-                                    },
-                                    "grn": {
-                                        "grnip": "423470400232426",
-                                        "date": "2023-04-19"
-                                    }
-                                },
-                                "reg_pension_fund": {
-                                    "reg_nom_pension_fund": "057004041833",
-                                    "reg_date": "2022-09-20",
-                                    "org_pension_fund": {
-                                        "code": "057004",
-                                        "name": "\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0424\u043e\u043d\u0434\u0430 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u043f\u043e \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0443 \u0438 \u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0439 \u043e\u0431\u043b\u0430\u0441\u0442\u0438"
-                                    },
-                                    "grn": {
-                                        "grnip": "422470400498740",
-                                        "date": "2022-09-20"
-                                    }
-                                }
-                            }
-                        ],
-                        "count": 2,
-                        "enrichment_state": "\u0411\u044b\u043b \u043f\u043e\u043b\u0443\u0447\u0435\u043d \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0418\u041d\u041d \u0438\u0437 \u0440\u0435\u0435\u0441\u0442\u0440\u0430 \u0415\u0413\u0420\u0418\u041f: 470409387610",
-                        "enrichment_inn": "470409387610"
-                    },
-                    "tax_accruals": {
-                        "penalties": [],
-                        "total": 0,
-                        "partially_paid": 0,
-                        "none": 0,
-                        "unpaid": 0
-                    },
-                    "acc_stop": {
-                        "pdf": "https://accstop-archive.spectrumdata.ru//stop_pdf/049401871_470409387610_20241105142149.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241105T112149Z&X-Amz-SignedHeaders=host&X-Amz-Expires=259200&X-Amz-Credential=p-srcs-accstop/20241105/us-west-1/s3/aws4_request&X-Amz-Signature=7f307eb7dcf5a27c0f4e98d6d9eb89b5a9ea3c050cac3eb639548797c216483a"
-                    },
-                    "credit_history": {
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "phn_contact_address": {
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    },
-                    "tax_accrual": {
-                        "tax_accruals": [],
-                        "src_meta": {
-                            "state": "OK",
-                            "detailed": ""
-                        }
-                    }
-                },
-                "check_person/disqualified_persons": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
                 "report_meta": {
                     "check_person": {
-                        "passport": {
+                        "piter_driver_license": {
                             "src_meta": {
                                 "state": "PROGRESS",
                                 "detailed": ""
                             }
                         },
-                        "inn": {
+                        "traffic_ticket": {
                             "src_meta": {
                                 "state": "PROGRESS",
                                 "detailed": ""
                             }
                         },
-                        "tax_accrual": {
+                        "cp_gibdd_driver_license_v2": {
                             "src_meta": {
                                 "state": "PROGRESS",
                                 "detailed": ""
                             }
                         },
-                        "credit_history": {
-                            "src_meta": {
-                                "state": "PROGRESS",
-                                "detailed": ""
-                            }
-                        },
-                        "pledge": {
-                            "src_meta": {
-                                "state": "PROGRESS",
-                                "detailed": ""
-                            }
-                        },
-                        "phn_contact_phone_number": {
-                            "src_meta": {
-                                "state": "PROGRESS",
-                                "detailed": ""
-                            }
-                        },
-                        "phn_contact_address": {
-                            "src_meta": {
-                                "state": "PROGRESS",
-                                "detailed": ""
-                            }
-                        },
-                        "bankruptcy_short": {
+                        "driver_rating_scoring": {
                             "src_meta": {
                                 "state": "PROGRESS",
                                 "detailed": ""
@@ -723,115 +78,74 @@
                         }
                     }
                 },
-                "check_person/inoagent": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/arbitr_short": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/statusnpd_nalog": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "fns_opendata": {
-                    "massfounders": {
-                        "inn": "",
-                        "full_name": "",
-                        "data": {}
+                "check_person": {
+                    "driver_rating": {
+                        "scoring": {
+                            "index": 0,
+                            "index_color": "Green",
+                            "invert_index": 100,
+                            "index_weight": 0.3999999999999999
+                        },
+                        "stage_general_status": {
+                            "status": "OK"
+                        },
+                        "stage_1_status": {
+                            "status": "NOT_FOUND"
+                        },
+                        "stage_2_status": {
+                            "status": "NOT_FOUND"
+                        },
+                        "stage_3_status": {
+                            "status": "OK"
+                        },
+                        "stage_4_status": {
+                            "status": "SKIP_QUERY"
+                        },
+                        "traffic_tickets_by_sts_duration": {
+                            "start": "2024-11-07T13:05:39.496835727Z",
+                            "finish": "2024-11-07T13:05:39.502244860Z",
+                            "duration": "PT0.005409133S",
+                            "totalDuration": "PT0.005409133S",
+                            "multiThreadTimes": 0
+                        },
+                        "traffic_tickets_by_dl_duration": {
+                            "start": "2024-11-07T13:05:39.806488648Z",
+                            "finish": "2024-11-07T13:05:40.216449488Z",
+                            "duration": "PT0.40996084S",
+                            "totalDuration": "PT0.408979985S",
+                            "multiThreadTimes": 1
+                        }
                     },
-                    "massleaders": {
-                        "inn": "",
-                        "full_name": "",
-                        "data": {}
-                    }
-                },
-                "fns_opendata/massfounders": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/arbitr_cases_full": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "fns_opendata/massleaders": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/rnp_dishonest_supplier": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/rnp_affected_supplier": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/linkasso_person_relation": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/provisional_measures": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/egrul_fio_inn": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/egrip_fio_inn": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/tax_accruals": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
-                    }
-                },
-                "check_person/acc_stop": {
-                    "src_meta": {
-                        "state": "OK",
-                        "detailed": ""
+                    "driver_rating_scoring": {
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
+                    },
+                    "piter_driver_license": {
+                        "status": "NOT_FOUND",
+                        "issuer": "",
+                        "experience": 0,
+                        "category_info": {
+                            "category_info_list": []
+                        },
+                        "src_meta": {
+                            "state": "OK",
+                            "detailed": ""
+                        }
                     }
                 }
             },
             "last_generation_stat": {
-                "duration": 20602,
-                "start_time": "2024-11-05T11:21:43.240Z",
-                "complete_time": "2024-11-05T11:22:03.842Z"
+                "start_time": "2024-11-07T13:05:39.189Z"
             },
-            "uid": "report_check_passport_test_e2d551437d1634c3b69e8fc4cc122c3f@btg_spedition",
+            "uid": "report_check_dl_test_b78c0c95e2e434a59e95df0411cf80a5@btg_spedition",
             "name": "NONAME",
             "comment": "",
             "tags": "",
-            "created_at": "2024-11-05T11:21:43.199Z",
+            "created_at": "2024-11-07T13:05:39.142Z",
             "created_by": "system",
-            "updated_at": "2024-11-05T11:22:05.727Z",
+            "updated_at": "2024-11-07T13:05:40.249Z",
             "updated_by": "system",
             "active_from": "1900-01-01T00:00:00.000Z",
             "active_to": "3000-01-01T00:00:00.000Z"

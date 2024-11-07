@@ -14,8 +14,8 @@ class DriverPrepare:
         
         percent = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('driver_rating', {}).get('scoring', {})
         
-        result['pb_percent'] = f"{percent.get('invert_index', '-')}"
-        result['pb_color'] = percent.get('invert_index', '-')
+        result['pb_percent'] = percent.get('invert_index', 0)
+        result['pb_color'] = ""
         
         return result
         

@@ -5241,3 +5241,172 @@ Script has been reloaded
 Script has been reloaded
 2024-11-06 21:31:47 - asyncio - DEBUG - Using proactor: IocpProactor
 2024-11-06 21:31:49 - root - INFO - OK Globus
+Script has been reloaded
+2024-11-07 15:01:06 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:01:07 - root - INFO - OK Jur
+2024-11-07 15:01:08 - root - INFO - OK Globus
+2024-11-07 15:01:11 - root - INFO - OK Jur
+2024-11-07 15:01:40 - root - INFO - OK IP
+2024-11-07 15:01:51 - root - INFO - OK IP
+2024-11-07 15:04:25 - root - INFO - OK IP
+2024-11-07 15:04:29 - root - INFO - OK IP
+2024-11-07 15:10:15 - root - INFO - OK IP
+Script has been reloaded
+2024-11-07 15:10:53 - asyncio - DEBUG - Using proactor: IocpProactor
+Script has been reloaded
+2024-11-07 15:11:13 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:11:24 - root - INFO - OK IP
+2024-11-07 15:11:32 - root - INFO - OK IP
+2024-11-07 15:11:36 - root - INFO - OK IP
+2024-11-07 15:11:40 - root - INFO - OK IP
+2024-11-07 15:11:44 - root - INFO - OK IP
+2024-11-07 15:11:48 - root - INFO - OK IP
+2024-11-07 15:11:52 - root - INFO - OK IP
+2024-11-07 15:11:56 - root - INFO - OK IP
+2024-11-07 15:11:59 - root - INFO - OK IP
+Script has been reloaded
+2024-11-07 15:15:08 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:15:13 - root - INFO - OK IP
+Script has been reloaded
+2024-11-07 15:21:15 - asyncio - DEBUG - Using proactor: IocpProactor
+Script has been reloaded
+2024-11-07 15:21:20 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:21:29 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:25:51 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:25:52 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:28:17 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:28:40 - root - ERROR - '<=' not supported between instances of 'list' and 'int'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 69, in Jur
+    await asyncio.sleep(delay.get('data', [{}][0].get('progress_wait', 10)))
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\tasks.py", line 639, in sleep
+    if delay <= 0:
+       ^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'list' and 'int'
+Script has been reloaded
+2024-11-07 15:32:55 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:33:08 - root - ERROR - '>=' not supported between instances of 'list' and 'int'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 70, in Jur
+    await asyncio.sleep(delay if delay >= 0 else 10)
+                                 ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'list' and 'int'
+Script has been reloaded
+2024-11-07 15:34:15 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:34:23 - root - ERROR - '>=' not supported between instances of 'list' and 'int'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 71, in Jur
+    await asyncio.sleep(delay if delay >= 0 else 10)
+                                 ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'list' and 'int'
+Script has been reloaded
+2024-11-07 15:35:06 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:35:11 - root - ERROR - cannot access local variable 'data' where it is not associated with a value
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 75, in Jur
+    json.dump(data, f, indent=4)
+            ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+Script has been reloaded
+2024-11-07 15:35:49 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:35:57 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:38:19 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:38:25 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:38:35 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:38:42 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:39:28 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:39:38 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:39:55 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:40:01 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:40:51 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:41:31 - root - INFO - OK Jur
+2024-11-07 15:42:25 - root - INFO - OK Jur
+2024-11-07 15:43:24 - root - INFO - OK Jur
+2024-11-07 15:44:40 - root - INFO - OK Jur
+Script has been reloaded
+2024-11-07 15:51:27 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:53:55 - root - ERROR - '10779'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 93, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '10779'
+2024-11-07 15:55:28 - root - ERROR - '10779'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 93, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '10779'
+Script has been reloaded
+2024-11-07 15:56:04 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:56:24 - root - ERROR - '10779'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 93, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '10779'
+Script has been reloaded
+2024-11-07 15:58:10 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 15:58:16 - root - ERROR - '10779'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 86, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '10779'
+2024-11-07 16:00:22 - root - ERROR - '10779'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 86, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '10779'
+Script has been reloaded
+2024-11-07 16:01:18 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 16:01:22 - root - ERROR - '10779'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 86, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '10779'
+Script has been reloaded
+2024-11-07 16:04:56 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 16:05:01 - root - ERROR - '11503'
+Traceback (most recent call last):
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\main.py", line 86, in Driver
+    id = await RukDriverWebhook().webhook()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\zakazs\zakaz_n_6_API-DEV\new_concept-api\src\Driver\webhook.py", line 79, in webhook
+    fieldDriver['Birth']: data[fieldDriver['Birth']],
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '11503'
+Script has been reloaded
+2024-11-07 16:05:31 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-07 16:05:44 - root - INFO - OK Driver
+2024-11-07 16:17:28 - root - INFO - OK Jur
+2024-11-07 18:02:52 - root - INFO - OK Jur
+2024-11-07 18:17:12 - root - INFO - OK Jur
+2024-11-07 18:31:03 - root - INFO - OK Globus

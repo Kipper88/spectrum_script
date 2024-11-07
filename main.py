@@ -63,6 +63,11 @@ async def Jur():
         id = await RukJurWebhook().webhookJur()
         if id:
             uid = await JurG.post_spectrum_jur_face(id[FJurW['inn']])
+            
+            delay = await JurG.get_spectrum_jur_face(uid)
+            delay = delay.get('data', [{}])[0].get('progress_wait', 10)
+            
+            await asyncio.sleep(delay)
             data = await JurG.get_spectrum_jur_face(uid)
                 
             data = await JurPrep.prepare_data(data)
@@ -88,9 +93,11 @@ async def Driver():
                 id[DrW['Patronymic']],
                 id[DrW['Birth']]
             )
+                        
+            delay = await DrG.get_spectrum(uid)
+            delay = delay.get('data', [{}])[0].get('progress_wait', 10)
             
-            await asyncio.sleep(5)
-            
+            await asyncio.sleep(delay)
             data = await DrG.get_spectrum(uid)
                 
             data = await DrPrep.prepare_data(data)
@@ -118,7 +125,12 @@ async def Auto():
         id = await RukAutoWebhook().webhookAuto()
         if id:
             uid = await AutoG.post_spectrum(id[FAW['GRZ']])
-            await asyncio.sleep(1)
+            
+            delay = await AutoG.get_spectrum(uid)
+            delay = delay.get('data', [{}])[0].get('progress_wait', 10)
+            
+            await asyncio.sleep(delay)
+            
             data = await AutoG.get_spectrum(uid)
             data = await AutoPrep.prepare_data(data)
             await AutoPos.post_data(data, id['id'])
@@ -142,7 +154,13 @@ async def IP():
                 id[FIPW['passport_date']],
                 id[FIPW['inn']]
                 )
-            data = await IPG.get_spectrum(uid)            
+            delay = await IPG.get_spectrum(uid)
+            delay = delay.get('data', [{}])[0].get('progress_wait', 10)
+            
+            await asyncio.sleep(delay)
+            
+            data = IPG.get_spectrum(uid)
+        
             data = await IPPrep.prepare_data(data)
             
             await IPPos.post_data(data, id['id'])
@@ -166,11 +184,13 @@ async def Phys():
                 id[PhW['passport_date']],
                 id[PhW['inn']]
                 )
-            await asyncio.sleep(5)
+            delay = await PhysG.get_spectrum_jur_face(uid)
+            delay = delay.get('data', [{}])[0].get('progress_wait', 10)
+            
+            await asyncio.sleep(delay)
+            
             data = await PhysG.get_spectrum(uid)
-            with open('json.json', 'w') as f:
-                import json
-                json.dump(data, f, indent=4)
+            
             data = await PhysPrep.prepare_data(data)
             
             await PhysPos.post_data(data, id['id'])
