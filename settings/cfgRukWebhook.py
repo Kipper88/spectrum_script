@@ -31,8 +31,7 @@ fieldIP['first_name'] = '11248'
 fieldIP['patronymic'] = '11249'
 fieldIP['birth'] = '11250'
 fieldIP['passport'] = '11251'
-fieldIP['passport_date'] = '11422'
-fieldIP['inn'] = '10925'
+fieldIP['inn'] = '11233'
 
 #Phys
 fieldPhys['Phys'] = '306'

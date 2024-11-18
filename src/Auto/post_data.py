@@ -9,21 +9,27 @@ class AutoPost:
         ...
     
     async def post_data(self, data, id_f):
-        items = {
-            fieldAuto['VIN']: data['VIN'],
-            fieldAuto['CTC']: data['CTC'],
+        # items = {
+        #     fieldAuto['VIN']: data['VIN'],
+        #     fieldAuto['CTC']: data['CTC'],
             
-            fieldAuto['original']: data['original'],
-            fieldAuto['colorName']: data['colorName'],
-            fieldAuto['year']: data['year'],
+        #     fieldAuto['original']: data['original'],
+        #     fieldAuto['colorName']: data['colorName'],
+        #     fieldAuto['year']: data['year'],
             
-            fieldAuto['dateReceive']: data['dateReceive'],
+        #     fieldAuto['dateReceive']: data['dateReceive'],
             
-            fieldAuto['periodEnd']: data['periodEnd'],
-            fieldAuto['policyStatus']: data['policyStatus'],
+        #     fieldAuto['periodEnd']: data['periodEnd'],
+        #     fieldAuto['policyStatus']: data['policyStatus'],
             
-            fieldAuto['inclusionDateis_wanted']: data['inclusionDateis_wanted']
-        }
+        #     fieldAuto['inclusionDateis_wanted']: data['inclusionDateis_wanted'],
+            
+        #     fieldAuto['score_year']: data['score_year'],
+        #     fieldAuto['']
+        # }
+        
+        items = {fieldAuto[key]: data[key] for key in fieldAuto}
+        
         params = {
             'key': apiKeyRuk,           # API ключ  
             'username': 'PortalBTG24',                                   # Имя пользователя

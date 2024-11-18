@@ -17,27 +17,30 @@ class IPPost:
            inclusionDate, exclusionDate, reason,\n
            actualCaseStatus"""
         
-        items = {
-            fieldIP['inn']: data.get('inn', ''),  # Продолжительность периода деятельности организации
-            fieldIP['state']: data.get('state', ''),  # Дата прекращения деятельности
-            fieldIP['ogrn']: data.get('ogrn', ''),       
-            fieldIP['ogrn_date']: data.get('ogrn_date', ''),
-            fieldIP['date']: data.get('date', ''),
-            fieldIP['address_text']: data.get('address_text', ''),
-            fieldIP['type']: data.get('type', ''),
-            fieldIP['found_by_inn']: data.get('found_by_inn', ''),
-            fieldIP['activity_main_name']: data.get('activity_main_name', ''),
-            fieldIP['stopash_date']: data.get('stopash_date', ''),
-            fieldIP['lits_type_deyat_name']: data.get('lits_type_deyat_name', ''),
+        # items = {
+        #     fieldIP['inn']: data.get('inn', ''),  # Продолжительность периода деятельности организации
+        #     fieldIP['state']: data.get('state', ''),  # Дата прекращения деятельности
+        #     fieldIP['ogrn']: data.get('ogrn', ''),       
+        #     fieldIP['ogrn_date']: data.get('ogrn_date', ''),
+        #     fieldIP['date']: data.get('date', ''),
+        #     fieldIP['address_text']: data.get('address_text', ''),
+        #     fieldIP['type']: data.get('type', ''),
+        #     fieldIP['found_by_inn']: data.get('found_by_inn', ''),
+        #     fieldIP['activity_main_name']: data.get('activity_main_name', ''),
+        #     fieldIP['stopash_date']: data.get('stopash_date', ''),
+        #     fieldIP['lits_type_deyat_name']: data.get('lits_type_deyat_name', ''),
             
-            fieldIP['details']: data.get('details', ''),
+        #     fieldIP['details']: data.get('details', ''),
             
-            fieldIP['last_date']: data.get('last_date', ''),
-            fieldIP['name_long']: data.get('name_long', ''),
-            fieldIP['stop_org_date']: data.get('stop_org_date', ''),
-            fieldIP['activity_additional_name']: data.get('activity_additional_name', '')
-        }
+        #     fieldIP['last_date']: data.get('last_date', ''),
+        #     fieldIP['name_long']: data.get('name_long', ''),
+        #     fieldIP['stop_org_date']: data.get('stop_org_date', ''),
+        #     fieldIP['activity_additional_name']: data.get('activity_additional_name', ''),
+        #     fieldIP['claim_sum']: data.get('claim_sum')
+        # }
             
+        items = {fieldIP[key]: data[key] for key in fieldIP}
+        
         params = {
             'key': apiKeyRuk,           # API ключ  
             'username': 'PortalBTG24',                                   # Имя пользователя

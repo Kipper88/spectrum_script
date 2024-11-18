@@ -8,7 +8,7 @@ class IPPrepare:
         physip = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('egrip', {}).get('items', [{}])[0]
         
         result['inn'] = physip.get('inn', '')
-        result['state'] = physip.get('state', '')
+        result['state'] = physip.get('state', '-')
         result['ogrn'] = physip.get('ogrn', '')
         result['ogrn_date'] = physip.get('ogrn_date', '')
         result['date'] = physip.get('date', '')
@@ -29,5 +29,13 @@ class IPPrepare:
         passport = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('passport', {})
         result['details'] = passport.get('details', '')
         
+        cases = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('arbitr_full', {}).get('cases', [{}])[0]
+        result['claim_sum'] = cases.get('claim_sum', 0)
+        
+        
+        result['score_state'] = '100' if result['state'] == 'NOT_ACTIVE' else '0'
+        result['score_stopash_date'] = '100' if result['stopash_date'] and result['stopash_date'] != '' else '0'
+        result['score_claim_sum'] = '100' if int(result['claim_sum']) >= 10000000 else '0'
+         
         return result
     

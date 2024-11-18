@@ -12,7 +12,6 @@ class IPGet:
                             patronymic: str,
                             birth: str,
                             passport: str,
-                            passport_date: str,
                             inn: str
     ):
         async with ClientSession() as sess:
@@ -29,7 +28,7 @@ class IPGet:
                     "patronymic": patronymic,
                     "birth": birth,
                     "passport": passport,
-                    "passport_date": passport_date,
+                    #"passport_date": '111',
                     "inn": inn#,
                     #    "region": [
                     #   {

@@ -151,7 +151,6 @@ async def IP():
                 id[FIPW['patronymic']],
                 id[FIPW['birth']],
                 id[FIPW['passport']],
-                id[FIPW['passport_date']],
                 id[FIPW['inn']]
                 )
             delay = await IPG.get_spectrum(uid)
@@ -159,7 +158,7 @@ async def IP():
             
             await asyncio.sleep(delay)
             
-            data = IPG.get_spectrum(uid)
+            data = await IPG.get_spectrum(uid)
         
             data = await IPPrep.prepare_data(data)
             
@@ -184,7 +183,7 @@ async def Phys():
                 id[PhW['passport_date']],
                 id[PhW['inn']]
                 )
-            delay = await PhysG.get_spectrum_jur_face(uid)
+            delay = await PhysG.get_spectrum(uid)
             delay = delay.get('data', [{}])[0].get('progress_wait', 10)
             
             await asyncio.sleep(delay)

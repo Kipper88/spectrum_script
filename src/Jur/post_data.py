@@ -27,7 +27,14 @@ class JurPost:
             fieldJur['inclusionDate']: data.get('inclusionDate', ''),
             fieldJur['exclusionDate']: data.get('exclusionDate', ''),
             fieldJur['reason']: data.get('reason', ''),
-            fieldJur['actualCaseStatus']: data.get('actualCaseStatus', '')    
+            fieldJur['actualCaseStatus']: data.get('actualCaseStatus', ''),
+            fieldJur['net_profit']: data.get('net_profit', ''),
+            fieldJur['score_is_not_active_date']: data.get('score_is_not_active_date', ''),
+            fieldJur['score_total']: data.get('score_total', ''),
+            fieldJur['score_date']: data.get('score_date', ''),
+            fieldJur['score_inclusionDate']: data.get('score_inclusionDate', ''),
+            fieldJur['score_actualCaseStatus']: data.get('score_actualCaseStatus', ''),
+            fieldJur['score_net_profit']: data.get('score_net_profit', '')
         }
             
         params = {

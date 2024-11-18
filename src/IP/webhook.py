@@ -38,7 +38,6 @@ class RukIPWebhook:
                             {fieldIP['patronymic']},\
                             {fieldIP['birth']},\
                             {fieldIP['passport']},\
-                            {fieldIP['passport_date']},\
                             {fieldIP['inn']}"
             #'filter': {
             #    '159': datetime.now().strftime('%Y-%m-%d')
@@ -61,6 +60,5 @@ class RukIPWebhook:
                     fieldIP['patronymic']: data[fieldIP['patronymic']],
                     fieldIP['birth']: data[fieldIP['birth']],
                     fieldIP['passport']: data[fieldIP['passport']],
-                    fieldIP['passport_date']: data[fieldIP['passport_date']],
                     fieldIP['inn']: data[fieldIP['inn']],
                     'id': data['id']}
