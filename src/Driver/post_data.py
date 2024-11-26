@@ -13,7 +13,8 @@ class DriverPost:
             fieldDriver['issuer']: data['issuer'],
             fieldDriver['categories']: data['categories'],
             fieldDriver['pb_percent']: data['pb_percent'],
-            fieldDriver['pb_color']: data['pb_color']
+            fieldDriver['pb_color']: data['pb_color'],
+            fieldDriver['score_endDate']: data['score_endDate']
         }
         params = {
             'key': apiKeyRuk,           # API ключ  

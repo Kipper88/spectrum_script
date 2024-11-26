@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class DriverPrepare:
     async def prepare_data(self, data):
         """ВУ. Основное (действительность, срок действия)		Ссылка на документацию: https://my.spectrumdata.ru/docs/520b756e/report-blocks/P.0026.DRL.BAS-TRU\n
@@ -7,7 +9,7 @@ class DriverPrepare:
         lic = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('cp_driver_license_v2', {}).get('driverLicense', {})
         
         # ВУ. Основное (действительность, срок действия)
-        result['endDate'] = lic.get('endDate', '-')          # Срок действия
+        result['endDate'] = lic.get('endDate', '-')    # Срок действия
         result['issuer'] = lic.get('issuer', '-')            # Кем выдано ВУ
         
         result['categories'] = ', '.join(lic.get('categories', []))           # Категория ВУ
@@ -16,6 +18,8 @@ class DriverPrepare:
         
         result['pb_percent'] = percent.get('invert_index', 0)
         result['pb_color'] = ""
+        
+        result["score_endDate"] = '100' if datetime.strptime(result['endDate'], '%Y-%m-%d').year < 2023  else '0'
         
         return result
         

@@ -41,6 +41,8 @@ fieldDriver['categories'] = 'field_10761'
 fieldDriver['pb_percent'] = 'field_10762'
 fieldDriver['pb_color'] = 'field_10764'
 
+fieldDriver['score_endDate'] = 'field_11607'
+
 #Auto
 fieldAuto['VIN'] = 'field_10689'
 fieldAuto['CTC'] = 'field_10690'

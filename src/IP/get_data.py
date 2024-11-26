@@ -17,7 +17,7 @@ class IPGet:
         async with ClientSession() as sess:
             headers = {
                 "Accept": "application/json",
-                "Authorization": "AR-REST dXNlcl9pbnRlZ3JhdGlvbkBidGdfc3BlZGl0aW9uOjE3Mjc5NjI0NTU6OTk5OTk5OTk5OldINDBwTlpNUzljVGtLUkNhbDgzOUE9PQ=="
+                "Authorization": api_key_spec
             }
             params = {
                 "queryType": "MULTIPART",
@@ -53,7 +53,7 @@ class IPGet:
         async with ClientSession() as sess:
             headers = {
                 "Accept": "application/json",
-                "Authorization": "AR-REST dXNlcl9pbnRlZ3JhdGlvbkBidGdfc3BlZGl0aW9uOjE3Mjc5NjI0NTU6OTk5OTk5OTk5OldINDBwTlpNUzljVGtLUkNhbDgzOUE9PQ=="
+                "Authorization": api_key_spec
             }
             params = {
                 "_content": "true",

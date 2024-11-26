@@ -225,7 +225,7 @@ async def main():
         task2 = asyncio.create_task(Driver())
         task3 = asyncio.create_task(Auto())
         task4 = asyncio.create_task(IP())
-        task5 = asyncio.create_task(Phys())
+        #task5 = asyncio.create_task(Phys())
         task6 = asyncio.create_task(Globus())
         
         await asyncio.sleep(2)
