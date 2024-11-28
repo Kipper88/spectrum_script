@@ -12,7 +12,7 @@ class AutoPrepare:
         
         result['original'] = data.get('tech_data', {}).get('brand', {}).get('name', {}).get('original', '')
         result['colorName'] = data.get('tech_data', {}).get('body', {}).get('color', {}).get('name', '')
-        result['year'] = data.get('tech_data', {}).get('year', f'{datetime.now().year} (техническая дата - данные не найдены)')
+        result['year'] = data.get('tech_data', {}).get('year', datetime.now().year)
 
         result['dateReceive'] = data.get('additional_info', {}).get('vehicle', {}).get('sts', {}).get('date', {}).get('receive', '-')
 

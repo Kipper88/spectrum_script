@@ -19,7 +19,7 @@ class DriverPrepare:
         result['pb_percent'] = percent.get('invert_index', 0)
         result['pb_color'] = ""
         
-        result["score_endDate"] = '100' if datetime.strptime(result['endDate'], '%Y-%m-%d').year < 2023  else '0'
+        result["score_endDate"] = '100' if (datetime.strptime(result['endDate'], '%Y-%m-%d').year if result['endDate'] != '-' else 99999) < 2023  else '0'
         
         return result
         
