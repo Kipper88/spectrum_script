@@ -6537,3 +6537,22 @@ Script has been reloaded
 Script has been reloaded
 2024-11-26 20:21:17 - asyncio - DEBUG - Using proactor: IocpProactor
 2024-11-26 20:21:24 - root - INFO - OK Driver
+Script has been reloaded
+2024-12-03 16:19:03 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-03 16:19:04 - root - INFO - OK Globus
+2024-12-03 16:19:04 - root - INFO - OK Driver
+2024-12-03 16:19:04 - root - INFO - OK IP
+2024-12-03 16:19:04 - root - INFO - OK Jur
+2024-12-03 16:19:14 - root - ERROR - invalid literal for int() with base 10: '-'
+Traceback (most recent call last):
+  File "E:\projects\new_concept-api\main.py", line 135, in Auto
+    data = await AutoPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\new_concept-api\src\Auto\prepare_data.py", line 26, in prepare_data
+    result['score_year'] = (NORMAL_SCORE_VALUE if int(result['year']) < datetime.now().year - 19 else NEGATIVE_SCORE_VALUE) if (result['year'] != '' and result['year'] != '') else NEGATIVE_SCORE_VALUE
+                                                  ^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '-'
+2024-12-03 16:20:04 - root - INFO - OK IP
+Script has been reloaded
+2024-12-03 16:20:21 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-03 16:20:47 - root - INFO - OK Auto

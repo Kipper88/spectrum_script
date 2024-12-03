@@ -16,3 +16,7 @@ type_request_auto = 'report_check_vehicle_test@btg_spedition'
 type_request_dl = 'report_check_dl_test@btg_spedition'
 type_request_passport = 'report_check_passport_test@btg_spedition'
 type_request_credit_history = 'report_check_person_credit_history_test@btg_spedition'
+
+NEGATIVE_SCORE_VALUE = '0'
+NORMAL_SCORE_VALUE = '100'
+NONE_SCORE_VALUE = '30'
