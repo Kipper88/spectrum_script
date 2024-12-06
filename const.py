@@ -11,11 +11,11 @@ apiKeyGlobus = 'mEgXuZoPiA'
 urlGlobus = 'https://glbs.io/api/supplies-search'
 
 
-type_request_kontrAgent = 'report_company_test@btg_spedition'
-type_request_auto = 'report_check_vehicle_test@btg_spedition'
-type_request_dl = 'report_check_dl_test@btg_spedition'
-type_request_passport = 'report_check_passport_test@btg_spedition'
-type_request_credit_history = 'report_check_person_credit_history_test@btg_spedition'
+type_request_kontrAgent = 'report_check_company@btg_spedition'
+type_request_auto = 'report_check_vehicle@btg_spedition'
+type_request_dl = 'report_check_dl@btg_spedition'
+type_request_passport = 'report_check_passport@btg_spedition'
+type_request_credit_history = 'report_check_person_credit_history@btg_spedition'
 
 NEGATIVE_SCORE_VALUE = '0'
 NORMAL_SCORE_VALUE = '100'
