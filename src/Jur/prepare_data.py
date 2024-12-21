@@ -34,7 +34,7 @@ class JurPrepare:
         result['net_profit'] = next((str(item.get("value", '0')) for item in items if item.get("description") == "Чистая прибыль (убыток)"), '0')
      
         # Баллы 
-        result['score_is_not_active_date'] = '100' if result['is_not_active_date'] != '' and result['is_not_active_date'] != '1111-11-11' else '0'
+        result['score_is_not_active_date'] = '100' if result['isNotActiveDate'] != '' and result['isNotActiveDate'] != '1111-11-11' else '0'
         result['score_total'] =              '100' if int(result['total']) >= 500000 else '0'
         result['score_date'] =               '100' if result['date'] != '' else '0'
         result['score_inclusionDate'] =      '100' if result['inclusionDate'] != '' else '0'
