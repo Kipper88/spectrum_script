@@ -6,8 +6,8 @@ class JurPrepare:
         result = {}
 
         # Сведения о юридическом лице
-        result['activity_duration'] =  dat.get('xfirm', {}).get('fns_egrul_egrip', {}).get('org', {}).get('activity_duration', {}).get('text', '')                       # Продолжительность периода деятельности организации
-        result['is_not_active_date'] = dat.get('xfirm', {}).get('fns_egrul_egrip', {}).get('org', {}).get('is_not_active_date', '1111-11-11')                                       # Дата прекращения деятельности
+        result['activityDuration'] =  dat.get('xfirm', {}).get('fns_egrul_egrip', {}).get('org', {}).get('activity_duration', {}).get('text', '')                       # Продолжительность периода деятельности организации
+        result['isNotActiveDate'] = dat.get('xfirm', {}).get('fns_egrul_egrip', {}).get('org', {}).get('is_not_active_date', '1111-11-11')                                       # Дата прекращения деятельности
         
         # Сведения о состоянии/статусе
         result['code'] =               dat.get('fns_opendata', {}).get('paytax', {}).get('data', {}).get('paytax', [{}])[0].get('taxes', [{}])[0].get('code', '')        # Код статуса
