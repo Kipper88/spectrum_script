@@ -1,7 +1,7 @@
 class JurPrepare:
     async def prepare_data(data):
         
-        dat = dat.get('data', [{}])[0].get('content', {})
+        dat = data.get('data', [{}])[0].get('content', {})
         
         result = {}
 
