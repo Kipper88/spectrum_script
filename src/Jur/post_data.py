@@ -7,7 +7,7 @@ class JurPost:
     def __init__(self):
         ...
         
-    async def post_data(self, data, id_f, uid):
+    async def post_data(self, data, id_f):
         # items = {
         #     fieldJur['activityDuration']: data.get('activity_duration', ''),  # Продолжительность периода деятельности организации
         #     fieldJur['isNotActiveDate']: data.get('is_not_active_date', ''),  # Дата прекращения деятельности
