@@ -7,7 +7,7 @@ from const import urlRuk, apiKeyRuk
 class DriverPost:
     def __init__(self):
         ...
-    async def post_data(self, data, id_f, uid):
+    async def post_data(self, data, id_f):
         # items = {
         #     fieldDriver['endDate']: data['endDate'],
         #     fieldDriver['issuer']: data['issuer'],
