@@ -33,6 +33,8 @@ fieldJur['score_inclusionDate'] = 'field_11566'
 fieldJur['score_actualCaseStatus'] = 'field_11567'  
 fieldJur['score_net_profit'] = 'field_11568' 
 
+fieldJur['uid'] = 'field_11800'
+
 #Driver
 fieldDriver['endDate'] = 'field_10759'
 fieldDriver['issuer'] = 'field_10760'
@@ -42,6 +44,8 @@ fieldDriver['pb_percent'] = 'field_10762'
 fieldDriver['pb_color'] = 'field_10764'
 
 fieldDriver['score_endDate'] = 'field_11607'
+
+fieldDriver['uid'] = 'field_11801'
 
 #Auto
 fieldAuto['VIN'] = 'field_10689'
@@ -62,6 +66,8 @@ fieldAuto['score_year'] = 'field_11553'
 fieldAuto['score_periodEnd'] = 'field_11554'
 fieldAuto['score_inclusionDateis_wanted'] = 'field_11555'
 
+fieldAuto['uid'] = 'field_11802'
+
 
 #IP
 fieldIP['inn'] = 'field_11233'
@@ -81,13 +87,13 @@ fieldIP['details'] = 'field_11246'
 fieldIP['last_date'] = 'field_11261'
 fieldIP['name_long'] = 'field_11262'
 fieldIP['stop_org_date'] = 'field_11263'
-#fieldIP['activity_main_name'] = 'field_11264'
 fieldIP['activity_additional_name'] = 'field_11369'
 fieldIP['claim_sum'] = 'field_11558'
 
 fieldIP['score_state'] = 'field_11552'
 fieldIP['score_stopash_date'] = 'field_11556'
 fieldIP['score_claim_sum'] = 'field_11559'
+fieldIP['uid'] = 'field_11798'
 
 #Phys
 fieldPhys['cases_amount_total'] = 'field_11214'
@@ -122,6 +128,8 @@ fieldPhys['items_isActive'] = 'field_11334'
 fieldPhys['throughBy_inn'] = 'field_11343'
 fieldPhys['position'] = 'field_11344'
 fieldPhys['toDate'] = 'field_11345'
+
+fieldPhys['uid'] = 'field_'
 
 #Globus
 fieldGlobus['country_departure'] = 'field_11488'

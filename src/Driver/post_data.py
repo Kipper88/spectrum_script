@@ -7,15 +7,18 @@ from const import urlRuk, apiKeyRuk
 class DriverPost:
     def __init__(self):
         ...
-    async def post_data(self, data, id_f):
-        items = {
-            fieldDriver['endDate']: data['endDate'],
-            fieldDriver['issuer']: data['issuer'],
-            fieldDriver['categories']: data['categories'],
-            fieldDriver['pb_percent']: data['pb_percent'],
-            fieldDriver['pb_color']: data['pb_color'],
-            fieldDriver['score_endDate']: data['score_endDate']
-        }
+    async def post_data(self, data, id_f, uid):
+        # items = {
+        #     fieldDriver['endDate']: data['endDate'],
+        #     fieldDriver['issuer']: data['issuer'],
+        #     fieldDriver['categories']: data['categories'],
+        #     fieldDriver['pb_percent']: data['pb_percent'],
+        #     fieldDriver['pb_color']: data['pb_color'],
+        #     fieldDriver['score_endDate']: data['score_endDate']
+        # }
+        
+        items = {fieldDriver[key]: data[key] for key in fieldDriver}
+        
         params = {
             'key': apiKeyRuk,           # API ключ  
             'username': 'PortalBTG24',                                   # Имя пользователя

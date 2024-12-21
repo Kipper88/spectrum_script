@@ -26,5 +26,7 @@ class AutoPrepare:
         result['score_year'] = (NORMAL_SCORE_VALUE if int(result['year']) < datetime.now().year - 19 else NEGATIVE_SCORE_VALUE) if (result['year'] != '' and result['year'] != '-') else NEGATIVE_SCORE_VALUE
         result['score_periodEnd'] = (NORMAL_SCORE_VALUE if datetime.strptime(result['periodEnd'], "%Y-%m-%d").date() <= datetime.now().date() else NEGATIVE_SCORE_VALUE) if (result['periodEnd'] != '-' and result['year'] != '') else NEGATIVE_SCORE_VALUE
         result['score_inclusionDateis_wanted'] = (NORMAL_SCORE_VALUE if result['inclusionDateis_wanted'] is True else NEGATIVE_SCORE_VALUE) if result['inclusionDateis_wanted'] != False and result['inclusionDateis_wanted'] != '-' else NEGATIVE_SCORE_VALUE
+        
+        result['uid'] = data.get('data', [{}])[0].get('uid', '')
                 
         return result

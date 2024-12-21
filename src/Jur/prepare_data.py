@@ -41,5 +41,6 @@ class JurPrepare:
         result['score_actualCaseStatus'] =   '100' if result['actualCaseStatus'] != '' else '0'
         result['score_net_profit'] =         '100' if int(result['net_profit']) < 0 else '0'
         
+        result['uid'] = dat.get('data', [{}])[0].get('uid', '')
             
         return result

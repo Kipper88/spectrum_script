@@ -69,7 +69,6 @@ async def Jur():
             
             await asyncio.sleep(delay)
             data = await JurG.get_spectrum_jur_face(uid)
-            logging.debug(str(data))
                 
             data = await JurPrep.prepare_data(data)
 

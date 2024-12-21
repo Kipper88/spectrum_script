@@ -57,5 +57,7 @@ class PhysPrepare:
         result['position'] = linkasso_person.get('throughBy', [{}])[0].get('historicalManagerRelationships', [{}])[0].get('position', '-')
         result['toDate'] = linkasso_person.get('throughBy', [{}])[0].get('historicalManagerRelationships', [{}])[0].get('toDate', '-')
         
+        result['uid'] = data.get('data', [{}])[0].get('uid', '')
+        
         return result
     

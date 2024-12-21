@@ -21,16 +21,6 @@ class DriverPrepare:
         
         result["score_endDate"] = '100' if (datetime.strptime(result['endDate'], '%Y-%m-%d').year if result['endDate'] != '-' else 99999) < 2023  else '0'
         
+        result['uid'] = data.get('data', [{}])[0].get('uid', '')
+        
         return result
-        
-    """ async def prepare_data_percent(self, data):
-        Скоринг правовой благонадёжности. Метод 1		Ссылка на документацию: https://my.spectrumdata.ru/docs/520b756e/report-blocks/P.0103.PBS.ACT-SCR
-        
-        result = {}
-        
-        data = data.get('data', [{}])[0]['content']['check_person']['proceeding_v2']['executive_v2']['scoring']
-        
-        result['pb_percent'] = data.get('pb_percent', '')
-        result['pb_color'] = data.get('pb_color', '')
-        
-        return result """

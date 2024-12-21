@@ -36,6 +36,8 @@ class IPPrepare:
         result['score_state'] = '100' if result['state'] == 'NOT_ACTIVE' else '0'
         result['score_stopash_date'] = '100' if result['stopash_date'] and result['stopash_date'] != '' else '0'
         result['score_claim_sum'] = '100' if int(result['claim_sum']) >= 10000000 else '0'
+        
+        result['uid'] = data.get('data', [{}])[0].get('uid', '')
          
         return result
     
