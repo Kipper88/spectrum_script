@@ -1,1 +1,31 @@
 
+Script has been reloaded
+2024-12-24 15:15:47 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-24 15:15:49 - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\projects\new_concept-api\main.py", line 163, in IP
+    data = await IPPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\new_concept-api\src\IP\prepare_data.py", line 27, in prepare_data
+    result['activity_additional_name'] = physip.get('activity', {}).get('additional', [{}])[0].get('name', '')
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-12-24 15:15:49 - root - INFO - OK Globus
+2024-12-24 15:15:49 - root - INFO - OK Auto
+2024-12-24 15:15:49 - root - INFO - OK Driver
+2024-12-24 15:15:49 - root - INFO - OK Jur
+2024-12-24 15:16:05 - root - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\projects\new_concept-api\main.py", line 163, in IP
+    data = await IPPrep.prepare_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\new_concept-api\src\IP\prepare_data.py", line 27, in prepare_data
+    result['activity_additional_name'] = physip.get('activity', {}).get('additional', [{}])[0].get('name', '')
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+Script has been reloaded
+2024-12-24 15:16:28 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-24 15:16:51 - root - INFO - OK IP
+Script has been reloaded
+2024-12-24 15:17:51 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-24 15:18:37 - root - INFO - OK IP

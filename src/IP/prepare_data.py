@@ -24,7 +24,7 @@ class IPPrepare:
         result['name_long'] = physip.get('name', {}).get('name', '')
         result['stop_org_date'] = physip.get('stop_org_date', '')
         #result['activity_main_name'] = physip.get('activity', {}).get('main', {}).get('name', '')
-        result['activity_additional_name'] = physip.get('activity', {}).get('additional', [{}])[0].get('name', '')
+        result['activity_additional_name'] = physip.get('activity', {}).get('additional', [{}])[0].get('name', '') if physip.get('activity', {}).get('additional', [{}]) != [] else ''
 
         passport = data.get('data', [{}])[0].get('content', {}).get('check_person', {}).get('passport', {})
         result['details'] = passport.get('details', '')
