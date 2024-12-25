@@ -29,3 +29,36 @@ Script has been reloaded
 Script has been reloaded
 2024-12-24 15:17:51 - asyncio - DEBUG - Using proactor: IocpProactor
 2024-12-24 15:18:37 - root - INFO - OK IP
+Script has been reloaded
+2024-12-25 21:02:00 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-25 21:02:02 - root - INFO - OK Driver
+2024-12-25 21:02:02 - root - INFO - OK Globus
+2024-12-25 21:02:03 - root - INFO - OK Auto
+2024-12-25 21:02:03 - root - INFO - OK Jur
+2024-12-25 21:02:05 - root - ERROR - 'uid'
+Traceback (most recent call last):
+  File "E:\projects\new_concept-api\main.py", line 165, in IP
+    await IPPos.post_data(data, id['id'])
+  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in post_data
+    items = {fieldIP[key]: data[key] for key in fieldIP}
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in <dictcomp>
+    items = {fieldIP[key]: data[key] for key in fieldIP}
+                           ~~~~^^^^^
+KeyError: 'uid'
+2024-12-25 21:04:35 - root - ERROR - 'uid'
+Traceback (most recent call last):
+  File "E:\projects\new_concept-api\main.py", line 165, in IP
+    await IPPos.post_data(data, id['id'])
+  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in post_data
+    items = {fieldIP[key]: data[key] for key in fieldIP}
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in <dictcomp>
+    items = {fieldIP[key]: data[key] for key in fieldIP}
+                           ~~~~^^^^^
+KeyError: 'uid'
+Script has been reloaded
+2024-12-25 21:05:54 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-12-25 21:06:05 - root - INFO - OK IP
+2024-12-25 21:07:42 - root - INFO - OK Jur
+2024-12-25 21:08:32 - root - INFO - OK Driver
