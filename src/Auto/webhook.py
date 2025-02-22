@@ -2,7 +2,7 @@ from aiohttp import ClientSession
 from datetime import datetime
 import json
 
-from const import urlRuk, apiKeyRuk
+from const import urlRuk, apiKeyRuk, usernameRuk, passRuk
 from settings.cfgRukWebhook import fieldAuto
 
 async def readJsonAuto():
@@ -28,8 +28,8 @@ class RukAutoWebhook:
     async def webhookAuto(self):
         params = {
             'key': apiKeyRuk,  # API ключ  
-            'username': 'PortalBTG24',                                   # Имя пользователя
-            'password': 'PortalBTG2024',                                   # Пароль
+            'username': usernameRuk,                                   # Имя пользователя
+            'password': passRuk,                                   # Пароль
             'action': 'select',                                    # действие
             'entity_id': fieldAuto['Auto'], 
             'select_fields': f"{fieldAuto['GRZ']}",
