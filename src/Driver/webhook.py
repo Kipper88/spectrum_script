@@ -43,6 +43,8 @@ class RukDriverWebhook:
     def __init__(self):
         self.urlRuk = urlRuk
         self.apiKey = apiKeyRuk
+        self.usernameRuk = usernameRuk
+        self.passRuk = passRuk
         
     async def webhook(self):
         
