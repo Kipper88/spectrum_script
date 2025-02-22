@@ -1,7 +1,7 @@
 import json
 from aiohttp import ClientSession
 
-from const import apiKeyRuk, urlRuk
+from const import apiKeyRuk, urlRuk, usernameRuk, passRuk
 from settings.cfgRukWebhook import fieldGlobus
 
 async def readJsonFileJur():
@@ -24,12 +24,14 @@ class RukGlobusWebhook:
     def __init__(self):
         self.urlRuk = urlRuk
         self.apiKey = apiKeyRuk
+        self.usernameRuk = usernameRuk
+        self.passRuk = passRuk
         
     async def webhook(self):
         params = {
             'key': self.apiKey,  # API ключ  
-            'username': 'PortalBTG24',                                   # Имя пользователя
-            'password': 'PortalBTG2024',                                   # Пароль
+            'username': self.usernameRuk,                                   # Имя пользователя
+            'password': self.passRuk,                                   # Пароль
             'action': 'select',                                    # действие
             'entity_id': fieldGlobus['Globus'], 
             'select_fields': f"\
