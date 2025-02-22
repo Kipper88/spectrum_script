@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 
 from settings.cfgRukWebhook import fieldDriver
-from const import apiKeyRuk, urlRuk
+from const import apiKeyRuk, urlRuk, usernameRuk, passRuk
 
 async def readJsonFileLic():
     with open('temp/idsDriverLic.json', 'r', encoding='utf-8') as f:
@@ -47,9 +47,9 @@ class RukDriverWebhook:
     async def webhook(self):
         
         params = {
-            'key': 'qtIeyLiuELr77ptCXcL3RhHhVNJscQvXzvyOcaIC',  # API ключ  
-            'username': 'PortalBTG24',                                   # Имя пользователя
-            'password': 'PortalBTG2024',                                   # Пароль
+            'key': self.apiKeyRuk,  # API ключ  
+            'username': self.usernameRuk,                                   # Имя пользователя
+            'password': self.passRuk,                                   # Пароль
             'action': 'select',                                    # действие
             'entity_id': fieldDriver['Drivers'], 
             'select_fields': f"{fieldDriver['DriverLicense']}, {fieldDriver['DriverLicenseDate']}, {fieldDriver['LastName']}, {fieldDriver['FirstName']}, {fieldDriver['Patronymic']}, {fieldDriver['Birth']}",
