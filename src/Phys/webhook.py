@@ -49,7 +49,6 @@ class RukPhysWebhook:
                                   json=params,
                                   ssl=False
                                   )
-            print(await resp.text())
             data = await resp.json(content_type='text/html')
             data = data['data'][-1]
         

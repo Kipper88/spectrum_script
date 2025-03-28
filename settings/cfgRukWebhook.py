@@ -4,6 +4,7 @@ fieldJur = {}
 fieldIP = {}
 fieldPhys = {}
 fieldGlobus = {}
+fieldPlanning = {}
 
 # Driver
 fieldDriver['DriverLicense'] = '10757'
@@ -49,3 +50,10 @@ fieldGlobus['declarant_tin'] = '11460'
 fieldGlobus['start'] = '11484'
 fieldGlobus['finish'] = '11485'
 fieldGlobus['direction'] = '11486'
+
+#Planning
+fieldPlanning['Planning'] = '231'
+fieldPlanning['room'] = '8891'
+fieldPlanning['start_date_time'] = '8888'
+fieldPlanning['end_date_time'] = '8889'
+fieldPlanning['event_name'] = '8887'

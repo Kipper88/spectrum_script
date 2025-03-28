@@ -1,64 +1,255 @@
+Script has been reloaded
+2025-03-27 16:13:26 - asyncio - DEBUG - Using proactor: IocpProactor
+Script has been reloaded
+2025-03-27 16:16:21 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-03-27 16:16:43 - root - ERROR - PlanningPost.post_data() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 241, in Planning
+    result = await PlanningPos.post_data(id, id['id'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PlanningPost.post_data() takes 2 positional arguments but 3 were given
+Script has been reloaded
+2025-03-27 16:18:03 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-03-27 16:18:08 - root - ERROR - 127.0.0.1:5000/api/add_record
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 243, in Planning
+    result = await PlanningPos.post_data(id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\src\Planning\post_data.py", line 10, in post_data
+    resp = await sess.post(url=self.urlApiPlanning,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\client.py", line 541, in _request
+    raise NonHttpUrlClientError(url)
+aiohttp.client_exceptions.NonHttpUrlClientError: 127.0.0.1:5000/api/add_record
+Script has been reloaded
+2025-03-27 16:18:41 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-03-27 16:18:48 - root - ERROR - Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1123, in _wrap_create_connection
+    connection = await self._loop.create_connection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1113, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1146, in _create_connection_transport
+    await waiter
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "H:\Programs\Python-3.11.9\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
 
-Script has been reloaded
-2024-12-24 15:15:47 - asyncio - DEBUG - Using proactor: IocpProactor
-2024-12-24 15:15:49 - root - ERROR - list index out of range
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "E:\projects\new_concept-api\main.py", line 163, in IP
-    data = await IPPrep.prepare_data(data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\projects\new_concept-api\src\IP\prepare_data.py", line 27, in prepare_data
-    result['activity_additional_name'] = physip.get('activity', {}).get('additional', [{}])[0].get('name', '')
-                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
-IndexError: list index out of range
-2024-12-24 15:15:49 - root - INFO - OK Globus
-2024-12-24 15:15:49 - root - INFO - OK Auto
-2024-12-24 15:15:49 - root - INFO - OK Driver
-2024-12-24 15:15:49 - root - INFO - OK Jur
-2024-12-24 15:16:05 - root - ERROR - list index out of range
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 243, in Planning
+    result = await PlanningPos.post_data(id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\src\Planning\post_data.py", line 10, in post_data
+    resp = await sess.post(url=self.urlApiPlanning,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1414, in _create_direct_connection
+    raise last_exc
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1383, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1131, in _wrap_create_connection
+    raise ClientConnectorSSLError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorSSLError: Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+Script has been reloaded
+2025-03-27 16:20:48 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-03-27 16:20:56 - root - ERROR - Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
 Traceback (most recent call last):
-  File "E:\projects\new_concept-api\main.py", line 163, in IP
-    data = await IPPrep.prepare_data(data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\projects\new_concept-api\src\IP\prepare_data.py", line 27, in prepare_data
-    result['activity_additional_name'] = physip.get('activity', {}).get('additional', [{}])[0].get('name', '')
-                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
-IndexError: list index out of range
-Script has been reloaded
-2024-12-24 15:16:28 - asyncio - DEBUG - Using proactor: IocpProactor
-2024-12-24 15:16:51 - root - INFO - OK IP
-Script has been reloaded
-2024-12-24 15:17:51 - asyncio - DEBUG - Using proactor: IocpProactor
-2024-12-24 15:18:37 - root - INFO - OK IP
-Script has been reloaded
-2024-12-25 21:02:00 - asyncio - DEBUG - Using proactor: IocpProactor
-2024-12-25 21:02:02 - root - INFO - OK Driver
-2024-12-25 21:02:02 - root - INFO - OK Globus
-2024-12-25 21:02:03 - root - INFO - OK Auto
-2024-12-25 21:02:03 - root - INFO - OK Jur
-2024-12-25 21:02:05 - root - ERROR - 'uid'
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1123, in _wrap_create_connection
+    connection = await self._loop.create_connection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1113, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1146, in _create_connection_transport
+    await waiter
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "H:\Programs\Python-3.11.9\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "E:\projects\new_concept-api\main.py", line 165, in IP
-    await IPPos.post_data(data, id['id'])
-  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in post_data
-    items = {fieldIP[key]: data[key] for key in fieldIP}
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in <dictcomp>
-    items = {fieldIP[key]: data[key] for key in fieldIP}
-                           ~~~~^^^^^
-KeyError: 'uid'
-2024-12-25 21:04:35 - root - ERROR - 'uid'
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 245, in Planning
+    result = await PlanningPos.post_data(id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\src\Planning\post_data.py", line 10, in post_data
+    resp = await sess.post(url=self.urlApiPlanning,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1414, in _create_direct_connection
+    raise last_exc
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1383, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1131, in _wrap_create_connection
+    raise ClientConnectorSSLError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorSSLError: Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+2025-03-27 16:21:54 - root - ERROR - Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
 Traceback (most recent call last):
-  File "E:\projects\new_concept-api\main.py", line 165, in IP
-    await IPPos.post_data(data, id['id'])
-  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in post_data
-    items = {fieldIP[key]: data[key] for key in fieldIP}
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\projects\new_concept-api\src\IP\post_data.py", line 42, in <dictcomp>
-    items = {fieldIP[key]: data[key] for key in fieldIP}
-                           ~~~~^^^^^
-KeyError: 'uid'
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1123, in _wrap_create_connection
+    connection = await self._loop.create_connection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1113, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1146, in _create_connection_transport
+    await waiter
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "H:\Programs\Python-3.11.9\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 245, in Planning
+    result = await PlanningPos.post_data(id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\src\Planning\post_data.py", line 10, in post_data
+    resp = await sess.post(url=self.urlApiPlanning,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1414, in _create_direct_connection
+    raise last_exc
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1383, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1131, in _wrap_create_connection
+    raise ClientConnectorSSLError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorSSLError: Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+2025-03-27 16:22:26 - root - ERROR - Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1123, in _wrap_create_connection
+    connection = await self._loop.create_connection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1113, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1146, in _create_connection_transport
+    await waiter
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "H:\Programs\Python-3.11.9\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 245, in Planning
+    result = await PlanningPos.post_data(id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\src\Planning\post_data.py", line 10, in post_data
+    resp = await sess.post(url=self.urlApiPlanning,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1414, in _create_direct_connection
+    raise last_exc
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1383, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1131, in _wrap_create_connection
+    raise ClientConnectorSSLError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorSSLError: Cannot connect to host 127.0.0.1:5000 ssl:False [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
 Script has been reloaded
-2024-12-25 21:05:54 - asyncio - DEBUG - Using proactor: IocpProactor
-2024-12-25 21:06:05 - root - INFO - OK IP
-2024-12-25 21:07:42 - root - INFO - OK Jur
-2024-12-25 21:08:32 - root - INFO - OK Driver
+2025-03-27 16:23:42 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-03-27 16:23:44 - root - ERROR - Cannot connect to host 127.0.0.1:5000 ssl:default [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1123, in _wrap_create_connection
+    connection = await self._loop.create_connection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1113, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\base_events.py", line 1146, in _create_connection_transport
+    await waiter
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "H:\Programs\Python-3.11.9\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "H:\Programs\Python-3.11.9\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\main.py", line 245, in Planning
+    result = await PlanningPos.post_data(id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\spectrum_script\src\Planning\post_data.py", line 10, in post_data
+    resp = await sess.post(url=self.urlApiPlanning,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1414, in _create_direct_connection
+    raise last_exc
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1383, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\projects\¡Œ“_œÀ¿Õ»–Œ¬Õ»≈_œ≈–≈√Œ¬Œ–Õ€’\spectrum\venv\Lib\site-packages\aiohttp\connector.py", line 1131, in _wrap_create_connection
+    raise ClientConnectorSSLError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorSSLError: Cannot connect to host 127.0.0.1:5000 ssl:default [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)]
+Script has been reloaded
+2025-03-27 16:25:01 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-03-27 16:25:20 - root - INFO - OK Globus
+2025-03-27 16:26:35 - root - INFO - OK Globus
+2025-03-27 16:28:47 - root - INFO - OK Globus
+2025-03-27 16:31:34 - root - INFO - OK Globus

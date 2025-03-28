@@ -28,6 +28,9 @@ from src.Globus.prepare_data import GlobusPrepare
 from src.Globus.post_data import GlobusPost
 from src.Globus.webhook import RukGlobusWebhook
 
+from src.Planning.post_data import PlanningPost
+from src.Planning.webhook import RukPlanningWebhook
+
 from settings.cfgRukWebhook import fieldJur as FJurW
 
 from settings.cfgRukWebhook import fieldDriver as DrW
@@ -40,8 +43,13 @@ from settings.cfgRukWebhook import fieldPhys as PhW
 
 from settings.cfgRukWebhook import fieldGlobus as FGlW
 
+# from settings.cfgRukWebhook import fieldPlanning as FPl
+
 import logging
 import asyncio
+from logging.handlers import RotatingFileHandler
+
+from const import api_key_api_planning
 
 with open('log/script.log', 'a') as f:
     f.write('Script has been reloaded\n')
@@ -51,7 +59,12 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # Формат вывода логов
     datefmt='%Y-%m-%d %H:%M:%S',  # Формат даты и времени
     handlers=[
-        logging.FileHandler('log/script.log', mode='a')  # Вывод логов в файл 'app.log'
+        RotatingFileHandler(
+            filename='log/script.log', 
+            mode='a',              # Режим добавления (append)
+            maxBytes=10*1024*1024, # Ограничение в 10 МБ (10 * 1024 * 1024 байт)
+            backupCount=5          # Количество резервных файлов (опционально)
+        )
     ]
 )
 
@@ -218,16 +231,37 @@ async def Globus():
     except Exception as err:
         logging.error(str(err), exc_info=True)
         
+async def Planning():
+    PlanningPos = PlanningPost()  
+
+    try:
+        #постоянно опрашиваем руководитель на предмет новых записей
+        id = await RukPlanningWebhook().webhook()
+        # если найдена новая запись
+        if id:
+            id.pop('id')
+            id['api_key'] = api_key_api_planning
+            # постим данные на удаленный сервер
+            result = await PlanningPos.post_data(id)
+            # место для доп. логики, исходя из ответа сервера апи планирования
+            # if result.get('status', '') == 'success':
+            #     ...
+                
+            logging.info('OK Globus')
+    except Exception as err:
+        logging.error(str(err), exc_info=True)    
         
+functions = [
+    Jur,
+    Driver,
+    Auto,
+    IP,
+    Globus,
+    Planning
+]
 async def main():
     while True:
-        task1 = asyncio.create_task(Jur())
-        task2 = asyncio.create_task(Driver())
-        task3 = asyncio.create_task(Auto())
-        task4 = asyncio.create_task(IP())
-        #task5 = asyncio.create_task(Phys())
-        task6 = asyncio.create_task(Globus())
-        
+        await asyncio.gather(*(func() for func in functions))
         await asyncio.sleep(2)
     
 if __name__ == "__main__":

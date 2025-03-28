@@ -49,7 +49,7 @@ class RukDriverWebhook:
     async def webhook(self):
         
         params = {
-            'key': self.apiKeyRuk,  # API ключ  
+            'key': self.apiKey,  # API ключ  
             'username': self.usernameRuk,                                   # Имя пользователя
             'password': self.passRuk,                                   # Пароль
             'action': 'select',                                    # действие
